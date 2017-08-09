@@ -1,4 +1,4 @@
-theme                    : "minimal-mistakes-jekyll"
+theme                    : minimal-mistakes-jekyll
 # Site Settings
 locale                   : "en"
 title                    : "hiro7"
