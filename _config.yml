@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "hiro7"
 title_separator          : "-"
 name                     : &name "Silvia [hiro]"
-description              : &description "personal description"
+description              : &description "Nie wieder Krieg nie wieder Faschismus"
 url                      : http://www.hiro7.eu # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "hiromipaw/hiromipaw.github.io"
@@ -80,7 +80,7 @@ analytics:
 author:
   name             : "Silvia Puglisi [hiro]"
   avatar           : "profile.png"
-  bio              : "Nie wieder Krieg nie wieder Faschismus - #conservationist - Ford Foundation / Media Democracy Fund TX Fellow @ The Tor Project. 6864C734AD972957FE938866A38425F1767BB67C"
+  bio              : "Ford Foundation / Media Democracy Fund TX Fellow @ The Tor Project. 67BB67C"
   location         : "BCN - La millor ciutat del mon"
   employer         : "The Tor Project"
   googlescholar    : "https://scholar.google.es/citations?user=B8_Ts38AAAAJ&hl=en"
@@ -98,7 +98,7 @@ author:
   instagram        :
   lastfm           :
   linkedin         :
-  orcid            : " "
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
