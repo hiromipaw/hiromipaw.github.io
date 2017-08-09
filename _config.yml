@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Silvia Puglisi - hiro / Personal Page"
+title                    : "Silvia Puglisi [hiro] / Personal Page"
 title_separator          : "-"
-name                     : &name "Silvia / hiro"
+name                     : &name "Silvia [hiro]"
 description              : &description "personal description"
-url                      : https://www.hiro7.eu # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "hiromipaw/hiromipaw.github.io"
+repository               : "academicpages/academicpages.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -30,7 +30,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "master" # "master", "gh-pages"
+  branch                 : "gh-pages" # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
@@ -78,13 +78,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Silvia / hiro"
+  name             : "Your Sidebar Name"
   avatar           : "profile.png"
-  bio              : "Nie wieder Krieg nie wieder Faschismus #conservationist @fordfoundation/@MedDemFund TX Fellow @torproject. 6864C734AD972957FE938866A38425F1767BB67C"
-  location         : "BCN - La millor ciutat del mon"
-  employer         : "The Tor Project"
-  googlescholar    : "https://scholar.google.es/citations?user=B8_Ts38AAAAJ"
-  email            : "me@hiro7.eu"
+  bio              : "Your biography for the left-hand sidebar"
+  location         : "Location"
+  employer         :
+  googlescholar    : "http://yourfullgooglescholarurl.com"
+  email            :
   uri              :
   bitbucket        :
   codepen          :
@@ -92,19 +92,19 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "hiromipaw"
+  github           : "academicpages"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : ""
-  orcid            : ""
+  linkedin         :
+  orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "nopressure"
+  twitter          : "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
