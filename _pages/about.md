@@ -33,4 +33,4 @@ hiro@torproject.org Jabber
 C6DE1978 28721810 F6FF21CC E91A4B26 2D468808
 
 
-I like: surfing, swimming, skiing, mountainering and hiking. I have got a dof and two cats. If we were still in the '90s I would have displayed here my geek code.
+I like: surfing, swimming, skiing, mountainering and hiking. I have got a dog and two cats. If we were still in the '90s I would have displayed here my geek code.
