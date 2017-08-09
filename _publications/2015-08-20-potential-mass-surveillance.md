@@ -2,7 +2,7 @@
 title: "Potential mass surveillance and privacy violations in proximity-based social applications."
 collection: publications
 permalink: /publication/2015-08-20-potential-mass-surveillance
-excerpt: 'Proximity-based social applications let users interact with people that are currently close to them, by revealing some information about their preferences and whereabouts. This information is acquired through passive geo-localisation and used to build a sense of serendipitous discovery of people, places and interests.'
+excerpt: 'Proximity-based social applications let users interact with people that are currently close to them, by revealing some information about their preferences and whereabouts.'
 date: 2015-08-20
 venue: 'TRUSTCOM '15 Proceedings of the 2015 IEEE Trustcom/BigDataSE/ISPA'
 paperurl: '/files/Potential-mass-surveillance.pdf'
