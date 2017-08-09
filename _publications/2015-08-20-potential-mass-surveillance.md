@@ -3,7 +3,7 @@ title: "Potential mass surveillance and privacy violations in proximity-based so
 collection: publications
 permalink: /publication/2015-08-20-potential-mass-surveillance
 excerpt: 'Proximity-based social applications let users interact with people that are currently close to them, by revealing some information about their preferences and whereabouts. This information is acquired through passive geo-localisation and used to build a sense of serendipitous discovery of people, places and interests.'
-date: 2015-20-08
+date: 2015-08-20
 venue: 'TRUSTCOM '15 Proceedings of the 2015 IEEE Trustcom/BigDataSE/ISPA'
 paperurl: '/files/Potential-mass-surveillance.pdf'
 citation: 'S. Puglisi, D. Rebollo-Monedero, J. Forné (2010). &quot;Potential mass surveillance and privacy violations in proximity-based social applications.&quot; <i>TRUSTCOM '15 Proceedings of the 2015 IEEE Trustcom/BigDataSE/ISPA</i>. 1 (1045-1052).'
