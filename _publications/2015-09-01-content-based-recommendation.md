@@ -1,5 +1,5 @@
 ---
-title: "On Content-Based Recommendation and User Privacy in Social-Tagging Systems"
+title: "On Content-Based Recommendation and User Privacy in Social-Tagging Systems."
 collection: publications
 permalink: /publication/2015-09-01-content-based-recommendation
 excerpt: 'We investigate the effects of different privacy enhancing technologies in content-based recommendation systems.'
