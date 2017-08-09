@@ -1,6 +1,5 @@
-
-# Site Settings
 theme                    : "minimal-mistakes-jekyll"
+# Site Settings
 locale                   : "en"
 title                    : "hiro7"
 title_separator          : "-"
