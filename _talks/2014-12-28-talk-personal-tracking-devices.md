@@ -4,7 +4,7 @@ collection: talks
 type: "Talk"
 permalink: /talks/2014-12-28-talk-personal-tracking-devices
 venue: "CCC, Hamburg, Germany"
-date: 2015-08-20
+date: 2014-12-28
 location: "Hamburg, Germany"
 ---
 
