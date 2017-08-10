@@ -73,12 +73,10 @@ Education
   
 Skills
 ======
-* 
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Software Engineering
+* System Engineering
+* Information Privacy
+* Paddle Surfing
 
 Publications
 ======
@@ -92,7 +90,7 @@ Talks
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
-Teaching
+<!-- Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
@@ -101,3 +99,4 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+ -->
