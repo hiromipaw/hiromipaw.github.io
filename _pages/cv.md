@@ -12,6 +12,11 @@ redirect_from:
 Work experience
 ======
 
+* System Engineer
+  * [Tor Project](https://www.torproject.org/)
+  * 2016 - present
+  * Ford Foundation / Media Democracy Found Tech Exchange Fellow
+
 * Technical Architech
   * [Fablabbcn](https://www.fablabbcn.org/)
   * 2015 - 2016, Barcelona, Spain
