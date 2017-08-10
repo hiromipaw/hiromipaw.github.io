@@ -3,7 +3,7 @@ title: "Potential mass surveillance and privacy violations in proximity-based so
 collection: talks
 type: "Talk"
 permalink: /talks/2015-08-20-talk-potential-mass-surveillance
-venue: "Aalto Univerisity, Helsinki, Finland"
+venue: "Aalto Univerisity"
 date: 2015-08-20
 location: "Helsinki, Finland"
 ---

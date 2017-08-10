@@ -2,7 +2,7 @@
 title: "You never surf alone. Ubiquitous tracking of users’ browsing habits."
 type: "Talk"
 permalink: /talks/2015-09-21-you-never-surf-alone
-venue: "Vienna University of Technology (TU), Vienna, Austria"
+venue: "Vienna University of Technology (TU)"
 date: 2015-09-21
 location: "Vienna, Austria"
 ---

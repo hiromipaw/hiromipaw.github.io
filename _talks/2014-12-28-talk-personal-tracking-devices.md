@@ -3,7 +3,7 @@ title: "Personal tracking devices."
 collection: talks
 type: "Talk"
 permalink: /talks/2014-12-28-talk-personal-tracking-devices
-venue: "CCC, Hamburg, Germany"
+venue: "CCC"
 date: 2014-12-28
 location: "Hamburg, Germany"
 ---
