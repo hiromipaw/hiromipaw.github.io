@@ -16,6 +16,9 @@ Work experience
   * 2015 - 2016, Barcelona, Spain
   * Fab labs provide widespread access to modern means for invention. They began as an outreach project from MIT’s Center for Bits and Atoms (CBA), and became into a collaborative and global network. You can find more information about Fab Labs on the Fab Foundation Website.
 
+* Software Engineer @ (Ztory)[https://www.ztory.com/]
+  * 2014 - 2015, Barcelona, Spain
+  * Ruby on Rails development. Ztory is a Swedish startup founded in 2013 that gives readers access to an ever growing stockpile of fresh publications for a fixed monthly price. Our mission is to give millions of people unlimited access to publications and help publishers find new audiences.
 
 
 Education
