@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2016-11-18-mobilitapp
 excerpt: 'MobilitApp is a platform designed to provide smart mobility services in urban areas.'
 date: 2016-11-18
-venue: 'Proceeding Revised Selected Papers of the 10th International Workshop on Data Privacy Management, and Security Assurance'
+venue: 'Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering book series'
 paperurl: '/files/mobilitapp.pdf'
 citation: 'Silvia Puglisi, Ángel Torres Moreira, Gerard Marrugat Torregrosa, Mónica Aguilar Igartua and Jordi Forné. (2016). &quot;MobilitApp: Analysing Mobility Data of Citizens in the Metropolitan Area of Barcelona.&quot; <i>Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering book series</i>. Vol. 169.'
 ---

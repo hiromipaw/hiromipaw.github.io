@@ -13,7 +13,6 @@ In the early age of the internet users enjoyed a large level of anonymity. At th
 
 [PDF](/files/typeinst.pdf)
 
-Recommended citation: S. Puglisi, D. Rebollo-Monedero, J. Forné. (2015). "You never surf alone. Ubiquitous tracking of users’ browsing habits." <i>Proceeding
-Revised Selected Papers of the 10th International Workshop on Data Privacy Management, and Security Assurance</i>. 9481 (273-280).
+Recommended citation: S. Puglisi, D. Rebollo-Monedero, J. Forné. (2015). "You never surf alone. Ubiquitous tracking of users’ browsing habits." <i>Proceeding Revised Selected Papers of the 10th International Workshop on Data Privacy Management, and Security Assurance</i>. 9481 (273-280).
 
 
