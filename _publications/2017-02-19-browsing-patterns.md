@@ -3,7 +3,7 @@ title: "On web user tracking of browsing patterns for personalised advertising."
 collection: publications
 permalink: /publication/2017-02-19-browsing-patterns
 excerpt: 'On today’s Web, users trade access to their private data for content and services.'
-date: 2016-11-18
+date: 2017-02-19
 venue: 'International Journal of Parallel, Emergent and Distributed Systems'
 paperurl: 'http://dx.doi.org/10.1080/17445760.2017.1282480'
 citation: 'S. Puglisi, D. Rebollo-Monedero, J. Forne. (2017). &quot;On web user tracking of browsing patterns for personalised advertising.&quot; <i>International Journal of Parallel, Emergent and Distributed Systems</i>. 32 (502-521)'

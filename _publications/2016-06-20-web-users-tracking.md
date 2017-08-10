@@ -1,7 +1,7 @@
 ---
 title: "On Web user tracking: How third-party http requests track users' browsing patterns for personalised advertising."
 collection: publications
-permalink: /publication/2016-11-18-mobilitapp
+permalink: /publication/2016-06-20-web-users-tracking
 excerpt: 'Websites use personalisation services to profile their visitors, collect their in page reading activities and eventually use this data to provide tailored suggestions.'
 date: 2016-06-20
 venue: 'Ad Hoc Networking Workshop (Med-Hoc-Net), 2016 Mediterranean'
