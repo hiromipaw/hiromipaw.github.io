@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/hiroisgroot
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.hiro7.eu
+  * I am hiroisgroot (https://keybase.io/hiroisgroot) on keybase.
+  * I have a public key ASDLnwDjjFZiM5Qo-TSwglzQKkC0t2mctvaBNZKU4jB4IAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120cb9f00e38c5662339428f934b0825cd02a40b4b7699cb6f681359294e23078200a",
+      "host": "keybase.io",
+      "kid": "0120cb9f00e38c5662339428f934b0825cd02a40b4b7699cb6f681359294e23078200a",
+      "uid": "41f8a7dced914eed0ff0e65e8e1fc719",
+      "username": "hiroisgroot"
+    },
+    "merkle_root": {
+      "ctime": 1549009575,
+      "hash": "1cd0480fa7442f1dd7ffa27606a7b445dd0fe09f0cce8c7249c19527dd85bb7c456e162f38cc16cf80483b66c5028dddd31abf04652fd33658ec45c6becb2cb4",
+      "hash_meta": "4489de1a199f8ecc4fc032985fe7d78517abb007b22c06232dbd1736d8f611a1",
+      "seqno": 4675936
+    },
+    "service": {
+      "entropy": "AppfXbAfAjFHWtlpjd/r2fXs",
+      "hostname": "www.hiro7.eu",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.0.0"
+  },
+  "ctime": 1549009586,
+  "expire_in": 504576000,
+  "prev": "9a76b2524fafb7dc4ea9ddc359e6cb4667099ff7a2c0157f43abd1f5cd8fdd69",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgy58A44xWYjOUKPk0sIJc0CpAtLdpnLb2gTWSlOIweCAKp3BheWxvYWTESpcCBcQgmnayUk+vt9xOqd3DWebLRmcJn/eiwBV/Q6vR9c2P3WnEIO+9BcWM0ThAH2xL+Dkr/uyfMR3zODU7sCpODnvVw3i1AgHCo3NpZ8RA0NsxYUfe/k++ySHNMYUnV49G1YtHW7EGAIJ+pIFp3/rPVm9fSHRXxhPB3kGjx8mmGHX2zjLy+L6heFTGwdg5BqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHonxI9kiDEcbUDU1ZQviH44gyGaXq2rqer2iy2G9Suho3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hiroisgroot
+
+==================================================================
