@@ -1,7 +1,7 @@
 ---
 title: 'Using Solid with Tor .onion services. How to decentralise your online identities.'
 date: 2019-06-21
-permalink: /posts/2019/04/solid-tor-onion-services/
+permalink: /posts/2019/06/solid-tor-onion-services/
 tags:
   - tor
   - privacy
@@ -45,4 +45,4 @@ I have created a test application running on onion services and connecting to a 
 
 The code is available via the [myonion wrapper](https://github.com/hiromipaw/myonion). An experiment in making available through docker containers different app via .onion services.
 
-In this post we show how a web application made available through .onion on the Tor network can exchange information with a Solid pod and allow a user to login and share some data. Because .onion services live on the Tor network, you do not need hosting or a public ip address to offer some service via .onion address. This means .onion services are a gateway to a decentralised, peer-to-peer internet, where you regain control on the content you create and who you are sharing it with. The .onion is hosted on your computer for the time you desire, allowing the people visiting your site to remain anonymous, and also you. We believe anonymity to be very important since it can free people, allowing them to decide how to expose themselves or to make themselves visible on their own terms.
+In this post I have shown how a web application made available through .onion on the Tor network can exchange information with a Solid pod and allow a user to login and share some data. Because .onion services live on the Tor network, you do not need hosting or a public ip address to offer some service via .onion address. This means .onion services are a gateway to a decentralised, peer-to-peer internet, where you regain control on the content you create and who you are sharing it with. The .onion is hosted on your computer for the time you desire, allowing the people visiting your site to remain anonymous, and also you. We believe anonymity to be very important since it can free people, allowing them to decide how to expose themselves or to make themselves visible on their own terms.
