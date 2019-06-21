@@ -16,7 +16,8 @@ A lot of information is given away by certain properties of communications beyon
 
 Questions that can be answered by looking at metadata are:
 - how long you talk, how often ...
-- the people you talk to, or a group of people that communicate between eachothers frequently ... - network addresses, traffic patterns
+- the people you talk to, or a group of people that communicate between eachothers frequently ...
+- network addresses, traffic patterns
 - location services, geo-coding ...
 
 As you see Metadata give a lot away about you even if the actual content of your communication is encrypted. We could also say that the metadata can give away more information than reading the actual content, and in a form that is easily processed by machines.
