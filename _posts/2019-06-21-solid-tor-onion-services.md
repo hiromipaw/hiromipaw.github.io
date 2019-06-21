@@ -9,9 +9,6 @@ tags:
   - anonymity
   - solid
 ---
-
-Tor is an important tool providing privacy and anonymity online. The property of anonymity itself is more than just providing an encrypted connection between the source and the destination of a given conversation. Encryption only prevents the content of the communication between two parties from becoming known, but there is a lot of information that can still be learned by just observing the traffic.
-
 A lot of information is given away by certain properties of communications beyond just the content. These properties are usually referred to as communication metadata. Metadata include information such as the lenght of the conversation, who was involved, where are the parties involved in the conversation located, and so on.
 
 Questions that can be answered by looking at metadata are:
@@ -21,6 +18,8 @@ Questions that can be answered by looking at metadata are:
 - location services, geo-coding ...
 
 As you see Metadata give a lot away about you even if the actual content of your communication is encrypted. We could also say that the metadata can give away more information than reading the actual content, and in a form that is easily processed by machines.
+
+Tor is an important tool providing privacy and anonymity online. The property of anonymity itself is more than just providing an encrypted connection between the source and the destination of a given conversation. Encryption only prevents the content of the communication between two parties from becoming known, but there is a lot of information that can still be learned by just observing the traffic.
 
 When you use the Tor network, you are not sharing your communication metadata. So that, not only your communication are encrypted, but you can also stay anonymous. Anonymity is a broad concept, and it can mean different things to different groups.
 
