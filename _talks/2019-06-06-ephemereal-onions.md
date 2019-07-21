@@ -1,5 +1,5 @@
 ---
-title: "Privacy Web Docs"
+title: "Ephemereal Onions"
 collection: talks
 type: "Talk"
 permalink: /talks/2019-06-06-ephemereal-onions
