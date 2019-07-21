@@ -1,5 +1,5 @@
 ---
-title: "Tech Demo - Privacy across ages and spaces
+title: "Tech Demo - Privacy across ages and spaces"
 collection: talks
 type: "Talk"
 permalink: /talks/2019-06-13-tech-demo-privacy
