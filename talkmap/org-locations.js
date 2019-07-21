@@ -23,5 +23,20 @@ var addressPoints = [
     "Barcelona, Spain",
     41.3825,
     2.17694
+  ],
+  [
+    "Valencia, Spain",
+    39.4666667,
+    -0.3666667
+  ],
+  [
+    "Berlin, Germany",
+    52.5166667,
+    13.4
+  ],
+  [
+    "Tunis, Tunisia",
+    36.8027778,
+    10.1797222
   ]
 ];
