@@ -18,6 +18,8 @@ I have added a list of links at the end. These are mainly the resources that I u
 
 ## Generate a new gpg key
 
+I have generated my keys on a qube VM without internet connection.
+
 ```
 $ gpg --gen-key
 ```
