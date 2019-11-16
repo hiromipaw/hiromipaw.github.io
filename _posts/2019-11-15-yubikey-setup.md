@@ -101,8 +101,8 @@ $ ssh-add -l
 
 This should list your new key.
 
-- [1] https://developers.yubico.com/PGP/Importing_keys.html
-- [2] https://zeos.ca/post/2018/gpg-yubikey5/
-- [3] https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/
-- [4] https://www.isi.edu/~calvin/yubikeyssh.htm
-- [5] https://developers.yubico.com/PGP/Card_edit.html
+- [1] [https://developers.yubico.com/PGP/Importing_keys.html](https://developers.yubico.com/PGP/Importing_keys.html)
+- [2] [https://zeos.ca/post/2018/gpg-yubikey5/](https://zeos.ca/post/2018/gpg-yubikey5/)
+- [3] [https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/](https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/)
+- [4] [https://www.isi.edu/~calvin/yubikeyssh.htm](https://www.isi.edu/~calvin/yubikeyssh.htm)
+- [5] [https://developers.yubico.com/PGP/Card_edit.html](https://developers.yubico.com/PGP/Card_edit.html)
