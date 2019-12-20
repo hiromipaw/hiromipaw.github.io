@@ -1,0 +1,15 @@
+{% include 'header.html' %}
+<body>
+    <div class="doc__bg"></div>
+    {% include 'nav.html' %}
+
+    <div class="wrapper">
+      <article class="doc__content">
+        <section class="js-section">
+          {% block body %}{% endblock %}
+        </section>
+
+      </article>
+    </div>
+    {% include 'footer.html' %}
+</body>

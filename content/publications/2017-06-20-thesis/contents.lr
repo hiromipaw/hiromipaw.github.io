@@ -1,0 +1,23 @@
+_template: page.html
+---
+title: Analysis, Modelling and Protection of Online Private Data
+---
+pub_date: 2017-04-26
+---
+author: Silvia Puglisi [Hiro]
+---
+body:
+
+Websites and applications use personalisation services to profile their users, collect their patterns and activities and eventually use this data to provide tailored suggestions. User preferences and social interactions are therefore aggregated and Online communications generate a consistent amount of data flowing among users, services and applications. This information results from the interactions between different parties, and once collected, it is used for a variety of purposes, from marketing profiling to product recommendations, from news filtering to relationship suggestions.
+Understanding how data is shared and used by services on behalf of users is the motivation behind this work. When a user creates a new account on a certain platform, this creates a logical container that will be used to store the user's activity. The
+service aims to profile the user. Therefore, every time some data is created, shared or accessed, information about the user’s behaviour and interests is collected and analysed. Users produce this data but are unaware of how it will be handled by
+the service, and of whom it will be shared with. More importantly, once aggregated, this data could reveal more over time that the same users initially intended. Information revealed by one profile could be used to obtain access to another account, or during social engineering attacks.
+The main focus of this dissertation is modelling and analysing how user data flows among different applications and how this represents an important threat for privacy. A framework defining privacy violation is used to classify threats and identify
+issues where user data is effectively mishandled. User data is modelled as categorised events, and aggregated as histograms of relative frequencies of online activity along predefined categories of interests. Furthermore, a paradigm based on hypermedia to model online footprints is introduced. This emphasises the interactions between different user-generated events and their effects on the user’s measured privacy risk. Finally, the lessons learnt from applying the paradigm to
+different scenarios are discussed.
+
+Ph.D. dissertation, Universitat Politècnica de Catalunya, Jun. 2017
+
+citation: S. Puglisi. (2017). "Analysis, Modelling and Protection of Online Private Data." <i>Ph.D. dissertation, Universitat Politècnica de Catalunya, Jun. 2017</i>.
+
+[paperurl](/static/files/Silvia_Puglisi_Thesis_PhD.pdf)

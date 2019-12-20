@@ -1,0 +1,16 @@
+{% include 'header.html' %}
+<body>
+    <div class="doc__bg"></div>
+    {% include 'nav.html' %}
+
+    <div class="wrapper">
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">{{ this.title }}</h3>
+          {{ this.body }}
+        </section>
+
+      </article>
+    </div>
+    {% include 'footer.html' %}
+</body>
