@@ -28,7 +28,7 @@ p {
 
 a, a:hover {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--primary-color-light);
 }
 
 hr {
@@ -45,7 +45,7 @@ hr {
 
 /* typography */
 .section__title {
-  color: var(--primary-color);
+  color: var(--primary-color-light);
 }
 
 /* tabs */
@@ -298,9 +298,13 @@ table td:first-child {
 
 .footer {
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: var(--dark-gray-color);
   padding: 2rem;
-  color: white;
+  color: var(--primary-color-light);
+}
+
+.footer a {
+  color: var(--primary-color-light);
 }
 
 @keyframes fadeUp {

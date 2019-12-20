@@ -21,7 +21,7 @@ nav {
 
 .hero__title {
   font-weight: 900;
-  color: var(--primary-color);
+  color: var(--primary-color-light);
 }
 
 .hero__description {
