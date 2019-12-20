@@ -4,6 +4,10 @@ title: Projects
 ---
 body:
 
+### GhostWriter
+
+[GhostWriter](https://ghostwriter.sh) lets you edit a website via lektor, a flexible and powerful static content management system for building websites out of markdown files — for people who do not want to make a compromise between a CMS and a static blog engine. The generated site can be published via onionshare or a web server running from your computer.
+
 
 ### Barcelona Cyber Security
 
