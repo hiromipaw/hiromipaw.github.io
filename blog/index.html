@@ -1,0 +1,221 @@
+<!doctype html>
+<head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../static/style.css">
+      <title>Welcome</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="../static/scribbler-global.css">
+      <link rel="stylesheet" href="../static/scribbler-landing.css">
+      <link rel="author" href="humans.txt">
+  </head>
+<body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+  <a href="/"><h1 class="logo"><span class="logo__thin"> </span></h1></a>
+  <ul class="menu">
+    <div class="menu__item toggle"><span></span></div>
+
+    
+    
+        <li class="menu__item"><a href="../talks/"><i class="fa fa-volume-up"></i> Talks</a></li>
+    
+        <li class="menu__item"><a href="../blog/"><i class="fa fa-quote-left"></i> Blog</a></li>
+    
+        <li class="menu__item"><a href="../publications/"><i class="fa fa-book"></i> Pubblications</a></li>
+    
+        <li class="menu__item"><a href="../projects/"><i class="fa fa-cogs"></i> Projects</a></li>
+    
+        <li class="menu__item"><a href="../CV/"><i class="fa fa-file"></i> CV</a></li>
+    
+
+  </ul>
+</nav>
+
+    <div class="wrapper">
+      <article class="doc__content">
+        <section class="js-section">
+          
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="../blog/2019-11-15-yubikey-setup/">How to setup and use yubikeys for authentication</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2019-11-15
+  </p>
+  <p>I use yubikeys to store my gpg and ssh keys.</p>
+<p>Before starting do a little bit of reading to familiarize yourself with the setup
+procedure.
+I have added a list of links at the end. These are mainly the resources that I used.</p>
+<h2>Generate a new gpg key</h2>
+<p>I have generated my keys on a qube VM without internet connection.</p>
+<pre><code>$ gpg --gen-key
+</code></pre>
+<p>Selected option 0 and moved on to create my ID associated with the key.</p>
+<p>In this step I used mostly the guide from yubico developers website [1]
+The guide goes through generating Sign (S) Authentication (A) and Encryption (E)
+keys.</p>
+<h2>Add an authentication key</h2>
+<pre><code>$ gpg --expert --edit-key 123ABC45
+</code></pre>
+<p>At this step we select another RSA key to attach to our key. In the gpg selection
+menu this corresponds to option 8.</p>
+<h2>Backup</h2>
+<p>Here is where you should backup your keys and revocation certificates. Please do
+I have personally lost yubikeys and having backups really helps.</p>
+<p>Also setup a PIN and a admin PIN for your yubikey [5]. With:</p>
+<pre><code>$ gpg --card-edit
+
+$ gpg/card&gt; admin
+</code></pre>
+<h2>Import the key to the yubikey</h2>
+<p>Finally we edit our key and add it to the keycard [1].</p>
+<pre><code>$ gpg --expert --edit-key 123ABC45
+
+$ gpg&gt; keytocard
+</code></pre>
+<p>Now your key is exported to your card and ready to be used.</p>
+<h2>Setup key to be used with ssh</h2>
+<pre><code>$ gpg2 -K --with-keygrip
+</code></pre>
+<p>This will show all your keys available with keygrip.
+Use the keygrip of your authentication key to export it to <code>sshcontrol</code></p>
+<pre><code>echo 1234567AB8CDFFF90G9H1I23JJ4K5L67M89N012O &gt; ~/.gnupg/sshcontrol
+</code></pre>
+<p>I have also added the following to my <code>~/.gnupg/gpg-agent.conf</code> [4]:</p>
+<pre><code>default-cache-ttl 600
+max-cache-ttl 7200
+enable-ssh-support
+write-env-file ~/.gpg-agent-info
+</code></pre>
+<p>And edited my <code>~/.bashrc</code> with:</p>
+<pre><code>gpg-connect-agent /bye
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+</code></pre>
+<p>You can now:</p>
+<pre><code>$ source ~/.bashrc
+$ ssh-add -l
+</code></pre>
+<p>This should list your new key.</p>
+<ul>
+<li>[1] <a href="https://developers.yubico.com/PGP/Importing_keys.html">https://developers.yubico.com/PGP/Importing_keys.html</a></li>
+<li>[2] <a href="https://zeos.ca/post/2018/gpg-yubikey5/">https://zeos.ca/post/2018/gpg-yubikey5/</a></li>
+<li>[3] <a href="https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/">https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/</a></li>
+<li>[4] <a href="https://www.isi.edu/~calvin/yubikeyssh.htm">https://www.isi.edu/~calvin/yubikeyssh.htm</a></li>
+<li>[5] <a href="https://developers.yubico.com/PGP/Card_edit.html">https://developers.yubico.com/PGP/Card_edit.html</a></li>
+</ul>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="../blog/2019-06-21-solid-tor-onion-services/">Using Solid with Tor .onion services. How to decentralise your online identities</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2019-06-21
+  </p>
+  <p>A lot of information is given away by certain properties of communications beyond just the content. These properties are usually referred to as communication metadata. Metadata include information such as the lenght of the conversation, who was involved, where are the parties involved in the conversation located, and so on.</p>
+<p>Questions that can be answered by looking at metadata are:</p>
+<ul>
+<li>how long you talk, how often ...</li>
+<li>the people you talk to, or a group of people that communicate between eachothers frequently ...</li>
+<li>network addresses, traffic patterns</li>
+<li>location services, geo-coding ...</li>
+</ul>
+<p>As you see Metadata give a lot away about you even if the actual content of your communication is encrypted. We could also say that the metadata can give away more information than reading the actual content, and in a form that is easily processed by machines.</p>
+<p>Tor is an important tool providing privacy and anonymity online. The property of anonymity itself is more than just providing an encrypted connection between the source and the destination of a given conversation. Encryption only prevents the content of the communication between two parties from becoming known, but there is a lot of information that can still be learned by just observing the traffic.</p>
+<p>When you use the Tor network, you are not sharing your communication metadata. So that, not only your communication are encrypted, but you can also stay anonymous. Anonymity is a broad concept, and it can mean different things to different groups.</p>
+<p>The main advertised property of the Tor network is that it provides strong anonymity given a variety of people using the network.
+For the Tor network to function properly and to satisfy users' needs, we need a certain degree of diversity. We need diversity in the relays comprising the network and in the user population sending traffic through it. We want Tor to be able to reach and serve a diverse population of users and use cases. We believe everyone should be able to browse the web and enjoy privacy, independently of where they live and who they are.</p>
+<p>But hiding network traffic is not all you have to do to be protect websites and services from tracking you online. There is a lot of information that is given away when you use your google or facebook accounts to login to a third party service.</p>
+<p>The risk in this case doesn't only involve you transferring your profile information to a third party service, but also Facebook and Google learning about how and which third party services you use.</p>
+<p>Tor provides a technology called onion services that allows users to offer various kinds of services, such as web publishing or an instant messaging server making that available on the Tor network. Using Tor "rendezvous points," other Tor users can connect to these .onion services, formerly known as hidden services, each without knowing the other's network identity.</p>
+<p>An .onion service needs to advertise its existence in the Tor network before clients will be able to contact it. Therefore, the service randomly picks some relays, builds circuits to them, and asks them to act as introduction points by telling them its public key. By using a full Tor circuit, it's hard for anyone to associate an introduction point with the .onion server's IP address. While the introduction points and others are told the onion service's identity (public key), we don't want them to learn about the onion server's location (IP address).</p>
+<p>In a-not-so imaginary more privacy friendly web, applications could be made available through onion services and we could use different identity providers that wouldn't necessarly need to access and share all our data, therefore without us losing control over our online footprints.</p>
+<p>Recently I have have learned about Solid. Solid can be defined as a set of protocols leveraging on the idea of the semantic web to allow online applications to access user data. Building on top of hypermedia protocols, Solid is completely compatible with the current technologies of the web.
+With Solid all your data are stored in an online Solid Pod. The data is owned by the user who is always free to move it as they wanted.</p>
+<p>Users can give other users or services permission to read or write to their POD. This approach is great for services' developers while also protecting user privacy. Ultimately the user retains control on their pod.</p>
+<p>I have created a test application running on onion services and connecting to a solid community pod. This example is particularly interesting, because by using the .onion protocol the solid pod doesn't know about the app retrieving data. They will just see their .onion address.</p>
+<p>The code is available via the <a href="https://github.com/hiromipaw/myonion">myonion wrapper</a>. An experiment in making available through docker containers different app via .onion services.</p>
+<p>In this post I have shown how a web application made available through .onion on the Tor network can exchange information with a Solid pod and allow a user to login and share some data. Because .onion services live on the Tor network, you do not need hosting or a public ip address to offer some service via .onion address. This means .onion services are a gateway to a decentralised, peer-to-peer internet, where you regain control on the content you create and who you are sharing it with. The .onion can even be hosted on your computer for the time you desire, allowing the people using your service to remain anonymous, and also you.</p>
+<p>I believe anonymity to be very important since it can free people, allowing them to decide how to expose themselves or to make themselves visible on their own terms.</p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="../blog/2019-04-26-on-online-political-propaganda/">Online Political Propaganda, new fascism, controveries and the Spanish Elections</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2019-04-26
+  </p>
+  <p>I have been studying twitter political propaganda machine for a while now, trying
+to identify patterns and spot interesting behaviors. Here is what I found.</p>
+<p>First of all the raw data can be accessed <a href="https://docs.google.com/spreadsheets/d/1jIRr2THizWOixFippI8dk51z3Nzo-ym3qFd490z-x0I/edit?usp=sharing">here</a></p>
+<p>The spreadsheet above contains a number of keywords, most of these keywords are
+about controversial topics. With controversial I mean topics that would surely spark
+a debate or polarizing opinions.</p>
+<p>The list of topics (or keywords) isn't in any way complete and is mainly centered
+around propaganda for the Spanish elections happening this coming weekend.</p>
+<p>My intention was showing that the political right wing "clamore" was just marketing
+generated content, crafted by agencies. Therefore I have collected tweets from five
+specific location around the world, namely: Caracas, Venezuela, New York, US, Miami, US,
+Guadalajara, Mexico, Haifa, Israel.</p>
+<p>There isn't a big rationale around why I have chosen these cities, and I am counting
+on adding more as I continue this.</p>
+<p>My objective is eventually exposing the money trail behind political marketing.</p>
+<p>If you are a journalist interested in data, please get in touch, I'd like to work
+more on this.</p>
+
+  </div>
+
+  
+
+  
+  <div class="pagination">
+    
+      <span class="disabled">&laquo; Previous</span>
+    
+    | 1 |
+    
+      <span class="disabled">Next &raquo;</span>
+    
+  </div>
+
+
+        </section>
+
+      </article>
+    </div>
+    <footer class="footer">
+
+   <a href="https://twitter.com/nopressure/" target="_blank" class="link link--light"><i class="fa fa-twitter"></i></a>
+   <a href="https://www.linkedin.com/in/silviapuglisi" target="_blank" class="link link--light"><i class="fa fa-linkedin"></i></a>
+   <a href="https://github.com/hiromipaw/hiromipaw" target="_blank" class="link link--light"><i class="fa fa-github"></i></a>
+   <a href="https://scholar.google.es/citations?user=B8_Ts38AAAAJ&hl=en" target="_blank" class="link link--light"><i class="fa fa-graduation-cap"></i></a>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="../static/scribbler.js"></script>
+</body>

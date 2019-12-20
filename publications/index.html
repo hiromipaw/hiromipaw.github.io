@@ -1,0 +1,136 @@
+<!doctype html>
+<head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../static/style.css">
+      <title>Welcome</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="../static/scribbler-global.css">
+      <link rel="stylesheet" href="../static/scribbler-landing.css">
+      <link rel="author" href="humans.txt">
+  </head>
+<body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+  <a href="/"><h1 class="logo"><span class="logo__thin"> </span></h1></a>
+  <ul class="menu">
+    <div class="menu__item toggle"><span></span></div>
+
+    
+    
+        <li class="menu__item"><a href="../talks/"><i class="fa fa-volume-up"></i> Talks</a></li>
+    
+        <li class="menu__item"><a href="../blog/"><i class="fa fa-quote-left"></i> Blog</a></li>
+    
+        <li class="menu__item"><a href="../publications/"><i class="fa fa-book"></i> Pubblications</a></li>
+    
+        <li class="menu__item"><a href="../projects/"><i class="fa fa-cogs"></i> Projects</a></li>
+    
+        <li class="menu__item"><a href="../CV/"><i class="fa fa-file"></i> CV</a></li>
+    
+
+  </ul>
+</nav>
+
+    <div class="wrapper">
+      <article class="doc__content">
+        <section class="js-section">
+          
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="../publications/2017-06-20-thesis/">Analysis, Modelling and Protection of Online Private Data</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2017-04-26
+  </p>
+  <p>Websites and applications use personalisation services to profile their users, collect their patterns and activities and eventually use this data to provide tailored suggestions. User preferences and social interactions are therefore aggregated and Online communications generate a consistent amount of data flowing among users, services and applications. This information results from the interactions between different parties, and once collected, it is used for a variety of purposes, from marketing profiling to product recommendations, from news filtering to relationship suggestions.
+Understanding how data is shared and used by services on behalf of users is the motivation behind this work. When a user creates a new account on a certain platform, this creates a logical container that will be used to store the user's activity. The
+service aims to profile the user. Therefore, every time some data is created, shared or accessed, information about the user’s behaviour and interests is collected and analysed. Users produce this data but are unaware of how it will be handled by
+the service, and of whom it will be shared with. More importantly, once aggregated, this data could reveal more over time that the same users initially intended. Information revealed by one profile could be used to obtain access to another account, or during social engineering attacks.
+The main focus of this dissertation is modelling and analysing how user data flows among different applications and how this represents an important threat for privacy. A framework defining privacy violation is used to classify threats and identify
+issues where user data is effectively mishandled. User data is modelled as categorised events, and aggregated as histograms of relative frequencies of online activity along predefined categories of interests. Furthermore, a paradigm based on hypermedia to model online footprints is introduced. This emphasises the interactions between different user-generated events and their effects on the user’s measured privacy risk. Finally, the lessons learnt from applying the paradigm to
+different scenarios are discussed.</p>
+<p>Ph.D. dissertation, Universitat Politècnica de Catalunya, Jun. 2017</p>
+<p>citation: S. Puglisi. (2017). "Analysis, Modelling and Protection of Online Private Data." <i>Ph.D. dissertation, Universitat Politècnica de Catalunya, Jun. 2017</i>.</p>
+<p><a href="../static/files/Silvia_Puglisi_Thesis_PhD.pdf">paperurl</a></p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="../publications/2017-04-26-entropy-profiles/">On the Anonymity Risk of Time-Varying User Profiles</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2017-04-26
+  </p>
+  <p>Websites and applications use personalisation services to profile their users, collect their patterns and activities and eventually use this data to provide tailored suggestions. User preferences and social interactions are therefore aggregated and analysed. Every time a user publishes a new post or creates a link with another entity, either another user, or some online resource, new information is added to the user profile. Exposing private data does not only reveal information about single users’ preferences, increasing their privacy risk, but can expose more about their network that single actors intended. This mechanism is self-evident in social networks where users receive suggestions based on their friends’ activities. We propose an information-theoretic approach to measure the differential update of the anonymity risk of time-varying user profiles. This expresses how privacy is affected when new content is posted and how much third-party services get to know about the users when a new activity is shared. We use actual Facebook data to show how our model can be applied to a real-world scenario.</p>
+<p>citation: S. Puglisi, D. Rebollo-Monedero, J. Forne. (2017). "On the Anonymity Risk of Time-Varying User Profiles." <i>Entropy 2017</i>. 19(5), 190</p>
+<p>journal: Entropy 2017</p>
+<p><a href="http://www.mdpi.com/1099-4300/19/5/190/pdf">paperurl</a></p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="../publications/2017-02-19-browsing-patterns/">On web user tracking of browsing patterns for personalised advertising</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2017-02-19
+  </p>
+  <p>On today’s Web, users trade access to their private data for content and services. App and service providers want to know everything they can about their users, in order to improve their product experience. Also, advertising sustains the business model of many websites and applications. Efficient and successful advertising relies on predicting users’ actions and tastes to suggest a range of products to buy. Both service providers and advertisers try to track users’ behaviour across their product network. For application providers this means tracking users’ actions within their platform. For third-party services following users, means being able to track them across different websites and applications. It is well known how, while surfing the Web, users leave traces regarding their identity in the form of activity patterns and unstructured data. These data constitute what is called the user’s online footprint. We analyse how advertising networks build and collect users footprints and how the suggested advertising reacts to changes in the user behaviour.</p>
+<p>citation: S. Puglisi, D. Rebollo-Monedero, J. Forne. (2017). "On web user tracking of browsing patterns for personalised advertising." <i>International Journal of Parallel, Emergent and Distributed Systems</i>. 32 (502-521)</p>
+<p>journal: 'International Journal of Parallel, Emergent and Distributed Systems'</p>
+<p><a href="http://dx.doi.org/10.1080/17445760.2017.1282480">paperurl</a></p>
+
+  </div>
+
+  
+
+  
+  <div class="pagination">
+    
+      <span class="disabled">&laquo; Previous</span>
+    
+    | 1 |
+    
+      <a href="../publications/page/2/">Next &raquo;</a>
+    
+  </div>
+
+
+        </section>
+
+      </article>
+    </div>
+    <footer class="footer">
+
+   <a href="https://twitter.com/nopressure/" target="_blank" class="link link--light"><i class="fa fa-twitter"></i></a>
+   <a href="https://www.linkedin.com/in/silviapuglisi" target="_blank" class="link link--light"><i class="fa fa-linkedin"></i></a>
+   <a href="https://github.com/hiromipaw/hiromipaw" target="_blank" class="link link--light"><i class="fa fa-github"></i></a>
+   <a href="https://scholar.google.es/citations?user=B8_Ts38AAAAJ&hl=en" target="_blank" class="link link--light"><i class="fa fa-graduation-cap"></i></a>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="../static/scribbler.js"></script>
+</body>

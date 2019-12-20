@@ -1,0 +1,118 @@
+<!doctype html>
+<head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../../static/style.css">
+      <title>Welcome</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="../../static/scribbler-global.css">
+      <link rel="stylesheet" href="../../static/scribbler-landing.css">
+      <link rel="author" href="humans.txt">
+  </head>
+<body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+  <a href="/"><h1 class="logo"><span class="logo__thin"> </span></h1></a>
+  <ul class="menu">
+    <div class="menu__item toggle"><span></span></div>
+
+    
+    
+        <li class="menu__item"><a href="../../talks/"><i class="fa fa-volume-up"></i> Talks</a></li>
+    
+        <li class="menu__item"><a href="../../blog/"><i class="fa fa-quote-left"></i> Blog</a></li>
+    
+        <li class="menu__item"><a href="../../publications/"><i class="fa fa-book"></i> Pubblications</a></li>
+    
+        <li class="menu__item"><a href="../../projects/"><i class="fa fa-cogs"></i> Projects</a></li>
+    
+        <li class="menu__item"><a href="../../CV/"><i class="fa fa-file"></i> CV</a></li>
+    
+
+  </ul>
+</nav>
+
+    <div class="wrapper">
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">How to setup and use yubikeys for authentication</h3>
+          <p>I use yubikeys to store my gpg and ssh keys.</p>
+<p>Before starting do a little bit of reading to familiarize yourself with the setup
+procedure.
+I have added a list of links at the end. These are mainly the resources that I used.</p>
+<h2>Generate a new gpg key</h2>
+<p>I have generated my keys on a qube VM without internet connection.</p>
+<pre><code>$ gpg --gen-key
+</code></pre>
+<p>Selected option 0 and moved on to create my ID associated with the key.</p>
+<p>In this step I used mostly the guide from yubico developers website [1]
+The guide goes through generating Sign (S) Authentication (A) and Encryption (E)
+keys.</p>
+<h2>Add an authentication key</h2>
+<pre><code>$ gpg --expert --edit-key 123ABC45
+</code></pre>
+<p>At this step we select another RSA key to attach to our key. In the gpg selection
+menu this corresponds to option 8.</p>
+<h2>Backup</h2>
+<p>Here is where you should backup your keys and revocation certificates. Please do
+I have personally lost yubikeys and having backups really helps.</p>
+<p>Also setup a PIN and a admin PIN for your yubikey [5]. With:</p>
+<pre><code>$ gpg --card-edit
+
+$ gpg/card&gt; admin
+</code></pre>
+<h2>Import the key to the yubikey</h2>
+<p>Finally we edit our key and add it to the keycard [1].</p>
+<pre><code>$ gpg --expert --edit-key 123ABC45
+
+$ gpg&gt; keytocard
+</code></pre>
+<p>Now your key is exported to your card and ready to be used.</p>
+<h2>Setup key to be used with ssh</h2>
+<pre><code>$ gpg2 -K --with-keygrip
+</code></pre>
+<p>This will show all your keys available with keygrip.
+Use the keygrip of your authentication key to export it to <code>sshcontrol</code></p>
+<pre><code>echo 1234567AB8CDFFF90G9H1I23JJ4K5L67M89N012O &gt; ~/.gnupg/sshcontrol
+</code></pre>
+<p>I have also added the following to my <code>~/.gnupg/gpg-agent.conf</code> [4]:</p>
+<pre><code>default-cache-ttl 600
+max-cache-ttl 7200
+enable-ssh-support
+write-env-file ~/.gpg-agent-info
+</code></pre>
+<p>And edited my <code>~/.bashrc</code> with:</p>
+<pre><code>gpg-connect-agent /bye
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+</code></pre>
+<p>You can now:</p>
+<pre><code>$ source ~/.bashrc
+$ ssh-add -l
+</code></pre>
+<p>This should list your new key.</p>
+<ul>
+<li>[1] <a href="https://developers.yubico.com/PGP/Importing_keys.html">https://developers.yubico.com/PGP/Importing_keys.html</a></li>
+<li>[2] <a href="https://zeos.ca/post/2018/gpg-yubikey5/">https://zeos.ca/post/2018/gpg-yubikey5/</a></li>
+<li>[3] <a href="https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/">https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/</a></li>
+<li>[4] <a href="https://www.isi.edu/~calvin/yubikeyssh.htm">https://www.isi.edu/~calvin/yubikeyssh.htm</a></li>
+<li>[5] <a href="https://developers.yubico.com/PGP/Card_edit.html">https://developers.yubico.com/PGP/Card_edit.html</a></li>
+</ul>
+
+        </section>
+
+      </article>
+    </div>
+    <footer class="footer">
+
+   <a href="https://twitter.com/nopressure/" target="_blank" class="link link--light"><i class="fa fa-twitter"></i></a>
+   <a href="https://www.linkedin.com/in/silviapuglisi" target="_blank" class="link link--light"><i class="fa fa-linkedin"></i></a>
+   <a href="https://github.com/hiromipaw/hiromipaw" target="_blank" class="link link--light"><i class="fa fa-github"></i></a>
+   <a href="https://scholar.google.es/citations?user=B8_Ts38AAAAJ&hl=en" target="_blank" class="link link--light"><i class="fa fa-graduation-cap"></i></a>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="../../static/scribbler.js"></script>
+</body>
