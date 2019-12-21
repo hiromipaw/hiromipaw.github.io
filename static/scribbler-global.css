@@ -302,7 +302,7 @@ table td:first-child {
   padding: 2rem;
   color: var(--primary-color-light);
   bottom: 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 
