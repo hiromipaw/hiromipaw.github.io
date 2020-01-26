@@ -301,8 +301,8 @@ table td:first-child {
   background-color: var(--dark-gray-color);
   padding: 2rem;
   color: var(--primary-color-light);
-  bottom: -7rem;
-  position: absolute;
+  bottom: 0;
+  position: fixed;
   width: 100%;
 }
 
