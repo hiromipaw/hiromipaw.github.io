@@ -49,7 +49,7 @@ Far right accounts.
 For this user we extracted a subset of users that are retweeting their posts.
 For this subset of users we extracted a subset of their timelines.
 
-This is the [archive](/static/files/twitter/query_result_2020-04-01T09_42_42.689784Z.csv)
+This is the [archive](/static/files/twitter/query_result_2020-04-01T09_42_42.689784Z.csv).
 
 We were interesting in finding out what other accounts these users were tweeting.
 We found out most of the tweets are actually retweets to accounts in the spanish
@@ -60,7 +60,7 @@ group of top talkers for the spanish far right.
 Hence we counted the number of retweets for account with the idea of extracting
 a distribution.
 
-Again here is the [result](/static/files/twitter/query_result_2020-04-01T11_23_09.761662Z.csv)
+Again here is the [result](/static/files/twitter/query_result_2020-04-01T11_23_09.761662Z.csv).
 
 And here is a distribution per account:
 
