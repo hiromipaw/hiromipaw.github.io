@@ -43,6 +43,141 @@
     
   <div class="blog-post">
   
+    <h2><a href="../../../blog/2020-03-04-tor-relays/">Supporting the Tor network</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2030-03-04
+  </p>
+  <p>How can small organization run relays on the Tor network while sustain their operations</p>
+<h1>How is the Tor network composed</h1>
+<p>The Tor network consists entirely of relays run by volunteers, provinding bandwidth and other services to Tor users. There are currently about 6000 relays sustaining the network [1].
+Up to now the Tor network has grown organically, by the mean of community outreach activities. Tor relay operators are usually individuals that are motivated by various factors. The Tor project mission itself is a strong driver for individuals interested in providing privacy enhancing communication tools to people all over the world. Other relay operators might be researchers interested in the technical aspects of the Tor software and protocol. Others can also simply be open source entusiasts that want to be part of its community. Many relay operators have often been recruited, so to speak, by other comnmunity members or core developers. Finally some relay operators are adeversaries that are trying to run different analysis over the Tor network itself, like collecting information on its use or on the content being transferred.</p>
+<p>All the motivations described above do not require direct compensation by the Tor Project and the volunteer-based approach to sustain the network has been proved successful. Relay operators do not only invest their hardware, but also time and commitment in running the relays and in being part of the Tor community. Expenading the set of relays is vital for the Tor network. More importantly the network needs a diverse set of relay, not just advertised bandwidth. Diversity means different hardware and operating systems, but also different locations accross the globe in order to reach users worldwide and offer overall the same quality of service.</p>
+<p>Throughout Tor history, there have never been in place an official mechanism for relay operators to be rewarded extrinsically. The intrinsic reward of being a relay operator was the social perceeved value, like recognition within the Tor community. Many different proposals have been made for a Tor incentives system [2], but none has ever been implemented.</p>
+<h1>How do relay operators organize</h1>
+<p>Relay operators sometimes create a small non profit or join an umbrella organization, to support their activities. These are setup so that the individual operators are not legally responsible in case of a legal dispute. Also the organization is setup to share the burden of possible legal expenses and to collect donations for their activities. The Tor Project itself advises people to constitute a non-profit organization responsible for the relays in case of possible legal disputes.
+There are some legal risks in fact associated with running relays. These are usually not different from the same risks that an ISP could have since both relay internet traffic. Exits relays have more legal concerns that bridges, guards or middle relays, because middles and guards only relay encrypted traffic, while exits performs requests to the open internet.
+The Tor Project provides some standard response letters that relay operators can use and some legal resources that could become handy. In any case relay operators are adivised to consult with a lawyer if any problem with law enforcement should arise.</p>
+<h1>How much does it cost to run a relay</h1>
+<p>Runing a relay can be as cheap as a few dollars per month and as expensive as a few hundred, depending on where the realy runs, which kind of hardware it's running on, bandwidth, operating system and so on. Most relays operators rely on donations from individuals that want to contriubute to the network but for several reasons are not able to run a relay at the moment. There is again intrinsic value to donate to relay operators to contribute to the Tor community.</p>
+<p>A big portion of relay costs are taken over by bandwidth consumption. If an individual or group wants to run a node that relays a lot of traffic, bandwidth might become expensive.</p>
+<h1>Participatory Business Models for Off-Grid utilities, what can we learn</h1>
+<p>Certain mechanisms developed by and for the maintenance and operations of the Tor network have much in common with off-grid utility implementation. To start both are ipso-facto decentralized, community based and require experimenting with different business models for implementation.</p>
+<p>A number  of  previous  studies  have  developed  their  own  classifications  for electrification models.</p>
+<ul>
+<li>Commercially  led  modelswhich  are  driven  by  suppliers  and  dealers  with relatively little government control.</li>
+<li>Multi-stakeholder programmatic modelwherein a project management unit or multi-stakeholder management authority is typically charged with reaching consumers.</li>
+<li>Utility modeltypically operates on a fee-for-service basis.</li>
+<li>Grant  based  models.</li>
+</ul>
+<p>[3] describes different participatory models for off-grid electricy services in rural areas. Drawing  from  previous defined  classification  systems,  they identify  five  models  with  different types of operations that have been used in rural electrification.</p>
+<ol>
+<li>Co-operatives;</li>
+<li>Service distribution franchises;</li>
+<li>Fee-for-service models;</li>
+<li>Community managed models; and</li>
+<li>Private sector models.</li>
+</ol>
+<p>One thing that differentiate the ecosystem of companies and cooperatives providing utilities and relay operators is the fact that while utility providing organizations could in theory charge its users for using their network, the Tor network is freely accessible by everyone running a Tor client. Since neither the Tor Project nor any reasonable relay operator would like to charge Tor users for bandwidth used, in the past people have speculated whether it would make sense to build mechanisms so that the network could reward relays for the bandwidth provided to the network. A part of this speculation has also involved considering possible harms of such mechanism to both the privacy and security of Tor users and the community of relay operators. For example some have argued that this could encourage bad or malicious relays, or the growth of relay farms with the only interest to cash out instead of maintaining the network and protecting the privacy of its users.</p>
+<p>Some relay operators groups have developed a membership model to help sustain their operations [4] [5]. The membership model allows such group to build a close relationship with their supporters while also sustaining their operations.</p>
+<h1>Running a participatory relay community</h1>
+<p>While relay operators cannot be directly compensated by Tor users directly, they could be compensated for offering other services in a partecipatory way to the community of Tor users and .onion websites.
+The relay operators group could add a certain fee to the service offered and redirect part of this compensation to sustaining their infrastructure and work in maintaining the Tor network. This mechanism could help both the relay operators and the Tor network itself in more than one way. One the one hand relay operators can build a relationship with their members by offering a set of privacy friendly services that might or might not use the Tor network itself to be operated, like bridges, .onion hosting, vpn, and so on. On the other hand the Tor project will benefit by seeing more diverse use of the Tor network. Finally, this could also be an incentive for creating a better experience for onion services developers and operators and therefore fostering a more
+legitimate onion service ecosystem.</p>
+<p>This mechanism could be easier to implement for some relay operators that other form of financing, simply because they are already running some of these services as these are needed for day-to-day operations. For example many operators group running exit are already running an authoritative dns and could easily offer this service to their members (some in fact already do). This might actually be easier in many circumnstances than applying for international grants or public funding, since in many cases this suppose a big overhead in work that small relay operators group cannot sustain.</p>
+<p>[1] <a href="https://metrics.torproject.org/networksize.html">https://metrics.torproject.org/networksize.html</a></p>
+<p>[2] <a href="https://blog.torproject.org/tor-incentives-research-roundup-goldstar-par-braids-lira-tears-and-torcoin">https://blog.torproject.org/tor-incentives-research-roundup-goldstar-par-braids-lira-tears-and-torcoin</a></p>
+<p>[3] Krithika, P.R. and Palit, D., 2013. Participatory business models for off-grid electrification. In Rural electrification through decentralised off-grid systems in developing countries (pp. 187-225). Springer, London. <a href="https://www.researchgate.net/profile/Debajit_Palit/publication/261946063_Participatory_Business_Models_for_Off-Grid_Electrification/links/53e993090cf2fb1b9b671622.pdf">https://www.researchgate.net/profile/Debajit_Palit/publication/261946063_Participatory_Business_Models_for_Off-Grid_Electrification/links/53e993090cf2fb1b9b671622.pdf</a></p>
+<p>[4] <a href="https://applied-privacy.net/membership/">https://applied-privacy.net/membership/</a></p>
+<p>[5] <a href="https://enn.lu/member">https://enn.lu/member</a></p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="../../../blog/2019-11-15-yubikey-setup/">How to setup and use yubikeys for authentication</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2019-11-15
+  </p>
+  <p>I use yubikeys to store my gpg and ssh keys.</p>
+<p>Before starting do a little bit of reading to familiarize yourself with the setup
+procedure.
+I have added a list of links at the end. These are mainly the resources that I used.</p>
+<h2>Generate a new gpg key</h2>
+<p>I have generated my keys on a qube VM without internet connection.</p>
+<pre><code>$ gpg --gen-key
+</code></pre>
+<p>Selected option 0 and moved on to create my ID associated with the key.</p>
+<p>In this step I used mostly the guide from yubico developers website [1]
+The guide goes through generating Sign (S) Authentication (A) and Encryption (E)
+keys.</p>
+<h2>Add an authentication key</h2>
+<pre><code>$ gpg --expert --edit-key 123ABC45
+</code></pre>
+<p>At this step we select another RSA key to attach to our key. In the gpg selection
+menu this corresponds to option 8.</p>
+<h2>Backup</h2>
+<p>Here is where you should backup your keys and revocation certificates. Please do
+I have personally lost yubikeys and having backups really helps.</p>
+<p>Also setup a PIN and a admin PIN for your yubikey [5]. With:</p>
+<pre><code>$ gpg --card-edit
+
+$ gpg/card&gt; admin
+</code></pre>
+<h2>Import the key to the yubikey</h2>
+<p>Finally we edit our key and add it to the keycard [1].</p>
+<pre><code>$ gpg --expert --edit-key 123ABC45
+
+$ gpg&gt; keytocard
+</code></pre>
+<p>Now your key is exported to your card and ready to be used.</p>
+<h2>Setup key to be used with ssh</h2>
+<pre><code>$ gpg2 -K --with-keygrip
+</code></pre>
+<p>This will show all your keys available with keygrip.
+Use the keygrip of your authentication key to export it to <code>sshcontrol</code></p>
+<pre><code>echo 1234567AB8CDFFF90G9H1I23JJ4K5L67M89N012O &gt; ~/.gnupg/sshcontrol
+</code></pre>
+<p>I have also added the following to my <code>~/.gnupg/gpg-agent.conf</code> [4]:</p>
+<pre><code>default-cache-ttl 600
+max-cache-ttl 7200
+enable-ssh-support
+write-env-file ~/.gpg-agent-info
+</code></pre>
+<p>And edited my <code>~/.bashrc</code> with:</p>
+<pre><code>gpg-connect-agent /bye
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+</code></pre>
+<p>You can now:</p>
+<pre><code>$ source ~/.bashrc
+$ ssh-add -l
+</code></pre>
+<p>This should list your new key.</p>
+<ul>
+<li>[1] <a href="https://developers.yubico.com/PGP/Importing_keys.html">https://developers.yubico.com/PGP/Importing_keys.html</a></li>
+<li>[2] <a href="https://zeos.ca/post/2018/gpg-yubikey5/">https://zeos.ca/post/2018/gpg-yubikey5/</a></li>
+<li>[3] <a href="https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/">https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/</a></li>
+<li>[4] <a href="https://www.isi.edu/~calvin/yubikeyssh.htm">https://www.isi.edu/~calvin/yubikeyssh.htm</a></li>
+<li>[5] <a href="https://developers.yubico.com/PGP/Card_edit.html">https://developers.yubico.com/PGP/Card_edit.html</a></li>
+</ul>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
     <h2><a href="../../../blog/2019-06-21-solid-tor-onion-services/">Using Solid with Tor .onion services. How to decentralise your online identities</a></h2>
   
   <p class="meta">
@@ -81,39 +216,6 @@ With Solid all your data are stored in an online Solid Pod. The data is owned by
   </div>
 
   
-    
-  <div class="blog-post">
-  
-    <h2><a href="../../../blog/2019-04-26-on-online-political-propaganda/">Online Political Propaganda, new fascism, controveries and the Spanish Elections</a></h2>
-  
-  <p class="meta">
-    written by
-    
-      Silvia Puglisi [Hiro]
-    
-    on 2019-04-26
-  </p>
-  <p>I have been studying twitter political propaganda machine for a while now, trying
-to identify patterns and spot interesting behaviors. Here is what I found.</p>
-<p>First of all the raw data can be accessed <a href="https://docs.google.com/spreadsheets/d/1jIRr2THizWOixFippI8dk51z3Nzo-ym3qFd490z-x0I/edit?usp=sharing">here</a></p>
-<p>The spreadsheet above contains a number of keywords, most of these keywords are
-about controversial topics. With controversial I mean topics that would surely spark
-a debate or polarizing opinions.</p>
-<p>The list of topics (or keywords) isn't in any way complete and is mainly centered
-around propaganda for the Spanish elections happening this coming weekend.</p>
-<p>My intention was showing that the political right wing "clamore" was just marketing
-generated content, crafted by agencies. Therefore I have collected tweets from five
-specific location around the world, namely: Caracas, Venezuela, New York, US, Miami, US,
-Guadalajara, Mexico, Haifa, Israel.</p>
-<p>There isn't a big rationale around why I have chosen these cities, and I am counting
-on adding more as I continue this.</p>
-<p>My objective is eventually exposing the money trail behind political marketing.</p>
-<p>If you are a journalist interested in data, please get in touch, I'd like to work
-more on this.</p>
-
-  </div>
-
-  
 
   
   <div class="pagination">
@@ -122,7 +224,7 @@ more on this.</p>
     
     | 2 |
     
-      <span class="disabled">Next &raquo;</span>
+      <a href="../../../blog/page/3/">Next &raquo;</a>
     
   </div>
 

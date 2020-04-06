@@ -1,0 +1,123 @@
+<!doctype html>
+<head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../../static/style.css">
+      <title>Welcome</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="../../static/scribbler-global.css">
+      <link rel="stylesheet" href="../../static/scribbler-landing.css">
+      <link rel="author" href="humans.txt">
+  </head>
+<body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+  <a href="/"><h1 class="logo"><span class="logo__thin"> </span></h1></a>
+  <ul class="menu">
+    <div class="menu__item toggle"><span></span></div>
+
+    
+    
+        <li class="menu__item"><a href="../../talks/"><i class="fa fa-volume-up"></i> Talks</a></li>
+    
+        <li class="menu__item"><a href="../../blog/"><i class="fa fa-quote-left"></i> Blog</a></li>
+    
+        <li class="menu__item"><a href="../../publications/"><i class="fa fa-book"></i> Pubblications</a></li>
+    
+        <li class="menu__item"><a href="../../projects/"><i class="fa fa-cogs"></i> Projects</a></li>
+    
+        <li class="menu__item"><a href="../../CV/"><i class="fa fa-file"></i> CV</a></li>
+    
+
+  </ul>
+</nav>
+
+    <div class="wrapper">
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Online disinformation campaigns. How do these work. What can we do.</h3>
+          <p>Every social media user has possibly noticed how content is often driven by very
+strong emotions. Many posts range from extreme cute kittens to drama stories, but
+above all emotions it seems like online content is especially fueled by anger [1] [2].</p>
+<p>This might be specifically true for political driven content [3], but how people
+came from coming together to comment Eurovision [4] to insult each others during
+political campaigns?</p>
+<p>To understand how we got here, we cannot ignore everything that happen with facebook
+and Cambridge Analytica [5]. Between 2013 and 2018 the company combined aggregation
+of Facebook data (later proved illegal), data mining and analysis, with communication
+campaigns during the electoral processes around the world with the goal to influence
+their outcome in favour of their clients [6].</p>
+<h2>What how does misinformation really look like?</h2>
+<p>If we take a look how any controversial or political topic on twitter we get
+a glimpse of how companies like Cambridge Analytica operate.</p>
+<p>At its core misinformation campaigns are built to spread a certain political agenda
+using specific language and amplifying only certain sources.</p>
+<p>In the last week I have been analyse topics spanning from the #covid-19 crisis to
+Spanish political propaganda. Here is what I found.</p>
+<p>A few accounts and news sources spread the main messages, then a network of automated
+accounts make sure to retweet, highlight and reply to these messages.</p>
+<h2>A few examples</h2>
+<p>We have been observing a number of accounts following this similar pattern. Here
+is an example:</p>
+<p>User: <a href="https://twitter.com/Alvisepf">@alvisepf</a></p>
+<p>We have chosen this user because it is one of the "top talkers" in the spanish
+Far right accounts.</p>
+<p>For this user we extracted a subset of users that are retweeting their posts.
+For this subset of users we extracted a subset of their timelines.</p>
+<p>This is the <a href="../../static/files/twitter/query_result_2020-04-01T09_42_42.689784Z.csv">archive</a></p>
+<p>We were interesting in finding out what other accounts these users were tweeting.
+We found out most of the tweets are actually retweets to accounts in the spanish
+far right political spectrum.
+In other words these accounts are part of an amplification machine of the same
+group of top talkers for the spanish far right.</p>
+<p>Hence we counted the number of retweets for account with the idea of extracting
+a distribution.</p>
+<p>Again here is the <a href="../../static/files/twitter/query_result_2020-04-01T11_23_09.761662Z.csv">result</a></p>
+<p>And here is a distribution per account:</p>
+<p><img src="../../static/files/twitter/Screenshot_2020-04-01%20Distribution%20of%20RT%20to%20accounts%20%C2%B7%20Metabase.png" alt="distribution" title="Twitter distribution per accounts"></p>
+<p>Finally here is a typical account in the amplification machine:</p>
+<p>This <a href="../../static/files/twitter/query_result_2020-03-31T09_44_57.589694Z.csv">archive</a>
+ contains approximately 400 tweets.</p>
+<h2>What can be done</h2>
+<p>The patterns observed are pretty simple and repeated across countries and issues.
+Accounts like these are exposed every other day by researchers, but also by the
+social networks operators [7].</p>
+<p>Why are operators not taking a stand against automated accounts? Patterns are not
+sophisticated, nor difficult to spot, different network and traffic metadata could
+be easily identified. More importantly these accounts exceed well the average
+frequency of tweets per hour of a normal user. A simple Proof of Work (PoW) [8] mechanism
+could well increase the cost of automating a large amount of highlights and retweets.</p>
+<p>A PoW is a mathematical mechanism asking a client to perform a certain
+operation whose calculation difficulty is increased as the client makes more requests
+to a certain service. PoWs deters denial-of-service attacks and other service abuses,
+such as spam on a network.</p>
+<p>REFERENCES:</p>
+<p>[1] <a href="https://www.wired.com/story/this-big-beef-exposes-the-ugly-underbelly-of-vegan-vlogging/">https://www.wired.com/story/this-big-beef-exposes-the-ugly-underbelly-of-vegan-vlogging/</a>
+[2] <a href="https://www.theguardian.com/science/2018/may/16/living-in-an-age-of-anger-50-year-rage-cycle">https://www.theguardian.com/science/2018/may/16/living-in-an-age-of-anger-50-year-rage-cycle</a>
+[3] <a href="https://time.com/4838673/anger-and-partisanship-as-a-virus/">https://time.com/4838673/anger-and-partisanship-as-a-virus/</a>
+[4] <a href="https://blog.twitter.com/en_gb/topics/marketing/2017/eurovision-2017.html">https://blog.twitter.com/en_gb/topics/marketing/2017/eurovision-2017.html</a>
+[5] <a href="https://www.theguardian.com/technology/2019/mar/17/the-cambridge-analytica-scandal-changed-the-world-but-it-didnt-change-facebook">https://www.theguardian.com/technology/2019/mar/17/the-cambridge-analytica-scandal-changed-the-world-but-it-didnt-change-facebook</a>
+[6] <a href="https://en.wikipedia.org/wiki/Cambridge_Analytica">https://en.wikipedia.org/wiki/Cambridge_Analytica</a>
+[7] <a href="https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown">https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown</a>
+[8] <a href="https://en.wikipedia.org/wiki/Proof_of_work">https://en.wikipedia.org/wiki/Proof_of_work</a></p>
+
+        </section>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </article>
+    </div>
+
+    <footer class="footer">
+
+   <a href="https://twitter.com/nopressure/" target="_blank" class="link link--light"><i class="fa fa-twitter"></i></a>
+   <a href="https://www.linkedin.com/in/silviapuglisi" target="_blank" class="link link--light"><i class="fa fa-linkedin"></i></a>
+   <a href="https://github.com/hiromipaw" target="_blank" class="link link--light"><i class="fa fa-github"></i></a>
+   <a href="https://scholar.google.es/citations?user=B8_Ts38AAAAJ&hl=en" target="_blank" class="link link--light"><i class="fa fa-graduation-cap"></i></a>
+   <a href="mailto:me@hiro7.eu" target="_blank" class="link link--light"><i class="fa fa-envelope"></i></a>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="../../static/scribbler.js"></script>
+</body>

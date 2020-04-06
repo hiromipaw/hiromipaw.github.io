@@ -43,6 +43,128 @@
     
   <div class="blog-post">
   
+    <h2><a href="../blog/2020-04-05-online-disinformation/">Online disinformation campaigns. How do these work. What can we do.</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2030-04-05
+  </p>
+  <p>Every social media user has possibly noticed how content is often driven by very
+strong emotions. Many posts range from extreme cute kittens to drama stories, but
+above all emotions it seems like online content is especially fueled by anger [1] [2].</p>
+<p>This might be specifically true for political driven content [3], but how people
+came from coming together to comment Eurovision [4] to insult each others during
+political campaigns?</p>
+<p>To understand how we got here, we cannot ignore everything that happen with facebook
+and Cambridge Analytica [5]. Between 2013 and 2018 the company combined aggregation
+of Facebook data (later proved illegal), data mining and analysis, with communication
+campaigns during the electoral processes around the world with the goal to influence
+their outcome in favour of their clients [6].</p>
+<h2>What how does misinformation really look like?</h2>
+<p>If we take a look how any controversial or political topic on twitter we get
+a glimpse of how companies like Cambridge Analytica operate.</p>
+<p>At its core misinformation campaigns are built to spread a certain political agenda
+using specific language and amplifying only certain sources.</p>
+<p>In the last week I have been analyse topics spanning from the #covid-19 crisis to
+Spanish political propaganda. Here is what I found.</p>
+<p>A few accounts and news sources spread the main messages, then a network of automated
+accounts make sure to retweet, highlight and reply to these messages.</p>
+<h2>A few examples</h2>
+<p>We have been observing a number of accounts following this similar pattern. Here
+is an example:</p>
+<p>User: <a href="https://twitter.com/Alvisepf">@alvisepf</a></p>
+<p>We have chosen this user because it is one of the "top talkers" in the spanish
+Far right accounts.</p>
+<p>For this user we extracted a subset of users that are retweeting their posts.
+For this subset of users we extracted a subset of their timelines.</p>
+<p>This is the <a href="../static/files/twitter/query_result_2020-04-01T09_42_42.689784Z.csv">archive</a></p>
+<p>We were interesting in finding out what other accounts these users were tweeting.
+We found out most of the tweets are actually retweets to accounts in the spanish
+far right political spectrum.
+In other words these accounts are part of an amplification machine of the same
+group of top talkers for the spanish far right.</p>
+<p>Hence we counted the number of retweets for account with the idea of extracting
+a distribution.</p>
+<p>Again here is the <a href="../static/files/twitter/query_result_2020-04-01T11_23_09.761662Z.csv">result</a></p>
+<p>And here is a distribution per account:</p>
+<p><img src="../static/files/twitter/Screenshot_2020-04-01%20Distribution%20of%20RT%20to%20accounts%20%C2%B7%20Metabase.png" alt="distribution" title="Twitter distribution per accounts"></p>
+<p>Finally here is a typical account in the amplification machine:</p>
+<p>This <a href="../static/files/twitter/query_result_2020-03-31T09_44_57.589694Z.csv">archive</a>
+ contains approximately 400 tweets.</p>
+<h2>What can be done</h2>
+<p>The patterns observed are pretty simple and repeated across countries and issues.
+Accounts like these are exposed every other day by researchers, but also by the
+social networks operators [7].</p>
+<p>Why are operators not taking a stand against automated accounts? Patterns are not
+sophisticated, nor difficult to spot, different network and traffic metadata could
+be easily identified. More importantly these accounts exceed well the average
+frequency of tweets per hour of a normal user. A simple Proof of Work (PoW) [8] mechanism
+could well increase the cost of automating a large amount of highlights and retweets.</p>
+<p>A PoW is a mathematical mechanism asking a client to perform a certain
+operation whose calculation difficulty is increased as the client makes more requests
+to a certain service. PoWs deters denial-of-service attacks and other service abuses,
+such as spam on a network.</p>
+<p>REFERENCES:</p>
+<p>[1] <a href="https://www.wired.com/story/this-big-beef-exposes-the-ugly-underbelly-of-vegan-vlogging/">https://www.wired.com/story/this-big-beef-exposes-the-ugly-underbelly-of-vegan-vlogging/</a>
+[2] <a href="https://www.theguardian.com/science/2018/may/16/living-in-an-age-of-anger-50-year-rage-cycle">https://www.theguardian.com/science/2018/may/16/living-in-an-age-of-anger-50-year-rage-cycle</a>
+[3] <a href="https://time.com/4838673/anger-and-partisanship-as-a-virus/">https://time.com/4838673/anger-and-partisanship-as-a-virus/</a>
+[4] <a href="https://blog.twitter.com/en_gb/topics/marketing/2017/eurovision-2017.html">https://blog.twitter.com/en_gb/topics/marketing/2017/eurovision-2017.html</a>
+[5] <a href="https://www.theguardian.com/technology/2019/mar/17/the-cambridge-analytica-scandal-changed-the-world-but-it-didnt-change-facebook">https://www.theguardian.com/technology/2019/mar/17/the-cambridge-analytica-scandal-changed-the-world-but-it-didnt-change-facebook</a>
+[6] <a href="https://en.wikipedia.org/wiki/Cambridge_Analytica">https://en.wikipedia.org/wiki/Cambridge_Analytica</a>
+[7] <a href="https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown">https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown</a>
+[8] <a href="https://en.wikipedia.org/wiki/Proof_of_work">https://en.wikipedia.org/wiki/Proof_of_work</a></p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="../blog/2020-03-25-decentralization-meets-anonymity/">Decentralization meets anonymity. Using the onion service protocol to build p2p applications.</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2030-03-25
+  </p>
+  <p>The architecture of the web is based on the client/server paradigm where the Hypertext Transfer Protocol (HTTP) occupies a predominant role [1]. HTTP was designed to transfer resource representations, to abstract over lower-layered transport protocols, such as TCP or UDP, and to act as the primary application-level protocol.</p>
+<p>Representational State Transfer (REST) architectures are a generalization of the Web based on the HTTP protocol. In this sense the World Wide Web represent an Internet-scale implementation of the RESTful architectural style.</p>
+<p>RESTful architecture identify three main foundation blocks:
+    – The identification mechanism, or a Uniform Resource Identifier (URI)
+    – The communication process between agents
+    – The representation of data being exchanged</p>
+<p>We used to think of the web as hypertext documents linked to one another, but nowadays web documents are more like data objects linked to other objects, or in other words: hyperdata. The constraints imposed by the RESTful architectural style make the Web's architecture particularly malleable. The components making the web are continually changing and providing new capabilities, adding new resources in the form of novel websites and web services, supporting new representations for resources, etc [2].</p>
+<p>The web architecture is hence inherently decentralized, but the data shared on the Internet and the services used to store this data are completely centralized [3]. These means that access to those data is controlled by the service owner, which is often different from the entity that produced the data. This approach might be considered extremely pragmatic and in most cases also cheaper and easier to manage than in-house data storage services.
+This process of centralizing data in a handful of location has been described as dataveillance [4], or a form of surveillance using the massive collection and storage of vast quantities of personal data. While users lose control over their data, they also lose control over their privacy.</p>
+<p>Personal data store approaches have been proposed to over come these issues [5] and allow users to regain control over who can access their data. But decentralized access to data is only one part of the problems associated with web privacy.</p>
+<p>Tor is an important tool providing privacy and anonymity online. The Tor network itself is only a part of what Tor is. Tor also provides privacy at the application level through the Tor Browser. The Tor Browser was designed to provide privacy while surfing the web and defend users against both network and local forensic adversaries. The same properties can be adopted by applications and services wishing to integrate the tor network in their architecture. Furthermore, onion services provide better authentication and assurance of who you are talking to. With onion services Tor can provide bi-directional anonymity by making it possible for users to hide their locations while offering various kinds of services, such as web publishing or an instant messaging server.</p>
+<p>An .onion service needs to advertise its existence in the Tor network before clients will be able to contact it. Therefore, the service randomly picks some relays, builds circuits to them, and asks them to act as introduction points by telling them its public key. An onion service lives on the Tor network and its name is its long term master identity key. This is encoded as a hostname by encoding the entire key in Base 32, including a version byte and a checksum, and then appending the string “.onion” at the end. The result is a 56-character domain name.</p>
+<p>This means that onion service operators do not need a public IP address to publish an onion service, but only it's onion service address (URI) making the protocol ideal for p2p applications.</p>
+<p>While the introduction points and others are told the onion service's identity (public key), we don't want them to learn about the onion server's location (IP address). By using a full Tor circuit, it's hard for anyone to associate an introduction point with the .onion server's IP address.
+Because .onion services are only accessible via the Tor network, users do not need hosting or a public ip address to offer some service via .onion address. This means .onion services are a gateway to a decentralized, peer-to-peer internet, where users regain control on the content they create and who they are sharing it with.</p>
+<p>Access control for an onion service is imposed at multiple points. The first stage of access control happens when downloading HS descriptors. Specifically, in order to download a descriptor, clients must know the public key of the service. Also, if optional client authorization is enabled, onion service descriptors are super-encrypted using each authorized user's identity x25519 key, to further ensure that unauthorized entities cannot decrypt it. The final level of access control happens at the server itself, which may decide to respond or not respond to the client's request depending on the contents of the request.</p>
+<p>By using the Tor Browsers (or any web browser supporting the Tor protocol) clients can interact with onion service applications following the same RESTful paradigms.  Users can still interact with applications via hyperlinks and the browser will render accessed resource representation in a similar way to how it renders the content of a website. In fact a website shared via .onion is still a website. In fact for a set of web services, the onion service protocol is just another way that they can be reached, i.e. via the Tor network. For p2p applications instead it is a way to take advantage of the flexibility, far-reach and ease of use of web technologies to create decentralized, privacy-friendly services. Furthermore because .onions can be hosted locally, on someone personal computer, we can start imaging services that are available for the time the user desire, and disappear when the .onion operator wishes to shutdown the server.</p>
+<p>There are a number of applications that are using the onion service protocol in a p2p fashion. One of this is onionshare [6] that allow user to share files or publishing a website without using a centralized server. Another is Haven [7] that transform an Android phone into a physical security device and use an onion service to check logs of the phone sensors remotely. We can envision apps allowing people to communicate between one another or developing their own social network. Hopefully more applications will be developed in the near future, creating a dynamic onion service app ecosystem and fostering a more privacy friendly decentralized web.</p>
+<p>REFERENCES:</p>
+<p>[1] Berners‐Lee, T., Cailliau, R., Groff, J.F. and Pollermann, B., 1992. World‐Wide Web: the information universe. Internet Research. <a href="https://www.emeraldgrouppublishing.com/products/backfiles/pdf/backfiles_sample_5.pdf">https://www.emeraldgrouppublishing.com/products/backfiles/pdf/backfiles_sample_5.pdf</a></p>
+<p>[2] Fielding, R.T., Taylor, R.N., Erenkrantz, J.R., Gorlick, M.M., Whitehead, J., Khare, R. and Oreizy, P., 2017, August. Reflections on the REST architectural style and” principled design of the modern web architecture”(impact paper award). In Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering (pp. 4-14). <a href="https://pdfs.semanticscholar.org/1942/68d1965a7704d1361e440c3ebf599249a005.pdf">https://pdfs.semanticscholar.org/1942/68d1965a7704d1361e440c3ebf599249a005.pdf</a></p>
+<p>[3] Robinson, D.C., Hand, J.A., Madsen, M.B. and McKelvey, K.R., 2018. The Dat Project, an open and decentralized research data tool. Scientific data, 5. <a href="https://www.nature.com/articles/sdata2018221">https://www.nature.com/articles/sdata2018221</a></p>
+<p>[4] Solove, D.J., 2004. The digital person: Technology and privacy in the information age (Vol. 1). NyU Press. <a href="https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2501&amp;context=faculty_publications">https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2501&amp;context=faculty_publications</a></p>
+<p>[5] Mansour, E., Sambra, A.V., Hawke, S., Zereba, M., Capadisli, S., Ghanem, A., Aboulnaga, A. and Berners-Lee, T., 2016, April. A demonstration of the solid platform for social web applications. In Proceedings of the 25th International Conference Companion on World Wide Web (pp. 223-226). <a href="https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf">https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf</a></p>
+<p>[6] <a href="https://onionshare.org">https://onionshare.org</a></p>
+<p>[7] <a href="https://play.google.com/store/apps/details?id=org.havenapp.main&amp;hl=en">https://play.google.com/store/apps/details?id=org.havenapp.main&amp;hl=en</a></p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
     <h2><a href="../blog/2020-03-04-censorship/">Internet Censorship</a></h2>
   
   <p class="meta">
@@ -89,141 +211,6 @@ How blocking is implementing varies widely from country to country and even by s
 <p>[19] <a href="https://2019.www.torproject.org/docs/onion-services.html.en">https://2019.www.torproject.org/docs/onion-services.html.en</a></p>
 <p>[20] <a href="https://torproject.org">https://torproject.org</a></p>
 <p>[21] <a href="https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship">https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship</a></p>
-
-  </div>
-
-  
-    
-  <div class="blog-post">
-  
-    <h2><a href="../blog/2020-03-04-tor-relays/">Supporting the Tor network</a></h2>
-  
-  <p class="meta">
-    written by
-    
-      Silvia Puglisi [Hiro]
-    
-    on 2030-03-04
-  </p>
-  <p>How can small organization run relays on the Tor network while sustain their operations</p>
-<h1>How is the Tor network composed</h1>
-<p>The Tor network consists entirely of relays run by volunteers, provinding bandwidth and other services to Tor users. There are currently about 6000 relays sustaining the network [1].
-Up to now the Tor network has grown organically, by the mean of community outreach activities. Tor relay operators are usually individuals that are motivated by various factors. The Tor project mission itself is a strong driver for individuals interested in providing privacy enhancing communication tools to people all over the world. Other relay operators might be researchers interested in the technical aspects of the Tor software and protocol. Others can also simply be open source entusiasts that want to be part of its community. Many relay operators have often been recruited, so to speak, by other comnmunity members or core developers. Finally some relay operators are adeversaries that are trying to run different analysis over the Tor network itself, like collecting information on its use or on the content being transferred.</p>
-<p>All the motivations described above do not require direct compensation by the Tor Project and the volunteer-based approach to sustain the network has been proved successful. Relay operators do not only invest their hardware, but also time and commitment in running the relays and in being part of the Tor community. Expenading the set of relays is vital for the Tor network. More importantly the network needs a diverse set of relay, not just advertised bandwidth. Diversity means different hardware and operating systems, but also different locations accross the globe in order to reach users worldwide and offer overall the same quality of service.</p>
-<p>Throughout Tor history, there have never been in place an official mechanism for relay operators to be rewarded extrinsically. The intrinsic reward of being a relay operator was the social perceeved value, like recognition within the Tor community. Many different proposals have been made for a Tor incentives system [2], but none has ever been implemented.</p>
-<h1>How do relay operators organize</h1>
-<p>Relay operators sometimes create a small non profit or join an umbrella organization, to support their activities. These are setup so that the individual operators are not legally responsible in case of a legal dispute. Also the organization is setup to share the burden of possible legal expenses and to collect donations for their activities. The Tor Project itself advises people to constitute a non-profit organization responsible for the relays in case of possible legal disputes.
-There are some legal risks in fact associated with running relays. These are usually not different from the same risks that an ISP could have since both relay internet traffic. Exits relays have more legal concerns that bridges, guards or middle relays, because middles and guards only relay encrypted traffic, while exits performs requests to the open internet.
-The Tor Project provides some standard response letters that relay operators can use and some legal resources that could become handy. In any case relay operators are adivised to consult with a lawyer if any problem with law enforcement should arise.</p>
-<h1>How much does it cost to run a relay</h1>
-<p>Runing a relay can be as cheap as a few dollars per month and as expensive as a few hundred, depending on where the realy runs, which kind of hardware it's running on, bandwidth, operating system and so on. Most relays operators rely on donations from individuals that want to contriubute to the network but for several reasons are not able to run a relay at the moment. There is again intrinsic value to donate to relay operators to contribute to the Tor community.</p>
-<p>A big portion of relay costs are taken over by bandwidth consumption. If an individual or group wants to run a node that relays a lot of traffic, bandwidth might become expensive.</p>
-<h1>Participatory Business Models for Off-Grid utilities, what can we learn</h1>
-<p>Certain mechanisms developed by and for the maintenance and operations of the Tor network have much in common with off-grid utility implementation. To start both are ipso-facto decentralized, community based and require experimenting with different business models for implementation.</p>
-<p>A number  of  previous  studies  have  developed  their  own  classifications  for electrification models.</p>
-<ul>
-<li>Commercially  led  modelswhich  are  driven  by  suppliers  and  dealers  with relatively little government control.</li>
-<li>Multi-stakeholder programmatic modelwherein a project management unit or multi-stakeholder management authority is typically charged with reaching consumers.</li>
-<li>Utility modeltypically operates on a fee-for-service basis.</li>
-<li>Grant  based  models.</li>
-</ul>
-<p>[3] describes different participatory models for off-grid electricy services in rural areas. Drawing  from  previous defined  classification  systems,  they identify  five  models  with  different types of operations that have been used in rural electrification.</p>
-<ol>
-<li>Co-operatives;</li>
-<li>Service distribution franchises;</li>
-<li>Fee-for-service models;</li>
-<li>Community managed models; and</li>
-<li>Private sector models.</li>
-</ol>
-<p>One thing that differentiate the ecosystem of companies and cooperatives providing utilities and relay operators is the fact that while utility providing organizations could in theory charge its users for using their network, the Tor network is freely accessible by everyone running a Tor client. Since neither the Tor Project nor any reasonable relay operator would like to charge Tor users for bandwidth used, in the past people have speculated whether it would make sense to build mechanisms so that the network could reward relays for the bandwidth provided to the network. A part of this speculation has also involved considering possible harms of such mechanism to both the privacy and security of Tor users and the community of relay operators. For example some have argued that this could encourage bad or malicious relays, or the growth of relay farms with the only interest to cash out instead of maintaining the network and protecting the privacy of its users.</p>
-<p>Some relay operators groups have developed a membership model to help sustain their operations [4] [5]. The membership model allows such group to build a close relationship with their supporters while also sustaining their operations.</p>
-<h1>Running a participatory relay community</h1>
-<p>While relay operators cannot be directly compensated by Tor users directly, they could be compensated for offering other services in a partecipatory way to the community of Tor users and .onion websites.
-The relay operators group could add a certain fee to the service offered and redirect part of this compensation to sustaining their infrastructure and work in maintaining the Tor network. This mechanism could help both the relay operators and the Tor network itself in more than one way. One the one hand relay operators can build a relationship with their members by offering a set of privacy friendly services that might or might not use the Tor network itself to be operated, like bridges, .onion hosting, vpn, and so on. On the other hand the Tor project will benefit by seeing more diverse use of the Tor network. Finally, this could also be an incentive for creating a better experience for onion services developers and operators and therefore fostering a more
-legitimate onion service ecosystem.</p>
-<p>This mechanism could be easier to implement for some relay operators that other form of financing, simply because they are already running some of these services as these are needed for day-to-day operations. For example many operators group running exit are already running an authoritative dns and could easily offer this service to their members (some in fact already do). This might actually be easier in many circumnstances than applying for international grants or public funding, since in many cases this suppose a big overhead in work that small relay operators group cannot sustain.</p>
-<p>[1] <a href="https://metrics.torproject.org/networksize.html">https://metrics.torproject.org/networksize.html</a></p>
-<p>[2] <a href="https://blog.torproject.org/tor-incentives-research-roundup-goldstar-par-braids-lira-tears-and-torcoin">https://blog.torproject.org/tor-incentives-research-roundup-goldstar-par-braids-lira-tears-and-torcoin</a></p>
-<p>[3] Krithika, P.R. and Palit, D., 2013. Participatory business models for off-grid electrification. In Rural electrification through decentralised off-grid systems in developing countries (pp. 187-225). Springer, London. <a href="https://www.researchgate.net/profile/Debajit_Palit/publication/261946063_Participatory_Business_Models_for_Off-Grid_Electrification/links/53e993090cf2fb1b9b671622.pdf">https://www.researchgate.net/profile/Debajit_Palit/publication/261946063_Participatory_Business_Models_for_Off-Grid_Electrification/links/53e993090cf2fb1b9b671622.pdf</a></p>
-<p>[4] <a href="https://applied-privacy.net/membership/">https://applied-privacy.net/membership/</a></p>
-<p>[5] <a href="https://enn.lu/member">https://enn.lu/member</a></p>
-
-  </div>
-
-  
-    
-  <div class="blog-post">
-  
-    <h2><a href="../blog/2019-11-15-yubikey-setup/">How to setup and use yubikeys for authentication</a></h2>
-  
-  <p class="meta">
-    written by
-    
-      Silvia Puglisi [Hiro]
-    
-    on 2019-11-15
-  </p>
-  <p>I use yubikeys to store my gpg and ssh keys.</p>
-<p>Before starting do a little bit of reading to familiarize yourself with the setup
-procedure.
-I have added a list of links at the end. These are mainly the resources that I used.</p>
-<h2>Generate a new gpg key</h2>
-<p>I have generated my keys on a qube VM without internet connection.</p>
-<pre><code>$ gpg --gen-key
-</code></pre>
-<p>Selected option 0 and moved on to create my ID associated with the key.</p>
-<p>In this step I used mostly the guide from yubico developers website [1]
-The guide goes through generating Sign (S) Authentication (A) and Encryption (E)
-keys.</p>
-<h2>Add an authentication key</h2>
-<pre><code>$ gpg --expert --edit-key 123ABC45
-</code></pre>
-<p>At this step we select another RSA key to attach to our key. In the gpg selection
-menu this corresponds to option 8.</p>
-<h2>Backup</h2>
-<p>Here is where you should backup your keys and revocation certificates. Please do
-I have personally lost yubikeys and having backups really helps.</p>
-<p>Also setup a PIN and a admin PIN for your yubikey [5]. With:</p>
-<pre><code>$ gpg --card-edit
-
-$ gpg/card&gt; admin
-</code></pre>
-<h2>Import the key to the yubikey</h2>
-<p>Finally we edit our key and add it to the keycard [1].</p>
-<pre><code>$ gpg --expert --edit-key 123ABC45
-
-$ gpg&gt; keytocard
-</code></pre>
-<p>Now your key is exported to your card and ready to be used.</p>
-<h2>Setup key to be used with ssh</h2>
-<pre><code>$ gpg2 -K --with-keygrip
-</code></pre>
-<p>This will show all your keys available with keygrip.
-Use the keygrip of your authentication key to export it to <code>sshcontrol</code></p>
-<pre><code>echo 1234567AB8CDFFF90G9H1I23JJ4K5L67M89N012O &gt; ~/.gnupg/sshcontrol
-</code></pre>
-<p>I have also added the following to my <code>~/.gnupg/gpg-agent.conf</code> [4]:</p>
-<pre><code>default-cache-ttl 600
-max-cache-ttl 7200
-enable-ssh-support
-write-env-file ~/.gpg-agent-info
-</code></pre>
-<p>And edited my <code>~/.bashrc</code> with:</p>
-<pre><code>gpg-connect-agent /bye
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-</code></pre>
-<p>You can now:</p>
-<pre><code>$ source ~/.bashrc
-$ ssh-add -l
-</code></pre>
-<p>This should list your new key.</p>
-<ul>
-<li>[1] <a href="https://developers.yubico.com/PGP/Importing_keys.html">https://developers.yubico.com/PGP/Importing_keys.html</a></li>
-<li>[2] <a href="https://zeos.ca/post/2018/gpg-yubikey5/">https://zeos.ca/post/2018/gpg-yubikey5/</a></li>
-<li>[3] <a href="https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/">https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/</a></li>
-<li>[4] <a href="https://www.isi.edu/~calvin/yubikeyssh.htm">https://www.isi.edu/~calvin/yubikeyssh.htm</a></li>
-<li>[5] <a href="https://developers.yubico.com/PGP/Card_edit.html">https://developers.yubico.com/PGP/Card_edit.html</a></li>
-</ul>
 
   </div>
 
