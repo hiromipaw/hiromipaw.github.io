@@ -98,7 +98,7 @@ So [here](/static/files/twitter/query_result_2020-04-05T17_07_24.229283Z.csv)
 retweeted @alvisepf.
 
 Finally here is a complete archive of a set of tweets linking articles from these
-news source: [archive](/static/files/twitter/users_tweeting_right_news_2020-04-05T16_51_11.893225Z.csv)
+news source: [archive](/static/files/twitter/users_tweeting_right_news_2020-04-05T16_51_11.893225Z.csv).
 
 ## What can be done
 
@@ -116,6 +116,16 @@ A PoW is a mathematical mechanism asking a client to perform a certain
 operation whose calculation difficulty is increased as the client makes more requests
 to a certain service. PoWs deters denial-of-service attacks and other service abuses,
 such as spam on a network.
+
+## What can you do
+
+You can run your own research. I use a mix of own scripts calling twitter APIs and
+I also use [twint](https://github.com/twintproject). For visualizations I use
+[metabase](https://metabase.com).
+
+If you are a researcher or a journalist please get in touch. I'd be happy to
+collaborate with you monitoring different political scenarios around the world.
+I'd also be happy to share access to my DB and give you full access to the data.
 
 REFERENCES:
 
