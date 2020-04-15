@@ -43,6 +43,88 @@
     
   <div class="blog-post">
   
+    <h2><a href="../blog/2020-04-08-online-disinformation-part-2/">Online disinformation campaigns. A deep dive.</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2030-04-05
+  </p>
+  <p>A few days ago I published a little summary of online disinformation campaign for
+the spanish far right [1].</p>
+<p>I tried to highlight the emerging patterns of how these amplification machines
+operate. Shoving retweets distribution for users rt-ing one of the top-talker
+accounts.</p>
+<p>I am now going to share a larger <a href="../static/files/twitter/query_result_2020-04-08T20_01_14.869652Z.zip">archive</a>
+of tweets. To obtain this archive I compiled all the tweets from users that have
+retweeted the account <a href="https://twitter.com/ldpsincomplejos">@ldpsincomplejos</a>.</p>
+<p>Here is how I obtained the tweets for the account @ldpsincomplejos was obtained:</p>
+<pre><code>def get_tweets_search(key, client):
+    tweets_endpoint = "https://api.twitter.com/1.1/search/tweets.json?q=" + key + "&amp;count=500&amp;include_entities=true&amp;result_type=recent"
+    response, data = client.request(tweets_endpoint)
+    return json.loads(data)
+</code></pre>
+<p>This function will return 500 tweets, including both tweets by the account and RTs
+to the account.
+For each tweet I extracted the username and got the latest 200 tweets user timeline.</p>
+<pre><code>def get_timeline(username, client):
+    timeline_endpoint = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + username + "&amp;include_rts=true&amp;count=200"
+    response, data = client.request(timeline_endpoint)
+    return json.loads(data)
+</code></pre>
+<p>Now I identified a few top-talkers and computed the distribution of RTs to Accounts.</p>
+<p>Here are some results:</p>
+<h3>Twitter distribution for users RT-ing @okdiario: who are they RTing?</h3>
+<p><img src="../static/files/twitter/distribucion_okdiario_RTs-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
+<a href="../static/files/twitter/distribucion_okdiario_RTs.png">full image</a></p>
+<h3>Twitter distribution for users RT-ing @hermanntertsch: who are they RTing?</h3>
+<p><img src="../static/files/twitter/distribucion_hermanntertsch_RTs-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
+<a href="../static/files/twitter/distribucion_hermanntertsch_RTs.png">full image</a></p>
+<h3>Twitter distribution for users RT-ing @alvisepf: who are they RTing?</h3>
+<p><img src="../static/files/twitter/distribucion_alvisepf_RTs-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
+<a href="../static/files/twitter/distribucion_alvisepf_RTs.png">full image</a></p>
+<p>Here is the thing. If you look at the distribution of comments instead you get a
+different result.</p>
+<h3>Twitter distribution for users commenting-ing @okdiario: who are they commenting?</h3>
+<p><img src="../static/files/twitter/distribucion_comment_okdiario-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
+<a href="../static/files/twitter/distribucion_comments_okdiario.png">full image</a></p>
+<h3>Twitter distribution for users commenting-ing @hermanntertsch: who are they commenting?</h3>
+<p><img src="../static/files/twitter/distribucion_comment_hermanntertsch-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
+<a href="../static/files/twitter/distribucion_comments_hermanntertsch.png">full image</a></p>
+<h3>Twitter distribution for users commenting-ing @alvisepf: who are they commenting?</h3>
+<p><img src="../static/files/twitter/distribucion_comment_alvisepf-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
+<a href="../static/files/twitter/distribucion_comments_alvisepfs.png">full image</a></p>
+<p>This means in practice that there is a list of accounts RT-ing sources on the right
+ and commenting on accounts from the left. The anticipation machines objective is
+ in fact to spread division and hate.</p>
+<p>Finally here is a visualization of the graph of accounts RTin OkDiario:</p>
+<p><img src="../static/files/twitter/plot-50.jpg" alt="plot_graph_okdiario" title="Graph of accounts RTing Ok Diario">
+<a href="../static/files/twitter/plot.jpg">full image</a></p>
+<p>If we isolate the accounts doing more than 100 RT, we find a group of approximately
+20 accounts doing most of the tweets.</p>
+<p><img src="../static/files/twitter/top_plot-50.jpg" alt="plot_graph_okdiario" title="Graph of top accounts RTing Ok Diario">
+<a href="../static/files/twitter/top_plot.jpg">full image</a></p>
+<p>Here is probably a team of accounts acting to promote the tweets from OkDiario and
+a group of other accounts.</p>
+<h2>Would you like to have access to this data?</h2>
+<p>I have a <a href="https://metabase.com">metabase</a> <a href="https://project-mononoke.herokuapp.com/">instance</a>
+setup on <a href="https://heroku.com">heroku</a>.</p>
+<p>You can have a look at the <a href="http://project-mononoke.herokuapp.com/public/dashboard/7e31a8e1-345b-4742-9774-82b86892135f">data</a>
+used in this study.</p>
+<p>If you get in touch I can give you access.</p>
+<p>REFERENCES</p>
+<p>[1] <a href="https://www.hiro7.eu/blog/2020-04-05-online-disinformation">https://www.hiro7.eu/blog/2020-04-05-online-disinformation</a></p>
+<p>Y para comparar si no es demasiado para ver la diferencia de entropia como comparación:
+Errejón, Más Pais</p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
     <h2><a href="../blog/2020-04-05-online-disinformation/">Online disinformation campaigns. How do these work. What can we do.</a></h2>
   
   <p class="meta">
@@ -191,59 +273,6 @@ Because .onion services are only accessible via the Tor network, users do not ne
 <p>[5] Mansour, E., Sambra, A.V., Hawke, S., Zereba, M., Capadisli, S., Ghanem, A., Aboulnaga, A. and Berners-Lee, T., 2016, April. A demonstration of the solid platform for social web applications. In Proceedings of the 25th International Conference Companion on World Wide Web (pp. 223-226). <a href="https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf">https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf</a></p>
 <p>[6] <a href="https://onionshare.org">https://onionshare.org</a></p>
 <p>[7] <a href="https://play.google.com/store/apps/details?id=org.havenapp.main&amp;hl=en">https://play.google.com/store/apps/details?id=org.havenapp.main&amp;hl=en</a></p>
-
-  </div>
-
-  
-    
-  <div class="blog-post">
-  
-    <h2><a href="../blog/2020-03-04-censorship/">Internet Censorship</a></h2>
-  
-  <p class="meta">
-    written by
-    
-      Silvia Puglisi [Hiro]
-    
-    on 2030-03-04
-  </p>
-  <p>When we talk about things like internet censorship and surveillance, these might appear as abstract concepts to some people, especially in global north countries. This post will tries to explain the effects of these activities, and what can be done to help people subjected to both.</p>
-<h1>How does internet censorship look like?</h1>
-<p>Internet censorship can take many different forms. In most countries there is some form of internet censorship, meaning that the government might decide to block some websites for different reasons. Usually, in democratic settings, internet blocking is regulated by the state and it takes more the shape of content restrictions based on various constitutional rights and principles, and it is enacted both through the democratic process and formal legislation.</p>
-<p>Generally speaking a network can be censored by blocking or slowing down access to certain websites, services, protocols. The ooni project [1] has been developing tests to find out when and how is censorship happening in a network [2].
-How blocking is implementing varies widely from country to country and even by specific political situations or events. Measures that can be adopted to circumnvent censorship at a certain moment might not work after a while. It is said that censorship circumnvention is a arms race. As censorship circunvention measures become more sophisticated so does censorship technology. Eventually the right for freedom and democracy is won at the political level.</p>
-<p>Ooni keeps a blog [3] where they present each internet censorship events and describe both the political background and the technical details of how the blocking is performed.</p>
-<p>While interent censorship might seems secondary it is important to point out that autoritarian regimes use communication control and blocking to shutdown or reduce people ability to organize and protest. There is evidence that as digitalr rights are restricted human rights are violated [4] [5].</p>
-<p>Internet censorship doesn't affect everyone equally either. Marginalized groups and people living in the global south are the ones that summer digital rights violation the most [6] [7].</p>
-<h1>Relationship between internet censorship and surveillance</h1>
-<p>When communication networks are controlled and blocked, citizens are surveilled [8][9]. Controlling dissent by targeting certain groups and dissidents is a common practice for many authoritarian governments [10]. In certain cases these governments prefer to engage themeselves online or partern with online media companies to control content and who has access to it [11]. In other cases the technics are more sophisticated. In certain cases even, having a state actor surveil their citizens affects users and business outside that country. This is the example of China weaponizing ligitimate requests to attack certain websites outside the Great Firewall (GFW) and even target the global chinese community [10].</p>
-<h1>How to protect yourself from surveillance and circumnvent censorship</h1>
-<p>The global investigative journalism network advises journalist to protect themselves and their sources from possible threats [13]. The first step is usually try to protect communications [14] by using end-to-end encrypted services, followed by taking necessary measures to protect access to personal accounts and using secure and encrypted tools and services to store and share documents.</p>
-<p>The ability to interact with sources is strategically important for journalist. This is why tools like Secure Drop [16] are used in newsrooms around the globe. Often journalists rely on more lightweight applications. One of this is OnionShare [17]. Onionshare allows users to share or receive files, or to publish a website, directly from their computer. Because OnionShare uses the Onion Service protocol [19] and expose the service on the Tor network only. The Onion Service protocol allows for bi-directional anonymity, meaning both the party offering the service and the party receiving the service are anonymous and protected by a 3-hops tor circuit.</p>
-<p>The Onion Service protocol also allows news organizations to reach surveilled and censored individuals [21] by offering their website on the Tor network. These website addresses end in the TLD .onion. Similar to how the https:// protocol of a website provides more security than the http:// protocol, an onion address also appears to be the same site but gives a visitor more privacy and security through end-to-end encryption and improved authentication. Visiting an onion address is easy. All that’s needed is Tor Browser (Tor Browser is built from Firefox and is similar to use); you visit the onion address in Tor Browser like you visit any web address.</p>
-<p>Because journalists and activists often have a public profile, both in real life and on social media, they need to take extra care to protect themselves from phishing attacks [15]. To understand the magnitude of phishing operations we just have to consider that the NSO's spyware Pegasus was targeting people in 45 countries [18].</p>
-<p>In other situation activists and journalist need to protect themselves by remaining anonymous. Tools like Tor [20] allow activists to safely browse the internet, do research, publish articles, and plan actions. All without being tracked.</p>
-<p>[1] <a href="https://ooni.org">https://ooni.org</a></p>
-<p>[2] <a href="https://ooni.org/nettest/">https://ooni.org/nettest/</a></p>
-<p>[3] <a href="https://ooni.org/post/">https://ooni.org/post/</a></p>
-<p>[4] <a href="https://www.washingtonpost.com/politics/2019/11/27/iran-shut-down-internet-stop-protests-how-long/">https://www.washingtonpost.com/politics/2019/11/27/iran-shut-down-internet-stop-protests-how-long/</a></p>
-<p>[5] <a href="https://netblocks.org/reports/evidence-of-internet-disruptions-in-russia-during-moscow-opposition-protests-XADErzBg">https://netblocks.org/reports/evidence-of-internet-disruptions-in-russia-during-moscow-opposition-protests-XADErzBg</a></p>
-<p>[6] <a href="https://www.accessnow.org/digital-rights-101-understanding-how-technology-affects-human-rights-for-all/">https://www.accessnow.org/digital-rights-101-understanding-how-technology-affects-human-rights-for-all/</a></p>
-<p>[7] <a href="https://ooni.org/post/2019-blocking-abortion-rights-websites-women-on-waves-web/">https://ooni.org/post/2019-blocking-abortion-rights-websites-women-on-waves-web/</a></p>
-<p>[8] <a href="https://www.theguardian.com/technology/2012/mar/02/censorship-inseperable-from-surveillance">https://www.theguardian.com/technology/2012/mar/02/censorship-inseperable-from-surveillance</a></p>
-<p>[9] <a href="https://www.washingtonpost.com/world/asia_pacific/chinas-scary-lesson-to-the-world-censoring-the-internet-works/2016/05/23/413afe78-fff3-11e5-8bb1-f124a43f84dc_story.html">https://www.washingtonpost.com/world/asia_pacific/chinas-scary-lesson-to-the-world-censoring-the-internet-works/2016/05/23/413afe78-fff3-11e5-8bb1-f124a43f84dc_story.html</a></p>
-<p>[10] <a href="https://www.wired.com/2017/04/internet-censorship-is-advancing-under-trump/">https://www.wired.com/2017/04/internet-censorship-is-advancing-under-trump/</a></p>
-<p>[11] <a href="https://www.zdnet.com/article/internet-censorship-its-on-the-rise-and-silicon-valley-is-helping-it-happen/">https://www.zdnet.com/article/internet-censorship-its-on-the-rise-and-silicon-valley-is-helping-it-happen/</a></p>
-<p>[12] <a href="https://www.eff.org/deeplinks/2019/10/chinas-global-reach-surveillance-and-censorship-beyond-great-firewall">https://www.eff.org/deeplinks/2019/10/chinas-global-reach-surveillance-and-censorship-beyond-great-firewall</a></p>
-<p>[13] <a href="https://gijn.org/digital-security/">https://gijn.org/digital-security/</a></p>
-<p>[14] <a href="https://www.icij.org/blog/2018/01/five-digital-security-tools-to-protect-your-work-and-sources/">https://www.icij.org/blog/2018/01/five-digital-security-tools-to-protect-your-work-and-sources/</a></p>
-<p>[15] <a href="https://cpj.org/2019/07/digital-safety-kit-journalists.php">https://cpj.org/2019/07/digital-safety-kit-journalists.php</a></p>
-<p>[16] <a href="https://securedrop.org/">https://securedrop.org/</a></p>
-<p>[17] <a href="https://onionshare.org/">https://onionshare.org/</a></p>
-<p>[18] <a href="https://citizenlab.ca/2018/09/hide-and-seek-tracking-nso-groups-pegasus-spyware-to-operations-in-45-countries/">https://citizenlab.ca/2018/09/hide-and-seek-tracking-nso-groups-pegasus-spyware-to-operations-in-45-countries/</a></p>
-<p>[19] <a href="https://2019.www.torproject.org/docs/onion-services.html.en">https://2019.www.torproject.org/docs/onion-services.html.en</a></p>
-<p>[20] <a href="https://torproject.org">https://torproject.org</a></p>
-<p>[21] <a href="https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship">https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship</a></p>
 
   </div>
 
