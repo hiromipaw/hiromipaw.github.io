@@ -43,6 +43,131 @@
     
   <div class="blog-post">
   
+    <h2><a href="../blog/2020-04-30-contact-tracing-app-privacy/"></a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2020-04-30
+  </p>
+  <p>Perche' preoccuparsi per la privacy in tempo di pandemia</p>
+<h2>Come funziona una app di contact tracing?</h2>
+<p>Una app di contact tracing e' uno strumento di prevenzione che se utilizzato insieme
+agli altri metodi di cui disponiamo per fare fronte alla pandemia del covid, ovvero
+test massivo e profilassi di protezione (igiene, mascherine, distanziamento sociale),
+puo' aiutare a rompere la catena dei contagi.</p>
+<p>Per quanto sappiamo fino ad ora le app europee verrano sviluppate sulle linee
+guida di protocolli decentralizzati, come il <a href="https://github.com/DP-3T/">DP-3T</a>.</p>
+<p>La app funziona (anche se forse e' meglio dire funzionera') piu' o meno cosi':</p>
+<ul>
+<li><p>Un cittadino viene diagnosticado come covid-19 positivo dal suo medico di famiglia,
+o dalla asl, o in ospedale.</p>
+</li>
+<li><p>Il personale sanitario e il cittadino configurano la positivita' sulla app che
+comunica questa informazione ad un server centrale. L'identita' del cittadino ne'
+dei suoi contatti non e' rivelata, ma solo degli identificativi anonimi.</p>
+</li>
+<li><p>Questi identificativi vengono inviati a tutte le app, tecnicamente si dice che
+vengono trasmessi in broadcast.</p>
+</li>
+<li><p>Le singole app faranno la verifica se sono stati in contatto con l'individuo
+positivo, verificando se gli identificativi che ricevono sono contenuti tra quelli
+delle persone con cui il cellulare e' stato in contatto.</p>
+</li>
+</ul>
+<p>Le funzioni fondamentali di una app di contact tracing possono essere riassunte
+nelle due seguenti:</p>
+<ul>
+<li>Rivelare le interazioni sociali in caso di contatto con un individuo positivo</li>
+<li>Poter calcolare un fattore di rischio per gli utenti</li>
+</ul>
+<p>Le funzioni che preoccupano chi si occupa di privacy, invece sono le seguenti:</p>
+<ul>
+<li><p>Il grafo sociale degli individui puo' essere ricompilato osservando i dati
+scambiati dall'applicazione</p>
+</li>
+<li><p>La condizione di positivita' di un individuo puo' essere rivelata.</p>
+</li>
+<li><p>Gli spostamenti e le coordinate geografiche degli utenti dell'applicazione possono
+essere calcolati o ricavati dai dati scambiati dall'applicazione.</p>
+</li>
+</ul>
+<h2>Che rischi presuppone creare e utilizzare una app di contact tracing?</h2>
+<h3>Protezione dei dati</h3>
+<p>Perche' una app di contact tracing non sia un rischio per la popolazione e' importante
+che vengano rispettati alcuni criteri di protezione dei dati raccolti, tra cui:</p>
+<h4>Minimizzazione dei dati</h4>
+<p>Nessuna entita' deve essere in grado di poter osservare o ricavare il grafo sociale
+degli utenti della app. Neanche in forma anonimizzata.</p>
+<p>Questo aspetto e' molto importante perche' il grafo sociale di una popolazione o
+semplicemente di un gruppo ristretto di persone puo' rendere pubbliche informazioni
+altrimenti confidenziali.</p>
+<h4>Le informazioni ricevuti dagli utenti e raccolte dal sistema devono essere</h4>
+<p>solamente quelle essenziali.</p>
+<p>Le informazioni raccolte sugli utenti che decideranno di installare la app devono
+essere solo quelle necessarie a ridurre il rischio di diffusione dell'empidemia.</p>
+<h4>Gli individui negativi devono essere protetti</h4>
+<p>Il sistema non puo' essere utilizzato come uno strumento di sorveglianza della
+popolazione. Nessuna informazione sugli utenti negativi deve essere raccolta dal
+sistema.</p>
+<h4>I dati devono essere distrutti</h4>
+<p>Il sistema deve essere in grado di dimenticare i dati raccolti alla fine dell'empidemia.
+Se non ci saranno pazienti infetti che trasmettono dati riguardo la loro positivita',
+e se in generale le persone smetteranno usare la applicazione, i dati dovranno
+essere distrutti.</p>
+<h3>Sicurezza</h3>
+<p>Perche' una app di contact tracing sia utile per il rischio epidemiologico si stima
+che debba essere utilizzata da circa il 50%-70% della popolazione.</p>
+<p>Per avere un'idea di questo dato fondamentale, pensiamo che il 60% delle persone
+che hanno un cellulare, hanno installato whatsapp.</p>
+<p>Inoltre una app che venga utilizzata da un numero cosi' elevato di persone, e che
+potenzialmente contiene dei dati sensibili e riservati sugli utenti, diventa
+necessariamente un target. Esiste un mercato di vulnerabilita' di sistemi informatici
+a cui accedono agenzie governative e non per le quali questi dati possono rappresentare
+un valore.</p>
+<h4>Rischi</h4>
+<h5>Un avversario modifica la app per raccogliere ulteriori informazioni sugli utenti</h5>
+<p>In questo scenario un possibile avversario puo' collezionare gli identificativi
+anonimi generati dai cellulari con cui e' stato in contatto per identificare degli
+individui.</p>
+<h5>Un avversario implementa un'antenna per intercettare le connessioni bluetooth</h5>
+<p>dei cellulari in una zona circoscritta.</p>
+<p>Questo scenario e' simile al precedente. In questo caso pero l'avversario utilizza
+dei sistemi per poter intercettare i segnali bluetooth dei cellulari nelle sue
+vicinanze e poter identificare gli utenti della app.</p>
+<h5>Un avversario riesce ad impersonificare le notifiche della app e comunicare</h5>
+<p>degli status di esposizione falsi agli utenti</p>
+<p>Questo scenario e' simile alle campagne di fishing delle banche. Un avversario crea
+un messaggio simile alla notifica che invia la app e comunica ad un numero elevato
+di utenti di essere stati in contatto con un positivo.</p>
+<p>L'effetto di questo attacco e' quello di generare panico o di ridurre la fiducia
+della popolazione nella app (discoragiandone l'utilizzo).</p>
+<h4>Perche' e' importante parlare di privacy</h4>
+<p>Identificare un individuo positivo puo' rappresentare un rischio per la sicurezza
+fisica di quella persona.</p>
+<p>Alcune persone possono reaggire con aggressivita' alla notizia di essere stati in
+contatto con una persona infetta.</p>
+<p>Identificare il grafo sociale di gruppi di persone e' un'informazione molto riservata
+che puo' essere utilizzata per vari scopi.</p>
+<p>Immaginate che sia possibile accedere alle informazioni su come, quando e quanto spesso
+certi esponenti di gruppi di politici si incontrano?</p>
+<p>Immaginate ceh sia possibile sapere che i gruppi direttivi di determinate aziende
+stanno avendo delle riunioni con una certa frequenza?</p>
+<p>Inoltre e' importante sottolineare che la tecnologia non e' neutra, contiene le
+influenze politiche del momento in cui viene creata. Le architetture tecnologiche
+che definiamo in questo momento straordinario determinaranno in parte i nostri
+dirtitti futuri.</p>
+<p>REFERENCES</p>
+<p>[1] Le contact tracing app rispettano la nostra privacy? <a href="https://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/">https://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/</a></p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
     <h2><a href="../blog/2020-04-08-online-disinformation-part-2/">Online disinformation campaigns. A deep dive.</a></h2>
   
   <p class="meta">
@@ -229,48 +354,6 @@ I'd also be happy to share access to my DB and give you full access to the data.
 <p>[6] <a href="https://en.wikipedia.org/wiki/Cambridge_Analytica">https://en.wikipedia.org/wiki/Cambridge_Analytica</a></p>
 <p>[7] <a href="https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown">https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown</a></p>
 <p>[8] <a href="https://en.wikipedia.org/wiki/Proof_of_work">https://en.wikipedia.org/wiki/Proof_of_work</a></p>
-
-  </div>
-
-  
-    
-  <div class="blog-post">
-  
-    <h2><a href="../blog/2020-03-25-decentralization-meets-anonymity/">Decentralization meets anonymity. Using the onion service protocol to build p2p applications.</a></h2>
-  
-  <p class="meta">
-    written by
-    
-      Silvia Puglisi [Hiro]
-    
-    on 2020-03-25
-  </p>
-  <p>The architecture of the web is based on the client/server paradigm where the Hypertext Transfer Protocol (HTTP) occupies a predominant role [1]. HTTP was designed to transfer resource representations, to abstract over lower-layered transport protocols, such as TCP or UDP, and to act as the primary application-level protocol.</p>
-<p>Representational State Transfer (REST) architectures are a generalization of the Web based on the HTTP protocol. In this sense the World Wide Web represent an Internet-scale implementation of the RESTful architectural style.</p>
-<p>RESTful architecture identify three main foundation blocks:
-    – The identification mechanism, or a Uniform Resource Identifier (URI)
-    – The communication process between agents
-    – The representation of data being exchanged</p>
-<p>We used to think of the web as hypertext documents linked to one another, but nowadays web documents are more like data objects linked to other objects, or in other words: hyperdata. The constraints imposed by the RESTful architectural style make the Web's architecture particularly malleable. The components making the web are continually changing and providing new capabilities, adding new resources in the form of novel websites and web services, supporting new representations for resources, etc [2].</p>
-<p>The web architecture is hence inherently decentralized, but the data shared on the Internet and the services used to store this data are completely centralized [3]. These means that access to those data is controlled by the service owner, which is often different from the entity that produced the data. This approach might be considered extremely pragmatic and in most cases also cheaper and easier to manage than in-house data storage services.
-This process of centralizing data in a handful of location has been described as dataveillance [4], or a form of surveillance using the massive collection and storage of vast quantities of personal data. While users lose control over their data, they also lose control over their privacy.</p>
-<p>Personal data store approaches have been proposed to over come these issues [5] and allow users to regain control over who can access their data. But decentralized access to data is only one part of the problems associated with web privacy.</p>
-<p>Tor is an important tool providing privacy and anonymity online. The Tor network itself is only a part of what Tor is. Tor also provides privacy at the application level through the Tor Browser. The Tor Browser was designed to provide privacy while surfing the web and defend users against both network and local forensic adversaries. The same properties can be adopted by applications and services wishing to integrate the tor network in their architecture. Furthermore, onion services provide better authentication and assurance of who you are talking to. With onion services Tor can provide bi-directional anonymity by making it possible for users to hide their locations while offering various kinds of services, such as web publishing or an instant messaging server.</p>
-<p>An .onion service needs to advertise its existence in the Tor network before clients will be able to contact it. Therefore, the service randomly picks some relays, builds circuits to them, and asks them to act as introduction points by telling them its public key. An onion service lives on the Tor network and its name is its long term master identity key. This is encoded as a hostname by encoding the entire key in Base 32, including a version byte and a checksum, and then appending the string “.onion” at the end. The result is a 56-character domain name.</p>
-<p>This means that onion service operators do not need a public IP address to publish an onion service, but only it's onion service address (URI) making the protocol ideal for p2p applications.</p>
-<p>While the introduction points and others are told the onion service's identity (public key), we don't want them to learn about the onion server's location (IP address). By using a full Tor circuit, it's hard for anyone to associate an introduction point with the .onion server's IP address.
-Because .onion services are only accessible via the Tor network, users do not need hosting or a public ip address to offer some service via .onion address. This means .onion services are a gateway to a decentralized, peer-to-peer internet, where users regain control on the content they create and who they are sharing it with.</p>
-<p>Access control for an onion service is imposed at multiple points. The first stage of access control happens when downloading HS descriptors. Specifically, in order to download a descriptor, clients must know the public key of the service. Also, if optional client authorization is enabled, onion service descriptors are super-encrypted using each authorized user's identity x25519 key, to further ensure that unauthorized entities cannot decrypt it. The final level of access control happens at the server itself, which may decide to respond or not respond to the client's request depending on the contents of the request.</p>
-<p>By using the Tor Browsers (or any web browser supporting the Tor protocol) clients can interact with onion service applications following the same RESTful paradigms.  Users can still interact with applications via hyperlinks and the browser will render accessed resource representation in a similar way to how it renders the content of a website. In fact a website shared via .onion is still a website. In fact for a set of web services, the onion service protocol is just another way that they can be reached, i.e. via the Tor network. For p2p applications instead it is a way to take advantage of the flexibility, far-reach and ease of use of web technologies to create decentralized, privacy-friendly services. Furthermore because .onions can be hosted locally, on someone personal computer, we can start imaging services that are available for the time the user desire, and disappear when the .onion operator wishes to shutdown the server.</p>
-<p>There are a number of applications that are using the onion service protocol in a p2p fashion. One of this is onionshare [6] that allow user to share files or publishing a website without using a centralized server. Another is Haven [7] that transform an Android phone into a physical security device and use an onion service to check logs of the phone sensors remotely. We can envision apps allowing people to communicate between one another or developing their own social network. Hopefully more applications will be developed in the near future, creating a dynamic onion service app ecosystem and fostering a more privacy friendly decentralized web.</p>
-<p>REFERENCES:</p>
-<p>[1] Berners‐Lee, T., Cailliau, R., Groff, J.F. and Pollermann, B., 1992. World‐Wide Web: the information universe. Internet Research. <a href="https://www.emeraldgrouppublishing.com/products/backfiles/pdf/backfiles_sample_5.pdf">https://www.emeraldgrouppublishing.com/products/backfiles/pdf/backfiles_sample_5.pdf</a></p>
-<p>[2] Fielding, R.T., Taylor, R.N., Erenkrantz, J.R., Gorlick, M.M., Whitehead, J., Khare, R. and Oreizy, P., 2017, August. Reflections on the REST architectural style and” principled design of the modern web architecture”(impact paper award). In Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering (pp. 4-14). <a href="https://pdfs.semanticscholar.org/1942/68d1965a7704d1361e440c3ebf599249a005.pdf">https://pdfs.semanticscholar.org/1942/68d1965a7704d1361e440c3ebf599249a005.pdf</a></p>
-<p>[3] Robinson, D.C., Hand, J.A., Madsen, M.B. and McKelvey, K.R., 2018. The Dat Project, an open and decentralized research data tool. Scientific data, 5. <a href="https://www.nature.com/articles/sdata2018221">https://www.nature.com/articles/sdata2018221</a></p>
-<p>[4] Solove, D.J., 2004. The digital person: Technology and privacy in the information age (Vol. 1). NyU Press. <a href="https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2501&amp;context=faculty_publications">https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2501&amp;context=faculty_publications</a></p>
-<p>[5] Mansour, E., Sambra, A.V., Hawke, S., Zereba, M., Capadisli, S., Ghanem, A., Aboulnaga, A. and Berners-Lee, T., 2016, April. A demonstration of the solid platform for social web applications. In Proceedings of the 25th International Conference Companion on World Wide Web (pp. 223-226). <a href="https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf">https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf</a></p>
-<p>[6] <a href="https://onionshare.org">https://onionshare.org</a></p>
-<p>[7] <a href="https://play.google.com/store/apps/details?id=org.havenapp.main&amp;hl=en">https://play.google.com/store/apps/details?id=org.havenapp.main&amp;hl=en</a></p>
 
   </div>
 

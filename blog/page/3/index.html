@@ -43,6 +43,83 @@
     
   <div class="blog-post">
   
+    <h2><a href="../../../blog/2019-11-15-yubikey-setup/">How to setup and use yubikeys for authentication</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2019-11-15
+  </p>
+  <p>I use yubikeys to store my gpg and ssh keys.</p>
+<p>Before starting do a little bit of reading to familiarize yourself with the setup
+procedure.
+I have added a list of links at the end. These are mainly the resources that I used.</p>
+<h2>Generate a new gpg key</h2>
+<p>I have generated my keys on a qube VM without internet connection.</p>
+<pre><code>$ gpg --gen-key
+</code></pre>
+<p>Selected option 0 and moved on to create my ID associated with the key.</p>
+<p>In this step I used mostly the guide from yubico developers website [1]
+The guide goes through generating Sign (S) Authentication (A) and Encryption (E)
+keys.</p>
+<h2>Add an authentication key</h2>
+<pre><code>$ gpg --expert --edit-key 123ABC45
+</code></pre>
+<p>At this step we select another RSA key to attach to our key. In the gpg selection
+menu this corresponds to option 8.</p>
+<h2>Backup</h2>
+<p>Here is where you should backup your keys and revocation certificates. Please do
+I have personally lost yubikeys and having backups really helps.</p>
+<p>Also setup a PIN and a admin PIN for your yubikey [5]. With:</p>
+<pre><code>$ gpg --card-edit
+
+$ gpg/card&gt; admin
+</code></pre>
+<h2>Import the key to the yubikey</h2>
+<p>Finally we edit our key and add it to the keycard [1].</p>
+<pre><code>$ gpg --expert --edit-key 123ABC45
+
+$ gpg&gt; keytocard
+</code></pre>
+<p>Now your key is exported to your card and ready to be used.</p>
+<h2>Setup key to be used with ssh</h2>
+<pre><code>$ gpg2 -K --with-keygrip
+</code></pre>
+<p>This will show all your keys available with keygrip.
+Use the keygrip of your authentication key to export it to <code>sshcontrol</code></p>
+<pre><code>echo 1234567AB8CDFFF90G9H1I23JJ4K5L67M89N012O &gt; ~/.gnupg/sshcontrol
+</code></pre>
+<p>I have also added the following to my <code>~/.gnupg/gpg-agent.conf</code> [4]:</p>
+<pre><code>default-cache-ttl 600
+max-cache-ttl 7200
+enable-ssh-support
+write-env-file ~/.gpg-agent-info
+</code></pre>
+<p>And edited my <code>~/.bashrc</code> with:</p>
+<pre><code>gpg-connect-agent /bye
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+</code></pre>
+<p>You can now:</p>
+<pre><code>$ source ~/.bashrc
+$ ssh-add -l
+</code></pre>
+<p>This should list your new key.</p>
+<ul>
+<li>[1] <a href="https://developers.yubico.com/PGP/Importing_keys.html">https://developers.yubico.com/PGP/Importing_keys.html</a></li>
+<li>[2] <a href="https://zeos.ca/post/2018/gpg-yubikey5/">https://zeos.ca/post/2018/gpg-yubikey5/</a></li>
+<li>[3] <a href="https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/">https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/</a></li>
+<li>[4] <a href="https://www.isi.edu/~calvin/yubikeyssh.htm">https://www.isi.edu/~calvin/yubikeyssh.htm</a></li>
+<li>[5] <a href="https://developers.yubico.com/PGP/Card_edit.html">https://developers.yubico.com/PGP/Card_edit.html</a></li>
+</ul>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
     <h2><a href="../../../blog/2019-06-21-solid-tor-onion-services/">Using Solid with Tor .onion services. How to decentralise your online identities</a></h2>
   
   <p class="meta">

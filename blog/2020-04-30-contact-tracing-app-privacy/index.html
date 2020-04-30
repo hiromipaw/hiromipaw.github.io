@@ -1,0 +1,168 @@
+<!doctype html>
+<head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../../static/style.css">
+      <title>Welcome</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="../../static/scribbler-global.css">
+      <link rel="stylesheet" href="../../static/scribbler-landing.css">
+      <link rel="author" href="humans.txt">
+  </head>
+<body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+  <a href="/"><h1 class="logo"><span class="logo__thin"> </span></h1></a>
+  <ul class="menu">
+    <div class="menu__item toggle"><span></span></div>
+
+    
+    
+        <li class="menu__item"><a href="../../talks/"><i class="fa fa-volume-up"></i> Talks</a></li>
+    
+        <li class="menu__item"><a href="../../blog/"><i class="fa fa-quote-left"></i> Blog</a></li>
+    
+        <li class="menu__item"><a href="../../publications/"><i class="fa fa-book"></i> Pubblications</a></li>
+    
+        <li class="menu__item"><a href="../../projects/"><i class="fa fa-cogs"></i> Projects</a></li>
+    
+        <li class="menu__item"><a href="../../CV/"><i class="fa fa-file"></i> CV</a></li>
+    
+
+  </ul>
+</nav>
+
+    <div class="wrapper">
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title"></h3>
+          <p>Perche' preoccuparsi per la privacy in tempo di pandemia</p>
+<h2>Come funziona una app di contact tracing?</h2>
+<p>Una app di contact tracing e' uno strumento di prevenzione che se utilizzato insieme
+agli altri metodi di cui disponiamo per fare fronte alla pandemia del covid, ovvero
+test massivo e profilassi di protezione (igiene, mascherine, distanziamento sociale),
+puo' aiutare a rompere la catena dei contagi.</p>
+<p>Per quanto sappiamo fino ad ora le app europee verrano sviluppate sulle linee
+guida di protocolli decentralizzati, come il <a href="https://github.com/DP-3T/">DP-3T</a>.</p>
+<p>La app funziona (anche se forse e' meglio dire funzionera') piu' o meno cosi':</p>
+<ul>
+<li><p>Un cittadino viene diagnosticado come covid-19 positivo dal suo medico di famiglia,
+o dalla asl, o in ospedale.</p>
+</li>
+<li><p>Il personale sanitario e il cittadino configurano la positivita' sulla app che
+comunica questa informazione ad un server centrale. L'identita' del cittadino ne'
+dei suoi contatti non e' rivelata, ma solo degli identificativi anonimi.</p>
+</li>
+<li><p>Questi identificativi vengono inviati a tutte le app, tecnicamente si dice che
+vengono trasmessi in broadcast.</p>
+</li>
+<li><p>Le singole app faranno la verifica se sono stati in contatto con l'individuo
+positivo, verificando se gli identificativi che ricevono sono contenuti tra quelli
+delle persone con cui il cellulare e' stato in contatto.</p>
+</li>
+</ul>
+<p>Le funzioni fondamentali di una app di contact tracing possono essere riassunte
+nelle due seguenti:</p>
+<ul>
+<li>Rivelare le interazioni sociali in caso di contatto con un individuo positivo</li>
+<li>Poter calcolare un fattore di rischio per gli utenti</li>
+</ul>
+<p>Le funzioni che preoccupano chi si occupa di privacy, invece sono le seguenti:</p>
+<ul>
+<li><p>Il grafo sociale degli individui puo' essere ricompilato osservando i dati
+scambiati dall'applicazione</p>
+</li>
+<li><p>La condizione di positivita' di un individuo puo' essere rivelata.</p>
+</li>
+<li><p>Gli spostamenti e le coordinate geografiche degli utenti dell'applicazione possono
+essere calcolati o ricavati dai dati scambiati dall'applicazione.</p>
+</li>
+</ul>
+<h2>Che rischi presuppone creare e utilizzare una app di contact tracing?</h2>
+<h3>Protezione dei dati</h3>
+<p>Perche' una app di contact tracing non sia un rischio per la popolazione e' importante
+che vengano rispettati alcuni criteri di protezione dei dati raccolti, tra cui:</p>
+<h4>Minimizzazione dei dati</h4>
+<p>Nessuna entita' deve essere in grado di poter osservare o ricavare il grafo sociale
+degli utenti della app. Neanche in forma anonimizzata.</p>
+<p>Questo aspetto e' molto importante perche' il grafo sociale di una popolazione o
+semplicemente di un gruppo ristretto di persone puo' rendere pubbliche informazioni
+altrimenti confidenziali.</p>
+<h4>Le informazioni ricevuti dagli utenti e raccolte dal sistema devono essere</h4>
+<p>solamente quelle essenziali.</p>
+<p>Le informazioni raccolte sugli utenti che decideranno di installare la app devono
+essere solo quelle necessarie a ridurre il rischio di diffusione dell'empidemia.</p>
+<h4>Gli individui negativi devono essere protetti</h4>
+<p>Il sistema non puo' essere utilizzato come uno strumento di sorveglianza della
+popolazione. Nessuna informazione sugli utenti negativi deve essere raccolta dal
+sistema.</p>
+<h4>I dati devono essere distrutti</h4>
+<p>Il sistema deve essere in grado di dimenticare i dati raccolti alla fine dell'empidemia.
+Se non ci saranno pazienti infetti che trasmettono dati riguardo la loro positivita',
+e se in generale le persone smetteranno usare la applicazione, i dati dovranno
+essere distrutti.</p>
+<h3>Sicurezza</h3>
+<p>Perche' una app di contact tracing sia utile per il rischio epidemiologico si stima
+che debba essere utilizzata da circa il 50%-70% della popolazione.</p>
+<p>Per avere un'idea di questo dato fondamentale, pensiamo che il 60% delle persone
+che hanno un cellulare, hanno installato whatsapp.</p>
+<p>Inoltre una app che venga utilizzata da un numero cosi' elevato di persone, e che
+potenzialmente contiene dei dati sensibili e riservati sugli utenti, diventa
+necessariamente un target. Esiste un mercato di vulnerabilita' di sistemi informatici
+a cui accedono agenzie governative e non per le quali questi dati possono rappresentare
+un valore.</p>
+<h4>Rischi</h4>
+<h5>Un avversario modifica la app per raccogliere ulteriori informazioni sugli utenti</h5>
+<p>In questo scenario un possibile avversario puo' collezionare gli identificativi
+anonimi generati dai cellulari con cui e' stato in contatto per identificare degli
+individui.</p>
+<h5>Un avversario implementa un'antenna per intercettare le connessioni bluetooth</h5>
+<p>dei cellulari in una zona circoscritta.</p>
+<p>Questo scenario e' simile al precedente. In questo caso pero l'avversario utilizza
+dei sistemi per poter intercettare i segnali bluetooth dei cellulari nelle sue
+vicinanze e poter identificare gli utenti della app.</p>
+<h5>Un avversario riesce ad impersonificare le notifiche della app e comunicare</h5>
+<p>degli status di esposizione falsi agli utenti</p>
+<p>Questo scenario e' simile alle campagne di fishing delle banche. Un avversario crea
+un messaggio simile alla notifica che invia la app e comunica ad un numero elevato
+di utenti di essere stati in contatto con un positivo.</p>
+<p>L'effetto di questo attacco e' quello di generare panico o di ridurre la fiducia
+della popolazione nella app (discoragiandone l'utilizzo).</p>
+<h4>Perche' e' importante parlare di privacy</h4>
+<p>Identificare un individuo positivo puo' rappresentare un rischio per la sicurezza
+fisica di quella persona.</p>
+<p>Alcune persone possono reaggire con aggressivita' alla notizia di essere stati in
+contatto con una persona infetta.</p>
+<p>Identificare il grafo sociale di gruppi di persone e' un'informazione molto riservata
+che puo' essere utilizzata per vari scopi.</p>
+<p>Immaginate che sia possibile accedere alle informazioni su come, quando e quanto spesso
+certi esponenti di gruppi di politici si incontrano?</p>
+<p>Immaginate ceh sia possibile sapere che i gruppi direttivi di determinate aziende
+stanno avendo delle riunioni con una certa frequenza?</p>
+<p>Inoltre e' importante sottolineare che la tecnologia non e' neutra, contiene le
+influenze politiche del momento in cui viene creata. Le architetture tecnologiche
+che definiamo in questo momento straordinario determinaranno in parte i nostri
+dirtitti futuri.</p>
+<p>REFERENCES</p>
+<p>[1] Le contact tracing app rispettano la nostra privacy? <a href="https://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/">https://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/</a></p>
+
+        </section>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </article>
+    </div>
+
+    <footer class="footer">
+
+   <a href="https://twitter.com/nopressure/" target="_blank" class="link link--light"><i class="fa fa-twitter"></i></a>
+   <a href="https://www.linkedin.com/in/silviapuglisi" target="_blank" class="link link--light"><i class="fa fa-linkedin"></i></a>
+   <a href="https://github.com/hiromipaw" target="_blank" class="link link--light"><i class="fa fa-github"></i></a>
+   <a href="https://scholar.google.es/citations?user=B8_Ts38AAAAJ&hl=en" target="_blank" class="link link--light"><i class="fa fa-graduation-cap"></i></a>
+   <a href="mailto:me@hiro7.eu" target="_blank" class="link link--light"><i class="fa fa-envelope"></i></a>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="../../static/scribbler.js"></script>
+</body>

@@ -43,6 +43,48 @@
     
   <div class="blog-post">
   
+    <h2><a href="../../../blog/2020-03-25-decentralization-meets-anonymity/">Decentralization meets anonymity. Using the onion service protocol to build p2p applications.</a></h2>
+  
+  <p class="meta">
+    written by
+    
+      Silvia Puglisi [Hiro]
+    
+    on 2020-03-25
+  </p>
+  <p>The architecture of the web is based on the client/server paradigm where the Hypertext Transfer Protocol (HTTP) occupies a predominant role [1]. HTTP was designed to transfer resource representations, to abstract over lower-layered transport protocols, such as TCP or UDP, and to act as the primary application-level protocol.</p>
+<p>Representational State Transfer (REST) architectures are a generalization of the Web based on the HTTP protocol. In this sense the World Wide Web represent an Internet-scale implementation of the RESTful architectural style.</p>
+<p>RESTful architecture identify three main foundation blocks:
+    – The identification mechanism, or a Uniform Resource Identifier (URI)
+    – The communication process between agents
+    – The representation of data being exchanged</p>
+<p>We used to think of the web as hypertext documents linked to one another, but nowadays web documents are more like data objects linked to other objects, or in other words: hyperdata. The constraints imposed by the RESTful architectural style make the Web's architecture particularly malleable. The components making the web are continually changing and providing new capabilities, adding new resources in the form of novel websites and web services, supporting new representations for resources, etc [2].</p>
+<p>The web architecture is hence inherently decentralized, but the data shared on the Internet and the services used to store this data are completely centralized [3]. These means that access to those data is controlled by the service owner, which is often different from the entity that produced the data. This approach might be considered extremely pragmatic and in most cases also cheaper and easier to manage than in-house data storage services.
+This process of centralizing data in a handful of location has been described as dataveillance [4], or a form of surveillance using the massive collection and storage of vast quantities of personal data. While users lose control over their data, they also lose control over their privacy.</p>
+<p>Personal data store approaches have been proposed to over come these issues [5] and allow users to regain control over who can access their data. But decentralized access to data is only one part of the problems associated with web privacy.</p>
+<p>Tor is an important tool providing privacy and anonymity online. The Tor network itself is only a part of what Tor is. Tor also provides privacy at the application level through the Tor Browser. The Tor Browser was designed to provide privacy while surfing the web and defend users against both network and local forensic adversaries. The same properties can be adopted by applications and services wishing to integrate the tor network in their architecture. Furthermore, onion services provide better authentication and assurance of who you are talking to. With onion services Tor can provide bi-directional anonymity by making it possible for users to hide their locations while offering various kinds of services, such as web publishing or an instant messaging server.</p>
+<p>An .onion service needs to advertise its existence in the Tor network before clients will be able to contact it. Therefore, the service randomly picks some relays, builds circuits to them, and asks them to act as introduction points by telling them its public key. An onion service lives on the Tor network and its name is its long term master identity key. This is encoded as a hostname by encoding the entire key in Base 32, including a version byte and a checksum, and then appending the string “.onion” at the end. The result is a 56-character domain name.</p>
+<p>This means that onion service operators do not need a public IP address to publish an onion service, but only it's onion service address (URI) making the protocol ideal for p2p applications.</p>
+<p>While the introduction points and others are told the onion service's identity (public key), we don't want them to learn about the onion server's location (IP address). By using a full Tor circuit, it's hard for anyone to associate an introduction point with the .onion server's IP address.
+Because .onion services are only accessible via the Tor network, users do not need hosting or a public ip address to offer some service via .onion address. This means .onion services are a gateway to a decentralized, peer-to-peer internet, where users regain control on the content they create and who they are sharing it with.</p>
+<p>Access control for an onion service is imposed at multiple points. The first stage of access control happens when downloading HS descriptors. Specifically, in order to download a descriptor, clients must know the public key of the service. Also, if optional client authorization is enabled, onion service descriptors are super-encrypted using each authorized user's identity x25519 key, to further ensure that unauthorized entities cannot decrypt it. The final level of access control happens at the server itself, which may decide to respond or not respond to the client's request depending on the contents of the request.</p>
+<p>By using the Tor Browsers (or any web browser supporting the Tor protocol) clients can interact with onion service applications following the same RESTful paradigms.  Users can still interact with applications via hyperlinks and the browser will render accessed resource representation in a similar way to how it renders the content of a website. In fact a website shared via .onion is still a website. In fact for a set of web services, the onion service protocol is just another way that they can be reached, i.e. via the Tor network. For p2p applications instead it is a way to take advantage of the flexibility, far-reach and ease of use of web technologies to create decentralized, privacy-friendly services. Furthermore because .onions can be hosted locally, on someone personal computer, we can start imaging services that are available for the time the user desire, and disappear when the .onion operator wishes to shutdown the server.</p>
+<p>There are a number of applications that are using the onion service protocol in a p2p fashion. One of this is onionshare [6] that allow user to share files or publishing a website without using a centralized server. Another is Haven [7] that transform an Android phone into a physical security device and use an onion service to check logs of the phone sensors remotely. We can envision apps allowing people to communicate between one another or developing their own social network. Hopefully more applications will be developed in the near future, creating a dynamic onion service app ecosystem and fostering a more privacy friendly decentralized web.</p>
+<p>REFERENCES:</p>
+<p>[1] Berners‐Lee, T., Cailliau, R., Groff, J.F. and Pollermann, B., 1992. World‐Wide Web: the information universe. Internet Research. <a href="https://www.emeraldgrouppublishing.com/products/backfiles/pdf/backfiles_sample_5.pdf">https://www.emeraldgrouppublishing.com/products/backfiles/pdf/backfiles_sample_5.pdf</a></p>
+<p>[2] Fielding, R.T., Taylor, R.N., Erenkrantz, J.R., Gorlick, M.M., Whitehead, J., Khare, R. and Oreizy, P., 2017, August. Reflections on the REST architectural style and” principled design of the modern web architecture”(impact paper award). In Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering (pp. 4-14). <a href="https://pdfs.semanticscholar.org/1942/68d1965a7704d1361e440c3ebf599249a005.pdf">https://pdfs.semanticscholar.org/1942/68d1965a7704d1361e440c3ebf599249a005.pdf</a></p>
+<p>[3] Robinson, D.C., Hand, J.A., Madsen, M.B. and McKelvey, K.R., 2018. The Dat Project, an open and decentralized research data tool. Scientific data, 5. <a href="https://www.nature.com/articles/sdata2018221">https://www.nature.com/articles/sdata2018221</a></p>
+<p>[4] Solove, D.J., 2004. The digital person: Technology and privacy in the information age (Vol. 1). NyU Press. <a href="https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2501&amp;context=faculty_publications">https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2501&amp;context=faculty_publications</a></p>
+<p>[5] Mansour, E., Sambra, A.V., Hawke, S., Zereba, M., Capadisli, S., Ghanem, A., Aboulnaga, A. and Berners-Lee, T., 2016, April. A demonstration of the solid platform for social web applications. In Proceedings of the 25th International Conference Companion on World Wide Web (pp. 223-226). <a href="https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf">https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf</a></p>
+<p>[6] <a href="https://onionshare.org">https://onionshare.org</a></p>
+<p>[7] <a href="https://play.google.com/store/apps/details?id=org.havenapp.main&amp;hl=en">https://play.google.com/store/apps/details?id=org.havenapp.main&amp;hl=en</a></p>
+
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
     <h2><a href="../../../blog/2020-03-04-censorship/">Internet Censorship</a></h2>
   
   <p class="meta">
@@ -147,83 +189,6 @@ legitimate onion service ecosystem.</p>
 <p>[3] Krithika, P.R. and Palit, D., 2013. Participatory business models for off-grid electrification. In Rural electrification through decentralised off-grid systems in developing countries (pp. 187-225). Springer, London. <a href="https://www.researchgate.net/profile/Debajit_Palit/publication/261946063_Participatory_Business_Models_for_Off-Grid_Electrification/links/53e993090cf2fb1b9b671622.pdf">https://www.researchgate.net/profile/Debajit_Palit/publication/261946063_Participatory_Business_Models_for_Off-Grid_Electrification/links/53e993090cf2fb1b9b671622.pdf</a></p>
 <p>[4] <a href="https://applied-privacy.net/membership/">https://applied-privacy.net/membership/</a></p>
 <p>[5] <a href="https://enn.lu/member">https://enn.lu/member</a></p>
-
-  </div>
-
-  
-    
-  <div class="blog-post">
-  
-    <h2><a href="../../../blog/2019-11-15-yubikey-setup/">How to setup and use yubikeys for authentication</a></h2>
-  
-  <p class="meta">
-    written by
-    
-      Silvia Puglisi [Hiro]
-    
-    on 2019-11-15
-  </p>
-  <p>I use yubikeys to store my gpg and ssh keys.</p>
-<p>Before starting do a little bit of reading to familiarize yourself with the setup
-procedure.
-I have added a list of links at the end. These are mainly the resources that I used.</p>
-<h2>Generate a new gpg key</h2>
-<p>I have generated my keys on a qube VM without internet connection.</p>
-<pre><code>$ gpg --gen-key
-</code></pre>
-<p>Selected option 0 and moved on to create my ID associated with the key.</p>
-<p>In this step I used mostly the guide from yubico developers website [1]
-The guide goes through generating Sign (S) Authentication (A) and Encryption (E)
-keys.</p>
-<h2>Add an authentication key</h2>
-<pre><code>$ gpg --expert --edit-key 123ABC45
-</code></pre>
-<p>At this step we select another RSA key to attach to our key. In the gpg selection
-menu this corresponds to option 8.</p>
-<h2>Backup</h2>
-<p>Here is where you should backup your keys and revocation certificates. Please do
-I have personally lost yubikeys and having backups really helps.</p>
-<p>Also setup a PIN and a admin PIN for your yubikey [5]. With:</p>
-<pre><code>$ gpg --card-edit
-
-$ gpg/card&gt; admin
-</code></pre>
-<h2>Import the key to the yubikey</h2>
-<p>Finally we edit our key and add it to the keycard [1].</p>
-<pre><code>$ gpg --expert --edit-key 123ABC45
-
-$ gpg&gt; keytocard
-</code></pre>
-<p>Now your key is exported to your card and ready to be used.</p>
-<h2>Setup key to be used with ssh</h2>
-<pre><code>$ gpg2 -K --with-keygrip
-</code></pre>
-<p>This will show all your keys available with keygrip.
-Use the keygrip of your authentication key to export it to <code>sshcontrol</code></p>
-<pre><code>echo 1234567AB8CDFFF90G9H1I23JJ4K5L67M89N012O &gt; ~/.gnupg/sshcontrol
-</code></pre>
-<p>I have also added the following to my <code>~/.gnupg/gpg-agent.conf</code> [4]:</p>
-<pre><code>default-cache-ttl 600
-max-cache-ttl 7200
-enable-ssh-support
-write-env-file ~/.gpg-agent-info
-</code></pre>
-<p>And edited my <code>~/.bashrc</code> with:</p>
-<pre><code>gpg-connect-agent /bye
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-</code></pre>
-<p>You can now:</p>
-<pre><code>$ source ~/.bashrc
-$ ssh-add -l
-</code></pre>
-<p>This should list your new key.</p>
-<ul>
-<li>[1] <a href="https://developers.yubico.com/PGP/Importing_keys.html">https://developers.yubico.com/PGP/Importing_keys.html</a></li>
-<li>[2] <a href="https://zeos.ca/post/2018/gpg-yubikey5/">https://zeos.ca/post/2018/gpg-yubikey5/</a></li>
-<li>[3] <a href="https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/">https://www.esev.com/blog/post/2015-01-pgp-ssh-key-on-yubikey-neo/</a></li>
-<li>[4] <a href="https://www.isi.edu/~calvin/yubikeyssh.htm">https://www.isi.edu/~calvin/yubikeyssh.htm</a></li>
-<li>[5] <a href="https://developers.yubico.com/PGP/Card_edit.html">https://developers.yubico.com/PGP/Card_edit.html</a></li>
-</ul>
 
   </div>
 
