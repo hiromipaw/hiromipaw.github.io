@@ -115,15 +115,13 @@ In questo scenario un possibile avversario puo' collezionare gli identificativi
 anonimi generati dai cellulari con cui e' stato in contatto per identificare degli
 individui.
 
-##### Un avversario implementa un'antenna per intercettare le connessioni bluetooth
-dei cellulari in una zona circoscritta.
+##### Un avversario implementa un'antenna per intercettare le connessioni bluetooth dei cellulari in una zona circoscritta.
 
 Questo scenario e' simile al precedente. In questo caso pero l'avversario utilizza
 dei sistemi per poter intercettare i segnali bluetooth dei cellulari nelle sue
 vicinanze e poter identificare gli utenti della app.
 
-##### Un avversario riesce ad impersonificare le notifiche della app e comunicare
-degli status di esposizione falsi agli utenti
+##### Un avversario riesce ad impersonificare le notifiche della app e comunicare degli status di esposizione falsi agli utenti
 
 Questo scenario e' simile alle campagne di fishing delle banche. Un avversario crea
 un messaggio simile alla notifica che invia la app e comunica ad un numero elevato
