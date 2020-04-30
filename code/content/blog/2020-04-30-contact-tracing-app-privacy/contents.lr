@@ -1,0 +1,158 @@
+_template: page.html
+---
+pub_date: 2020-04-30
+---
+author: Silvia Puglisi [Hiro]
+---
+title:
+---
+body: Perche' preoccuparsi per la privacy in tempo di pandemia
+
+## Come funziona una app di contact tracing?
+
+Una app di contact tracing e' uno strumento di prevenzione che se utilizzato insieme
+agli altri metodi di cui disponiamo per fare fronte alla pandemia del covid, ovvero
+test massivo e profilassi di protezione (igiene, mascherine, distanziamento sociale),
+puo' aiutare a rompere la catena dei contagi.
+
+Per quanto sappiamo fino ad ora le app europee verrano sviluppate sulle linee
+guida di protocolli decentralizzati, come il [DP-3T](https://github.com/DP-3T/).
+
+La app funziona (anche se forse e' meglio dire funzionera') piu' o meno cosi':
+
+- Un cittadino viene diagnosticado come covid-19 positivo dal suo medico di famiglia,
+o dalla asl, o in ospedale.
+
+- Il personale sanitario e il cittadino configurano la positivita' sulla app che
+comunica questa informazione ad un server centrale. L'identita' del cittadino ne'
+dei suoi contatti non e' rivelata, ma solo degli identificativi anonimi.
+
+- Questi identificativi vengono inviati a tutte le app, tecnicamente si dice che
+vengono trasmessi in broadcast.
+
+- Le singole app faranno la verifica se sono stati in contatto con l'individuo
+positivo, verificando se gli identificativi che ricevono sono contenuti tra quelli
+delle persone con cui il cellulare e' stato in contatto.
+
+Le funzioni fondamentali di una app di contact tracing possono essere riassunte
+nelle due seguenti:
+
+- Rivelare le interazioni sociali in caso di contatto con un individuo positivo
+- Poter calcolare un fattore di rischio per gli utenti
+
+Le funzioni che preoccupano chi si occupa di privacy, invece sono le seguenti:
+
+- Il grafo sociale degli individui puo' essere ricompilato osservando i dati
+scambiati dall'applicazione
+
+- La condizione di positivita' di un individuo puo' essere rivelata.
+
+- Gli spostamenti e le coordinate geografiche degli utenti dell'applicazione possono
+essere calcolati o ricavati dai dati scambiati dall'applicazione.
+
+
+## Che rischi presuppone creare e utilizzare una app di contact tracing?
+
+### Protezione dei dati
+
+Perche' una app di contact tracing non sia un rischio per la popolazione e' importante
+che vengano rispettati alcuni criteri di protezione dei dati raccolti, tra cui:
+
+#### Minimizzazione dei dati
+
+Nessuna entita' deve essere in grado di poter osservare o ricavare il grafo sociale
+degli utenti della app. Neanche in forma anonimizzata.
+
+Questo aspetto e' molto importante perche' il grafo sociale di una popolazione o
+semplicemente di un gruppo ristretto di persone puo' rendere pubbliche informazioni
+altrimenti confidenziali.
+
+#### Le informazioni ricevuti dagli utenti e raccolte dal sistema devono essere
+solamente quelle essenziali.
+
+Le informazioni raccolte sugli utenti che decideranno di installare la app devono
+essere solo quelle necessarie a ridurre il rischio di diffusione dell'empidemia.
+
+#### Gli individui negativi devono essere protetti
+
+Il sistema non puo' essere utilizzato come uno strumento di sorveglianza della
+popolazione. Nessuna informazione sugli utenti negativi deve essere raccolta dal
+sistema.
+
+#### I dati devono essere distrutti
+
+Il sistema deve essere in grado di dimenticare i dati raccolti alla fine dell'empidemia.
+Se non ci saranno pazienti infetti che trasmettono dati riguardo la loro positivita',
+e se in generale le persone smetteranno usare la applicazione, i dati dovranno
+essere distrutti.
+
+### Sicurezza
+
+Perche' una app di contact tracing sia utile per il rischio epidemiologico si stima
+che debba essere utilizzata da circa il 50%-70% della popolazione.
+
+Per avere un'idea di questo dato fondamentale, pensiamo che il 60% delle persone
+che hanno un cellulare, hanno installato whatsapp.
+
+Inoltre una app che venga utilizzata da un numero cosi' elevato di persone, e che
+potenzialmente contiene dei dati sensibili e riservati sugli utenti, diventa
+necessariamente un target. Esiste un mercato di vulnerabilita' di sistemi informatici
+a cui accedono agenzie governative e non per le quali questi dati possono rappresentare
+un valore.
+
+#### Rischi
+
+##### Un avversario modifica la app per raccogliere ulteriori informazioni sugli utenti
+
+In questo scenario un possibile avversario puo' collezionare gli identificativi
+anonimi generati dai cellulari con cui e' stato in contatto per identificare degli
+individui.
+
+##### Un avversario implementa un'antenna per intercettare le connessioni bluetooth
+dei cellulari in una zona circoscritta.
+
+Questo scenario e' simile al precedente. In questo caso pero l'avversario utilizza
+dei sistemi per poter intercettare i segnali bluetooth dei cellulari nelle sue
+vicinanze e poter identificare gli utenti della app.
+
+##### Un avversario riesce ad impersonificare le notifiche della app e comunicare
+degli status di esposizione falsi agli utenti
+
+Questo scenario e' simile alle campagne di fishing delle banche. Un avversario crea
+un messaggio simile alla notifica che invia la app e comunica ad un numero elevato
+di utenti di essere stati in contatto con un positivo.
+
+L'effetto di questo attacco e' quello di generare panico o di ridurre la fiducia
+della popolazione nella app (discoragiandone l'utilizzo).
+
+#### Perche' e' importante parlare di privacy
+
+Identificare un individuo positivo puo' rappresentare un rischio per la sicurezza
+fisica di quella persona.
+
+Alcune persone possono reaggire con aggressivita' alla notizia di essere stati in
+contatto con una persona infetta.
+
+Identificare il grafo sociale di gruppi di persone e' un'informazione molto riservata
+che puo' essere utilizzata per vari scopi.
+
+Immaginate che sia possibile accedere alle informazioni su come, quando e quanto spesso
+certi esponenti di gruppi di politici si incontrano?
+
+Immaginate ceh sia possibile sapere che i gruppi direttivi di determinate aziende
+stanno avendo delle riunioni con una certa frequenza?
+
+Inoltre e' importante sottolineare che la tecnologia non e' neutra, contiene le
+influenze politiche del momento in cui viene creata. Le architetture tecnologiche
+che definiamo in questo momento straordinario determinaranno in parte i nostri
+dirtitti futuri.
+
+
+
+
+REFERENCES
+
+[1] Le contact tracing app rispettano la nostra privacy? https://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/
+
+---
+_discoverable: yes
