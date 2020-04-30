@@ -8,6 +8,12 @@ title: Perche' preoccuparsi per la privacy in tempo di pandemia
 ---
 body:
 
+Perche preoccuparsi di privacy in tempo di pandemia?
+
+Ne abbiamo discusso in questo webminar: [Le contact tracing app rispettano la nostra privacy?](ttps://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/) [1]
+
+Cerco di aggiungere un po' di contesto al mio intervento in queste note.
+
 ## Come funziona una app di contact tracing?
 
 Una app di contact tracing e' uno strumento di prevenzione che se utilizzato insieme
@@ -16,7 +22,7 @@ test massivo e profilassi di protezione (igiene, mascherine, distanziamento soci
 puo' aiutare a rompere la catena dei contagi.
 
 Per quanto sappiamo fino ad ora le app europee verrano sviluppate sulle linee
-guida di protocolli decentralizzati, come il [DP-3T](https://github.com/DP-3T/).
+guida di protocolli decentralizzati, come il [DP-3T](https://github.com/DP-3T/) [2].
 
 La app funziona (anche se forse e' meglio dire funzionera') piu' o meno cosi':
 
@@ -150,10 +156,10 @@ dirtitti futuri.
 
 
 
-
 REFERENCES
 
 [1] Le contact tracing app rispettano la nostra privacy? https://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/
+[2] Decentralized Privacy-Preserving Proximity Tracing https://github.com/DP-3T/
 
 ---
 _discoverable: yes
