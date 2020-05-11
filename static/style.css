@@ -143,23 +143,58 @@ body {
     margin-right: 5rem
 }
 
+
+
 @media(min-width:80rem) {
     .navigation .navigation-list {
         margin-right: 0
     }
 }
 
-.navigation .navigation-item {
-    margin-bottom: 0;
-    margin-left: 2.5rem;
-    position: relative
-}
+@media(max-width: 1400px) {
 
-.navigation .img {
-    fill: #e53935;
-    height: 2rem;
-    position: relative;
-    top: .3rem
+  .navigation {
+      background: #f4f5f6;
+      border-bottom: .1rem solid #d1d1d1;
+      display: block;
+      height: 6.7rem;
+      left: 0;
+      max-width: 100%;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1
+  }
+
+  .navigation-title img {
+    height: 5rem;
+    border-radius: 50%;
+  }
+
+  .navigation .container {
+      padding-bottom: 0;
+      padding-top: 0
+  }
+
+  .navigation .navigation-list {
+      float: right;
+      list-style: none;
+      margin-right: 5rem
+  }
+
+  .navigation .navigation-item {
+      float: left;
+      margin-left: 2.5rem;
+      position: relative
+  }
+
+  .navigation .img {
+      fill: #e53935;
+      height: 2rem;
+      position: relative;
+      top: .3rem
+  }
 }
 
 .navigation .navigation-title,
