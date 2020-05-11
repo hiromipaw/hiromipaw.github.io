@@ -1,17 +1,15 @@
 {% include 'header.html' %}
 <body>
-    <div class="doc__bg"></div>
-    {% include 'nav.html' %}
+  <main class="wrapper">
+      {% include 'nav.html' %}
 
-    <div class="wrapper">
-      <article class="doc__content">
-        <section class="js-section">
-          <h3 class="section__title">{{ this.title }}</h3>
-          {{ this.body }}
-        </section>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      </article>
-    </div>
+      <section class="container">
+        <article>
+            <h3>{{ this.title }}</h3>
+            {{ this.body }}
+        </article>
+      </section>
 
-    {% include 'footer.html' %}
+      {% include 'footer.html' %}
+    </main>
 </body>

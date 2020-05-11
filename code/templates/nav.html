@@ -1,12 +1,14 @@
-<nav class="header">
-  <a href="/"><h1 class="logo"><span class="logo__thin"> </span></h1></a>
-  <ul class="menu">
-    <div class="menu__item toggle"><span></span></div>
+<nav class="navigation">
+	<section class="container">
+		<a class="navigation-title" href="/">
+      <img src="{{ '/static/profile.png'|url }}" />
+    </a>
+    <ul class="navigation-list">
 
-    {% set s = site.query('/') %}
-    {% for item in s %}
-        <li class="menu__item"><a href="{{ item.path|url }}"><i class="fa fa-{{ item.icon }}"></i> {{ item.title }}</a></li>
-    {% endfor %}
-
-  </ul>
+      {% set s = site.query('/') %}
+      {% for item in s %}
+          <li class="navigation-item"><a class="navigation-link" href="{{ item.path|url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
 </nav>

@@ -3,53 +3,46 @@
       <meta charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./static/milligram.min.css">
+      <link rel="stylesheet" href="./static/normalize.css">
       <link rel="stylesheet" href="./static/style.css">
+
       <title>Welcome</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
-      <link rel="stylesheet" href="./static/scribbler-global.css">
-      <link rel="stylesheet" href="./static/scribbler-landing.css">
       <link rel="author" href="humans.txt">
-  </head>
+</head>
 <body>
-    <nav>
-  <a href="/"><div class="logo"></div></a>
-  <ul class="menu">
-    <div class="menu__item toggle"><span></span></div>
+  <main class="wrapper">
+    <nav class="navigation">
+	<section class="container">
+		<a class="navigation-title" href="/">
+      <img src="./static/profile.png" />
+    </a>
+    <ul class="navigation-list">
 
-    
-    
-        <li class="menu__item"><a href="./talks/"><i class="fa fa-volume-up"></i>Talks</a></li>
-    
-        <li class="menu__item"><a href="./blog/"><i class="fa fa-quote-left"></i>Blog</a></li>
-    
-        <li class="menu__item"><a href="./publications/"><i class="fa fa-book"></i>Pubblications</a></li>
-    
-        <li class="menu__item"><a href="./projects/"><i class="fa fa-cogs"></i>Projects</a></li>
-    
-        <li class="menu__item"><a href="./CV/"><i class="fa fa-file"></i>CV</a></li>
-    
-
-  </ul>
+      
+      
+          <li class="navigation-item"><a class="navigation-link" href="./talks/">Talks</a></li>
+      
+          <li class="navigation-item"><a class="navigation-link" href="./blog/">Blog</a></li>
+      
+          <li class="navigation-item"><a class="navigation-link" href="./publications/">Pubblications</a></li>
+      
+          <li class="navigation-item"><a class="navigation-link" href="./projects/">Projects</a></li>
+      
+          <li class="navigation-item"><a class="navigation-link" href="./CV/">CV</a></li>
+      
+    </ul>
+  </section>
 </nav>
-    <div class="hero">
-  <h1 class="hero__title">Hello World</h1>
-  <p class="hero__description">Silvia Puglisi [Hiro]</p>
-</div>
-<div class="hero__terminal">
-  <pre>
-    <!-- Place your demo code here -->
-    <code class="shell-session demo">hyperyolo ~ $ </code>
-  </pre>
-</div>
-    <div class="wrapper">
-      <div class="installation">
-        <h3 class="section__title">About</h3>
-      </div>
-      <div class="feature">
-        <div class="wrapper">
-            <p>I am a Systems Engineer based in Barcelona, EU.</p>
+    <section class="container">
+  <p class="description">Silvia Puglisi [Hiro]</p>
+  <h5>Contacts:</h5>
+  <p>Email: <a href="mailto:hey@sifr.tech">hey at sifr dot tech</a></p>
+  <p>Twitter: <a href="https://twitter.com/nopressure/" target="_blank">@nopressure</a></p>
+</section>
+    <section class="container">
+      <h3>About</h3>
+      <p>I am a Systems Engineer based in Barcelona, EU.</p>
 <p>I am currently working at torproject.org and I am also part of the Information Security Group in the Department of Telematics Engineering at Universitat Politècnica de Catalunya (UPC) where I got my Ph.D. I research topics in the fields of privacy and anonymity of users in online communities and social networks.</p>
 <p>My current research interest are focused towards understanding what kind of information are publicly accessible online as result of users activities on social networks. I am also interested in RESTful architecture and application of hypermedia to Privacy and Security.</p>
 <p>This website is available under different domains that I have used through the years.</p>
@@ -73,20 +66,17 @@ French and Italian from the pre-islamic term sifr = zero - in Arabic صفر (see
 <p>C6DE1978 28721810 F6FF21CC E91A4B26 2D468808</p>
 <p>I like: surfing, swimming, skiing, mountainering and hiking. I have got two dog and two cats. If we were still in the '90s I would have displayed here my geek code.</p>
 
-        </div>
-      </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </div>
+    </section>
 
-<footer class="footer">
-
-   <a href="https://twitter.com/nopressure/" target="_blank" class="link link--light"><i class="fa fa-twitter"></i></a>
-   <a href="https://www.linkedin.com/in/silviapuglisi" target="_blank" class="link link--light"><i class="fa fa-linkedin"></i></a>
-   <a href="https://github.com/hiromipaw" target="_blank" class="link link--light"><i class="fa fa-github"></i></a>
-   <a href="https://scholar.google.es/citations?user=B8_Ts38AAAAJ&hl=en" target="_blank" class="link link--light"><i class="fa fa-graduation-cap"></i></a>
-   <a href="mailto:me@hiro7.eu" target="_blank" class="link link--light"><i class="fa fa-envelope"></i></a>
+    <footer class="footer">
+	<section class="container">
+		Links:
+     <a href="https://twitter.com/nopressure/" target="_blank">@nopressure</a> |
+     <a href="https://www.linkedin.com/in/silviapuglisi" target="_blank">LinkedIn</a> |
+     <a href="https://github.com/hiromipaw" target="_blank">Github</a> |
+     <a href="https://scholar.google.es/citations?user=B8_Ts38AAAAJ&hl=en" target="_blank">Scholar</a> |
+     <a href="mailto:hey@sifr.tech" target="_blank">Email</a> |
+   </section>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script src="./static/scribbler.js"></script>
+  </main>
 </body>

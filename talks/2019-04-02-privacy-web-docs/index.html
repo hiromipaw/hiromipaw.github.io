@@ -3,43 +3,42 @@
       <meta charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../../static/milligram.min.css">
+      <link rel="stylesheet" href="../../static/normalize.css">
       <link rel="stylesheet" href="../../static/style.css">
+
       <title>Welcome</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
-      <link rel="stylesheet" href="../../static/scribbler-global.css">
-      <link rel="stylesheet" href="../../static/scribbler-landing.css">
       <link rel="author" href="humans.txt">
-  </head>
+</head>
 <body>
-    <div class="doc__bg"></div>
-    <nav class="header">
-  <a href="/"><h1 class="logo"><span class="logo__thin"> </span></h1></a>
-  <ul class="menu">
-    <div class="menu__item toggle"><span></span></div>
+  <main class="wrapper">
+      <nav class="navigation">
+	<section class="container">
+		<a class="navigation-title" href="/">
+      <img src="../../static/profile.png" />
+    </a>
+    <ul class="navigation-list">
 
-    
-    
-        <li class="menu__item"><a href="../../talks/"><i class="fa fa-volume-up"></i> Talks</a></li>
-    
-        <li class="menu__item"><a href="../../blog/"><i class="fa fa-quote-left"></i> Blog</a></li>
-    
-        <li class="menu__item"><a href="../../publications/"><i class="fa fa-book"></i> Pubblications</a></li>
-    
-        <li class="menu__item"><a href="../../projects/"><i class="fa fa-cogs"></i> Projects</a></li>
-    
-        <li class="menu__item"><a href="../../CV/"><i class="fa fa-file"></i> CV</a></li>
-    
-
-  </ul>
+      
+      
+          <li class="navigation-item"><a class="navigation-link" href="../../talks/">Talks</a></li>
+      
+          <li class="navigation-item"><a class="navigation-link" href="../../blog/">Blog</a></li>
+      
+          <li class="navigation-item"><a class="navigation-link" href="../../publications/">Pubblications</a></li>
+      
+          <li class="navigation-item"><a class="navigation-link" href="../../projects/">Projects</a></li>
+      
+          <li class="navigation-item"><a class="navigation-link" href="../../CV/">CV</a></li>
+      
+    </ul>
+  </section>
 </nav>
 
-    <div class="wrapper">
-      <article class="doc__content">
-        <section class="js-section">
-          <h3 class="section__title">Privacy Web Docs</h3>
-          <p>Tor is an important tool providing privacy and anonymity online. The property of anonymity itself is more than just providing an encrypted connection between the source and the destination of a given conversation. There is in fact a lot of information that can be still learned by just observing encrypted communications. The Tor Browser was designed to provide privacy while surfing the web and defend users against both network and local forensic adversaries, There are two main categories of requirements for the Tor Browser: Security Requirements, and Privacy Requirements. Security Requirements are the minimum properties in order for a browser to be able to support Tor and similar privacy proxies safely. Privacy requirements are primarily concerned with reducing linkability: the ability for a user's activity on one site to be linked with their activity on another site without their knowledge or explicit consent. The Tor Browser is based on Mozilla's Extended Support Release (ESR) Firefox branch. We have a series of patches against this browser to enhance privacy and security. Browser behavior is additionally augmented through the Torbutton extension, and we also change a number of Firefox preferences from their defaults. This session is going to explore what tool and resources are missing for website and web applications to embrace more privacy friendly practices, and work seamlessly on Tor browser. We well answer some fundamental questions, like: - Why tor browser is slightly different from Firefox (or another browser) - Why does my app work differently in tor browser? What can I do to make it work smoothly? - How can I make my app compatible for people that do not use JS? - How can I configure an onion service? - What should I consider in order not to expose sensitive information about myself or visitors to my website? Code examples for css, js and backend configurations will be shared.</p>
+      <section class="container">
+        <article>
+            <h3>Privacy Web Docs</h3>
+            <p>Tor is an important tool providing privacy and anonymity online. The property of anonymity itself is more than just providing an encrypted connection between the source and the destination of a given conversation. There is in fact a lot of information that can be still learned by just observing encrypted communications. The Tor Browser was designed to provide privacy while surfing the web and defend users against both network and local forensic adversaries, There are two main categories of requirements for the Tor Browser: Security Requirements, and Privacy Requirements. Security Requirements are the minimum properties in order for a browser to be able to support Tor and similar privacy proxies safely. Privacy requirements are primarily concerned with reducing linkability: the ability for a user's activity on one site to be linked with their activity on another site without their knowledge or explicit consent. The Tor Browser is based on Mozilla's Extended Support Release (ESR) Firefox branch. We have a series of patches against this browser to enhance privacy and security. Browser behavior is additionally augmented through the Torbutton extension, and we also change a number of Firefox preferences from their defaults. This session is going to explore what tool and resources are missing for website and web applications to embrace more privacy friendly practices, and work seamlessly on Tor browser. We well answer some fundamental questions, like: - Why tor browser is slightly different from Firefox (or another browser) - Why does my app work differently in tor browser? What can I do to make it work smoothly? - How can I make my app compatible for people that do not use JS? - How can I configure an onion service? - What should I consider in order not to expose sensitive information about myself or visitors to my website? Code examples for css, js and backend configurations will be shared.</p>
 <p><a href="https://pad.internetfreedomfestival.org/p/823">Pad</a></p>
 <p><a href="https://platform.internetfreedomfestival.org/en/IFF2019/public/schedule/custom/823">Link</a></p>
 <p><a href="https://webprivacy.rocks">webprivacy.rocks</a></p>
@@ -47,20 +46,18 @@
 <p>venue: "Internet Freedom Festival"</p>
 <p>location: "Valencia, Spain"</p>
 
-        </section>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      </article>
-    </div>
+        </article>
+      </section>
 
-    <footer class="footer">
-
-   <a href="https://twitter.com/nopressure/" target="_blank" class="link link--light"><i class="fa fa-twitter"></i></a>
-   <a href="https://www.linkedin.com/in/silviapuglisi" target="_blank" class="link link--light"><i class="fa fa-linkedin"></i></a>
-   <a href="https://github.com/hiromipaw" target="_blank" class="link link--light"><i class="fa fa-github"></i></a>
-   <a href="https://scholar.google.es/citations?user=B8_Ts38AAAAJ&hl=en" target="_blank" class="link link--light"><i class="fa fa-graduation-cap"></i></a>
-   <a href="mailto:me@hiro7.eu" target="_blank" class="link link--light"><i class="fa fa-envelope"></i></a>
+      <footer class="footer">
+	<section class="container">
+		Links:
+     <a href="https://twitter.com/nopressure/" target="_blank">@nopressure</a> |
+     <a href="https://www.linkedin.com/in/silviapuglisi" target="_blank">LinkedIn</a> |
+     <a href="https://github.com/hiromipaw" target="_blank">Github</a> |
+     <a href="https://scholar.google.es/citations?user=B8_Ts38AAAAJ&hl=en" target="_blank">Scholar</a> |
+     <a href="mailto:hey@sifr.tech" target="_blank">Email</a> |
+   </section>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script src="../../static/scribbler.js"></script>
+    </main>
 </body>
