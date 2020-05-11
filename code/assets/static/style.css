@@ -157,14 +157,15 @@ body {
       background: #f4f5f6;
       border-bottom: .1rem solid #d1d1d1;
       display: block;
-      height: 6.7rem;
+      min-height: 6.7rem;
+      max-height: 28.3rem;
       left: 0;
       max-width: 100%;
       position: fixed;
       right: 0;
       top: 0;
       width: 100%;
-      z-index: 1
+      z-index: 1;
   }
 
   .navigation-title img {
@@ -180,12 +181,11 @@ body {
   .navigation .navigation-list {
       float: right;
       list-style: none;
-      margin-right: 5rem
   }
 
   .navigation .navigation-item {
       float: left;
-      margin-left: 2.5rem;
+      padding-left: 1.3rem;
       position: relative
   }
 
