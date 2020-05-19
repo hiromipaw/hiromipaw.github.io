@@ -42,6 +42,119 @@
     
   <section class="container">
     
+      <h2><a href="../../../blog/2020-04-05-online-disinformation/">Online disinformation campaigns. How do these work. What can we do.</a></h2>
+    
+    <p class="meta">
+      written by
+      
+        Silvia Puglisi [Hiro]
+      
+      on 2020-04-05
+    </p>
+    <p>Every social media user has possibly noticed how content is often driven by very
+strong emotions. Many posts range from extreme cute kittens to drama stories, but
+above all emotions it seems like online content is especially fueled by anger [1] [2].</p>
+<p>This might be specifically true for political driven content [3], but how people
+came from coming together to comment Eurovision [4] to insult each others during
+political campaigns?</p>
+<p>To understand how we got here, we cannot ignore everything that happen with facebook
+and Cambridge Analytica [5]. Between 2013 and 2018 the company combined aggregation
+of Facebook data (later proved illegal), data mining and analysis, with communication
+campaigns during the electoral processes around the world with the goal to influence
+their outcome in favour of their clients [6].</p>
+<h2>What how does misinformation really look like?</h2>
+<p>If we take a look how any controversial or political topic on twitter we get
+a glimpse of how companies like Cambridge Analytica operate.</p>
+<p>At its core misinformation campaigns are built to spread a certain political agenda
+using specific language and amplifying only certain sources.</p>
+<p>In the last week I have been analyse topics spanning from the #covid-19 crisis to
+Spanish political propaganda. Here is what I found.</p>
+<p>A few accounts and news sources spread the main messages, then a network of automated
+accounts make sure to retweet, highlight and reply to these messages.</p>
+<h2>A few examples</h2>
+<p>We have been observing a number of accounts following this similar pattern. Here
+is an example:</p>
+<p>User: <a href="https://twitter.com/Alvisepf">@alvisepf</a></p>
+<p>We have chosen this user because it is one of the "top talkers" in the spanish
+Far right accounts.</p>
+<p>For this user we extracted a subset of users that are retweeting their posts.
+For this subset of users we extracted a subset of their timelines.</p>
+<p>This is the <a href="../../../static/files/twitter/query_result_2020-04-01T09_42_42.689784Z.csv">archive</a>.</p>
+<p>We were interesting in finding out what other accounts these users were tweeting.
+We found out most of the tweets are actually retweets to accounts in the spanish
+far right political spectrum.
+In other words these accounts are part of an amplification machine of the same
+group of top talkers for the spanish far right.</p>
+<p>Hence we counted the number of retweets for account with the idea of extracting
+a distribution.</p>
+<p>Again here is the <a href="../../../static/files/twitter/query_result_2020-04-01T11_23_09.761662Z.csv">result</a>.</p>
+<p>And here is a distribution per account:</p>
+<p><img src="../../../static/files/twitter/screenshot-50.png" alt="distribution" title="Twitter distribution per accounts">
+<a href="../../../static/files/twitter/Screenshot_2020-04-01%20Distribution%20of%20RT%20to%20accounts%20%C2%B7%20Metabase.png">full image</a></p>
+<h2>How does a typical amplification account look like</h2>
+<p>This <a href="../../../static/files/twitter/query_result_2020-03-31T09_44_57.589694Z.csv">archive</a>
+ contains approximately 400 tweets from a single user, that coincidentally never sleeps ;).</p>
+<h2>What news sources are linked</h2>
+<p>Here is a list of identified news sources:</p>
+<ul>
+<li>Ok Diario</li>
+<li>Periodista Digital</li>
+<li>La Gacet</li>
+<li>Caso Aislado</li>
+<li>El Municipio</li>
+<li>Mediterraneo Digital</li>
+<li>Outono</li>
+<li>Libertad Digital</li>
+<li>Libremercado</li>
+<li>Alerta Digital</li>
+<li>La Tribuna de Cartagena</li>
+<li>Es Diario</li>
+<li>Heraldo de la Mancha</li>
+<li>El Diestro</li>
+<li><a href="https://youtube.com/channel/UCisIqN_XqjXz92eJMnjvEmA">https://youtube.com/channel/UCisIqN_XqjXz92eJMnjvEmA</a></li>
+</ul>
+<p>We noticed that all these accounts always retweet the same news source.
+So <a href="../../../static/files/twitter/query_result_2020-04-05T17_07_24.229283Z.csv">here</a>
+ we compiled a list of tweets to these recurrent news sources from accounts that
+retweeted @alvisepf.</p>
+<p>Finally here is a complete archive of a set of tweets linking articles from these
+news source: <a href="../../../static/files/twitter/users_tweeting_right_news_2020-04-05T16_51_11.893225Z.csv">archive</a>.</p>
+<h2>What can be done</h2>
+<p>The patterns observed are pretty simple and repeated across countries and issues.
+Accounts like these are exposed every other day by researchers, but also by the
+social networks operators [7].</p>
+<p>Why are operators not taking a stand against automated accounts? Patterns are not
+sophisticated, nor difficult to spot, different network and traffic metadata could
+be easily identified. More importantly these accounts exceed well the average
+frequency of tweets per hour of a normal user. A simple Proof of Work (PoW) [8] mechanism
+could well increase the cost of automating a large amount of highlights and retweets.</p>
+<p>A PoW is a mathematical mechanism asking a client to perform a certain
+operation whose calculation difficulty is increased as the client makes more requests
+to a certain service. PoWs deters denial-of-service attacks and other service abuses,
+such as spam on a network.</p>
+<h2>What can you do</h2>
+<p>You can run your own research. I use a mix of own scripts calling twitter APIs and
+I also use <a href="https://github.com/twintproject">twint</a>. For visualizations I use
+<a href="https://metabase.com">metabase</a>.</p>
+<p>If you are a researcher or a journalist please get in touch. I'd be happy to
+collaborate with you monitoring different political scenarios around the world.
+I'd also be happy to share access to my DB and give you full access to the data.</p>
+<p>REFERENCES:</p>
+<p>[1] <a href="https://www.wired.com/story/this-big-beef-exposes-the-ugly-underbelly-of-vegan-vlogging/">https://www.wired.com/story/this-big-beef-exposes-the-ugly-underbelly-of-vegan-vlogging/</a></p>
+<p>[2] <a href="https://www.theguardian.com/science/2018/may/16/living-in-an-age-of-anger-50-year-rage-cycle">https://www.theguardian.com/science/2018/may/16/living-in-an-age-of-anger-50-year-rage-cycle</a></p>
+<p>[3] <a href="https://time.com/4838673/anger-and-partisanship-as-a-virus/">https://time.com/4838673/anger-and-partisanship-as-a-virus/</a></p>
+<p>[4] <a href="https://blog.twitter.com/en_gb/topics/marketing/2017/eurovision-2017.html">https://blog.twitter.com/en_gb/topics/marketing/2017/eurovision-2017.html</a></p>
+<p>[5] <a href="https://www.theguardian.com/technology/2019/mar/17/the-cambridge-analytica-scandal-changed-the-world-but-it-didnt-change-facebook">https://www.theguardian.com/technology/2019/mar/17/the-cambridge-analytica-scandal-changed-the-world-but-it-didnt-change-facebook</a></p>
+<p>[6] <a href="https://en.wikipedia.org/wiki/Cambridge_Analytica">https://en.wikipedia.org/wiki/Cambridge_Analytica</a></p>
+<p>[7] <a href="https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown">https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown</a></p>
+<p>[8] <a href="https://en.wikipedia.org/wiki/Proof_of_work">https://en.wikipedia.org/wiki/Proof_of_work</a></p>
+
+  </section>
+
+  
+    
+  <section class="container">
+    
       <h2><a href="../../../blog/2020-03-25-decentralization-meets-anonymity/">Decentralization meets anonymity. Using the onion service protocol to build p2p applications.</a></h2>
     
     <p class="meta">
@@ -130,64 +243,6 @@ How blocking is implementing varies widely from country to country and even by s
 <p>[19] <a href="https://2019.www.torproject.org/docs/onion-services.html.en">https://2019.www.torproject.org/docs/onion-services.html.en</a></p>
 <p>[20] <a href="https://torproject.org">https://torproject.org</a></p>
 <p>[21] <a href="https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship">https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship</a></p>
-
-  </section>
-
-  
-    
-  <section class="container">
-    
-      <h2><a href="../../../blog/2020-03-04-tor-relays/">Supporting the Tor network</a></h2>
-    
-    <p class="meta">
-      written by
-      
-        Silvia Puglisi [Hiro]
-      
-      on 2020-03-04
-    </p>
-    <p>How can small organization run relays on the Tor network while sustain their operations</p>
-<h1>How is the Tor network composed</h1>
-<p>The Tor network consists entirely of relays run by volunteers, providing bandwidth and other services to Tor users. There are currently about 6000 relays sustaining the network [1].
-Up to now the Tor network has grown organically, by the mean of community outreach activities. Tor relay operators are usually individuals that are motivated by various factors. The Tor project mission itself is a strong driver for individuals interested in providing privacy enhancing communication tools to people all over the world. Other relay operators might be researchers interested in the technical aspects of the Tor software and protocol. Others can also simply be open source entusiasts that want to be part of its community. Many relay operators have often been recruited, so to speak, by other community members or core developers. Finally some relay operators are adversaries that are trying to run different analysis over the Tor network itself, like collecting information on its use or on the content being transferred.</p>
-<p>All the motivations described above do not require direct compensation by the Tor Project and the volunteer-based approach to sustain the network has been proved successful. Relay operators do not only invest their hardware, but also time and commitment in running the relays and in being part of the Tor community. Expenading the set of relays is vital for the Tor network. More importantly the network needs a diverse set of relay, not just advertised bandwidth. Diversity means different hardware and operating systems, but also different locations across the globe in order to reach users worldwide and offer overall the same quality of service.</p>
-<p>Throughout Tor history, there have never been in place an official mechanism for relay operators to be rewarded extrinsically. The intrinsic reward of being a relay operator was the social perceived value, like recognition within the Tor community. Many different proposals have been made for a Tor incentives system [2], but none has ever been implemented.</p>
-<h1>How do relay operators organize</h1>
-<p>Relay operators sometimes create a small non profit or join an umbrella organization, to support their activities. These are setup so that the individual operators are not legally responsible in case of a legal dispute. Also the organization is setup to share the burden of possible legal expenses and to collect donations for their activities. The Tor Project itself advises people to constitute a non-profit organization responsible for the relays in case of possible legal disputes.
-There are some legal risks in fact associated with running relays. These are usually not different from the same risks that an ISP could have since both relay internet traffic. Exits relays have more legal concerns that bridges, guards or middle relays, because middles and guards only relay encrypted traffic, while exits performs requests to the open internet.
-The Tor Project provides some standard response letters that relay operators can use and some legal resources that could become handy. In any case relay operators are advised to consult with a lawyer if any problem with law enforcement should arise.</p>
-<h1>How much does it cost to run a relay</h1>
-<p>Running a relay can be as cheap as a few dollars per month and as expensive as a few hundred, depending on where the relay runs, which kind of hardware it's running on, bandwidth, operating system and so on. Most relays operators rely on donations from individuals that want to contribute to the network but for several reasons are not able to run a relay at the moment. There is again intrinsic value to donate to relay operators to contribute to the Tor community.</p>
-<p>A big portion of relay costs are taken over by bandwidth consumption. If an individual or group wants to run a node that relays a lot of traffic, bandwidth might become expensive.</p>
-<h1>Participatory Business Models for Off-Grid utilities, what can we learn</h1>
-<p>Certain mechanisms developed by and for the maintenance and operations of the Tor network have much in common with off-grid utility implementation. To start both are ipso-facto decentralized, community based and require experimenting with different business models for implementation.</p>
-<p>A number  of  previous  studies  have  developed  their  own  classifications  for electrification models.</p>
-<ul>
-<li>Commercially  led  models which  are  driven  by  suppliers  and  dealers  with relatively little government control.</li>
-<li>Multi-stakeholder programmatic model wherein a project management unit or multi-stakeholder management authority is typically charged with reaching consumers.</li>
-<li>Utility model typically operates on a fee-for-service basis.</li>
-<li>Grant  based  models.</li>
-</ul>
-<p>[3] describes different participatory models for off-grid electricity services in rural areas. Drawing  from  previous defined  classification  systems,  they identify  five  models  with  different types of operations that have been used in rural electrification.</p>
-<ol>
-<li>Co-operatives;</li>
-<li>Service distribution franchises;</li>
-<li>Fee-for-service models;</li>
-<li>Community managed models; and</li>
-<li>Private sector models.</li>
-</ol>
-<p>One thing that differentiate the ecosystem of companies and cooperatives providing utilities and relay operators is the fact that while utility providing organizations could in theory charge its users for using their network, the Tor network is freely accessible by everyone running a Tor client. Since neither the Tor Project nor any reasonable relay operator would like to charge Tor users for bandwidth used, in the past people have speculated whether it would make sense to build mechanisms so that the network could reward relays for the bandwidth provided to the network. A part of this speculation has also involved considering possible harms of such mechanism to both the privacy and security of Tor users and the community of relay operators. For example some have argued that this could encourage bad or malicious relays, or the growth of relay farms with the only interest to cash out instead of maintaining the network and protecting the privacy of its users.</p>
-<p>Some relay operators groups have developed a membership model to help sustain their operations [4] [5]. The membership model allows such group to build a close relationship with their supporters while also sustaining their operations.</p>
-<h1>Running a participatory relay community</h1>
-<p>While relay operators cannot be directly compensated by Tor users directly, they could be compensated for offering other services in a participatory way to the community of Tor users and .onion websites.
-The relay operators group could add a certain fee to the service offered and redirect part of this compensation to sustaining their infrastructure and work in maintaining the Tor network. This mechanism could help both the relay operators and the Tor network itself in more than one way. One the one hand relay operators can build a relationship with their members by offering a set of privacy friendly services that might or might not use the Tor network itself to be operated, like bridges, .onion hosting, vpn, and so on. On the other hand the Tor project will benefit by seeing more diverse use of the Tor network. Finally, this could also be an incentive for creating a better experience for onion services developers and operators and therefore fostering a more
-legitimate onion service ecosystem.</p>
-<p>This mechanism could be easier to implement for some relay operators that other form of financing, simply because they are already running some of these services as these are needed for day-to-day operations. For example many operators group running exit are already running an authoritative dns and could easily offer this service to their members (some in fact already do). This might actually be easier in many circumstances than applying for international grants or public funding, since in many cases this suppose a big overhead in work that small relay operators group cannot sustain.</p>
-<p>[1] <a href="https://metrics.torproject.org/networksize.html">https://metrics.torproject.org/networksize.html</a></p>
-<p>[2] <a href="https://blog.torproject.org/tor-incentives-research-roundup-goldstar-par-braids-lira-tears-and-torcoin">https://blog.torproject.org/tor-incentives-research-roundup-goldstar-par-braids-lira-tears-and-torcoin</a></p>
-<p>[3] Krithika, P.R. and Palit, D., 2013. Participatory business models for off-grid electrification. In Rural electrification through decentralised off-grid systems in developing countries (pp. 187-225). Springer, London. <a href="https://www.researchgate.net/profile/Debajit_Palit/publication/261946063_Participatory_Business_Models_for_Off-Grid_Electrification/links/53e993090cf2fb1b9b671622.pdf">https://www.researchgate.net/profile/Debajit_Palit/publication/261946063_Participatory_Business_Models_for_Off-Grid_Electrification/links/53e993090cf2fb1b9b671622.pdf</a></p>
-<p>[4] <a href="https://applied-privacy.net/membership/">https://applied-privacy.net/membership/</a></p>
-<p>[5] <a href="https://enn.lu/member">https://enn.lu/member</a></p>
 
   </section>
 
