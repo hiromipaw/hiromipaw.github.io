@@ -2,9 +2,11 @@
   <item>
   {% if from_index %}
     <title>{{ post.title }}</title>
-    <link>{{ post|url }}</link>
-    <guid>{{ post|url }}</guid>
+    <link>{{ 'https://sifr.tech' + post.path }}</link>
+    <guid isPermaLink="true">{{ 'https://sifr.tech' + post.path }}</guid>
   {% endif %}
     <pubDate>{{ post.pub_date }}</pubDate>
+    <dc:creator>{{ post.author }}</dc:creator>
+    <content>{{ post.body }}</content>
   </item>
 {% endmacro %}
