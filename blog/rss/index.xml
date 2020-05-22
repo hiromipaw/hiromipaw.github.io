@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:admin="http://webns.net/mvcb/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <channel>
     <title>Hiro's rss feed</title>
     <description>Silvia [Hiro] </description>
-    <link>https://sifr.tech/blog/</link>
-    <atom:link href="https://sifr.tech/blog/rss/index.xml" rel="self" type="application/rss+xml" />
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
+    <dc:language>en-us</dc:language>
+    <link>https://www.sifr.tech/blog/</link>
+
+    <admin:errorReportsTo rdf:resource="mailto:hey@sifr.tech"/>
+
     
     
       
@@ -15,9 +23,9 @@
     <link>https://sifr.tech/blog/2020-05-19-network-dynamic-spanish-right</link>
     <guid isPermaLink="true">https://sifr.tech/blog/2020-05-19-network-dynamic-spanish-right</guid>
   
-    <pubDate>2020-05-19</pubDate>
-    <dc:creator>Silvia Puglisi [Hiro]</dc:creator>
-    <content><p>Let's analyze accounts interacting with a specific account and let's see with what
+    <dc:date>2020-05-19</dc:date>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
+    <content:encoded><![CDATA[<p>Let's analyze accounts interacting with a specific account and let's see with what
 other accounts they interact.</p>
 <p>We would have the idea that organically people replying or RT-ing a certain account
 have different interests and follow different people.</p>
@@ -48,7 +56,7 @@ opposition with the same volumes, suggesting a more organic behavior.</p>
 these population are always @psoe and @peniche.
 I would tend to think this accounts are set as targets, suggesting some organized
 strategy to boost a certain political narrative.</p>
-</content>
+]]></content:encoded>
   </item>
 
       
@@ -59,9 +67,9 @@ strategy to boost a certain political narrative.</p>
     <link>https://sifr.tech/blog/2020-04-30-contact-tracing-app-privacy</link>
     <guid isPermaLink="true">https://sifr.tech/blog/2020-04-30-contact-tracing-app-privacy</guid>
   
-    <pubDate>2020-04-30</pubDate>
-    <dc:creator>Silvia Puglisi [Hiro]</dc:creator>
-    <content><p>Perche preoccuparsi di privacy in tempo di pandemia?</p>
+    <dc:date>2020-04-30</dc:date>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
+    <content:encoded><![CDATA[<p>Perche preoccuparsi di privacy in tempo di pandemia?</p>
 <p>Ne abbiamo discusso in questo webminar: <a href="ttps://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/">Le contact tracing app rispettano la nostra privacy?</a> [1]</p>
 <p>Cerco di aggiungere un po' di contesto al mio intervento in queste note.</p>
 <h2>Come funziona una app di contact tracing?</h2>
@@ -173,7 +181,7 @@ dirtitti futuri.</p>
 <p>REFERENCES</p>
 <p>[1] Le contact tracing app rispettano la nostra privacy? <a href="https://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/">https://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/</a></p>
 <p>[2] Decentralized Privacy-Preserving Proximity Tracing <a href="https://github.com/DP-3T/">https://github.com/DP-3T/</a></p>
-</content>
+]]></content:encoded>
   </item>
 
       
@@ -184,9 +192,9 @@ dirtitti futuri.</p>
     <link>https://sifr.tech/blog/2020-04-08-online-disinformation-part-2</link>
     <guid isPermaLink="true">https://sifr.tech/blog/2020-04-08-online-disinformation-part-2</guid>
   
-    <pubDate>2020-04-05</pubDate>
-    <dc:creator>Silvia Puglisi [Hiro]</dc:creator>
-    <content><p>A few days ago I published a little summary of online disinformation campaign for
+    <dc:date>2020-04-05</dc:date>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
+    <content:encoded><![CDATA[<p>A few days ago I published a little summary of online disinformation campaign for
 the spanish far right [1].</p>
 <p>I tried to highlight the emerging patterns of how these amplification machines
 operate. Shoving retweets distribution for users rt-ing one of the top-talker
@@ -250,7 +258,7 @@ used in this study.</p>
 <p>If you get in touch I can give you access.</p>
 <p>REFERENCES</p>
 <p>[1] <a href="https://www.hiro7.eu/blog/2020-04-05-online-disinformation">https://www.hiro7.eu/blog/2020-04-05-online-disinformation</a></p>
-</content>
+]]></content:encoded>
   </item>
 
       
@@ -261,9 +269,9 @@ used in this study.</p>
     <link>https://sifr.tech/blog/2020-04-05-online-disinformation</link>
     <guid isPermaLink="true">https://sifr.tech/blog/2020-04-05-online-disinformation</guid>
   
-    <pubDate>2020-04-05</pubDate>
-    <dc:creator>Silvia Puglisi [Hiro]</dc:creator>
-    <content><p>Every social media user has possibly noticed how content is often driven by very
+    <dc:date>2020-04-05</dc:date>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
+    <content:encoded><![CDATA[<p>Every social media user has possibly noticed how content is often driven by very
 strong emotions. Many posts range from extreme cute kittens to drama stories, but
 above all emotions it seems like online content is especially fueled by anger [1] [2].</p>
 <p>This might be specifically true for political driven content [3], but how people
@@ -360,7 +368,7 @@ I'd also be happy to share access to my DB and give you full access to the data.
 <p>[6] <a href="https://en.wikipedia.org/wiki/Cambridge_Analytica">https://en.wikipedia.org/wiki/Cambridge_Analytica</a></p>
 <p>[7] <a href="https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown">https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown</a></p>
 <p>[8] <a href="https://en.wikipedia.org/wiki/Proof_of_work">https://en.wikipedia.org/wiki/Proof_of_work</a></p>
-</content>
+]]></content:encoded>
   </item>
 
       
@@ -371,9 +379,9 @@ I'd also be happy to share access to my DB and give you full access to the data.
     <link>https://sifr.tech/blog/2020-03-25-decentralization-meets-anonymity</link>
     <guid isPermaLink="true">https://sifr.tech/blog/2020-03-25-decentralization-meets-anonymity</guid>
   
-    <pubDate>2020-03-25</pubDate>
-    <dc:creator>Silvia Puglisi [Hiro]</dc:creator>
-    <content><p>The architecture of the web is based on the client/server paradigm where the Hypertext Transfer Protocol (HTTP) occupies a predominant role [1]. HTTP was designed to transfer resource representations, to abstract over lower-layered transport protocols, such as TCP or UDP, and to act as the primary application-level protocol.</p>
+    <dc:date>2020-03-25</dc:date>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
+    <content:encoded><![CDATA[<p>The architecture of the web is based on the client/server paradigm where the Hypertext Transfer Protocol (HTTP) occupies a predominant role [1]. HTTP was designed to transfer resource representations, to abstract over lower-layered transport protocols, such as TCP or UDP, and to act as the primary application-level protocol.</p>
 <p>Representational State Transfer (REST) architectures are a generalization of the Web based on the HTTP protocol. In this sense the World Wide Web represent an Internet-scale implementation of the RESTful architectural style.</p>
 <p>RESTful architecture identify three main foundation blocks:
     – The identification mechanism, or a Uniform Resource Identifier (URI)
@@ -399,7 +407,7 @@ Because .onion services are only accessible via the Tor network, users do not ne
 <p>[5] Mansour, E., Sambra, A.V., Hawke, S., Zereba, M., Capadisli, S., Ghanem, A., Aboulnaga, A. and Berners-Lee, T., 2016, April. A demonstration of the solid platform for social web applications. In Proceedings of the 25th International Conference Companion on World Wide Web (pp. 223-226). <a href="https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf">https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf</a></p>
 <p>[6] <a href="https://onionshare.org">https://onionshare.org</a></p>
 <p>[7] <a href="https://play.google.com/store/apps/details?id=org.havenapp.main&amp;hl=en">https://play.google.com/store/apps/details?id=org.havenapp.main&amp;hl=en</a></p>
-</content>
+]]></content:encoded>
   </item>
 
       
@@ -410,9 +418,9 @@ Because .onion services are only accessible via the Tor network, users do not ne
     <link>https://sifr.tech/blog/2020-03-04-censorship</link>
     <guid isPermaLink="true">https://sifr.tech/blog/2020-03-04-censorship</guid>
   
-    <pubDate>2020-03-04</pubDate>
-    <dc:creator>Silvia Puglisi [Hiro]</dc:creator>
-    <content><p>When we talk about things like internet censorship and surveillance, these might appear as abstract concepts to some people, especially in global north countries. This post will tries to explain the effects of these activities, and what can be done to help people subjected to both.</p>
+    <dc:date>2020-03-04</dc:date>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
+    <content:encoded><![CDATA[<p>When we talk about things like internet censorship and surveillance, these might appear as abstract concepts to some people, especially in global north countries. This post will tries to explain the effects of these activities, and what can be done to help people subjected to both.</p>
 <h1>How does internet censorship look like?</h1>
 <p>Internet censorship can take many different forms. In most countries there is some form of internet censorship, meaning that the government might decide to block some websites for different reasons. Usually, in democratic settings, internet blocking is regulated by the state and it takes more the shape of content restrictions based on various constitutional rights and principles, and it is enacted both through the democratic process and formal legislation.</p>
 <p>Generally speaking a network can be censored by blocking or slowing down access to certain websites, services, protocols. The ooni project [1] has been developing tests to find out when and how is censorship happening in a network [2].
@@ -449,7 +457,7 @@ How blocking is implementing varies widely from country to country and even by s
 <p>[19] <a href="https://2019.www.torproject.org/docs/onion-services.html.en">https://2019.www.torproject.org/docs/onion-services.html.en</a></p>
 <p>[20] <a href="https://torproject.org">https://torproject.org</a></p>
 <p>[21] <a href="https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship">https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship</a></p>
-</content>
+]]></content:encoded>
   </item>
 
       
@@ -460,9 +468,9 @@ How blocking is implementing varies widely from country to country and even by s
     <link>https://sifr.tech/blog/2020-03-04-tor-relays</link>
     <guid isPermaLink="true">https://sifr.tech/blog/2020-03-04-tor-relays</guid>
   
-    <pubDate>2020-03-04</pubDate>
-    <dc:creator>Silvia Puglisi [Hiro]</dc:creator>
-    <content><p>How can small organization run relays on the Tor network while sustain their operations</p>
+    <dc:date>2020-03-04</dc:date>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
+    <content:encoded><![CDATA[<p>How can small organization run relays on the Tor network while sustain their operations</p>
 <h1>How is the Tor network composed</h1>
 <p>The Tor network consists entirely of relays run by volunteers, providing bandwidth and other services to Tor users. There are currently about 6000 relays sustaining the network [1].
 Up to now the Tor network has grown organically, by the mean of community outreach activities. Tor relay operators are usually individuals that are motivated by various factors. The Tor project mission itself is a strong driver for individuals interested in providing privacy enhancing communication tools to people all over the world. Other relay operators might be researchers interested in the technical aspects of the Tor software and protocol. Others can also simply be open source entusiasts that want to be part of its community. Many relay operators have often been recruited, so to speak, by other community members or core developers. Finally some relay operators are adversaries that are trying to run different analysis over the Tor network itself, like collecting information on its use or on the content being transferred.</p>
@@ -504,7 +512,7 @@ legitimate onion service ecosystem.</p>
 <p>[3] Krithika, P.R. and Palit, D., 2013. Participatory business models for off-grid electrification. In Rural electrification through decentralised off-grid systems in developing countries (pp. 187-225). Springer, London. <a href="https://www.researchgate.net/profile/Debajit_Palit/publication/261946063_Participatory_Business_Models_for_Off-Grid_Electrification/links/53e993090cf2fb1b9b671622.pdf">https://www.researchgate.net/profile/Debajit_Palit/publication/261946063_Participatory_Business_Models_for_Off-Grid_Electrification/links/53e993090cf2fb1b9b671622.pdf</a></p>
 <p>[4] <a href="https://applied-privacy.net/membership/">https://applied-privacy.net/membership/</a></p>
 <p>[5] <a href="https://enn.lu/member">https://enn.lu/member</a></p>
-</content>
+]]></content:encoded>
   </item>
 
       
@@ -515,9 +523,9 @@ legitimate onion service ecosystem.</p>
     <link>https://sifr.tech/blog/2019-11-15-yubikey-setup</link>
     <guid isPermaLink="true">https://sifr.tech/blog/2019-11-15-yubikey-setup</guid>
   
-    <pubDate>2019-11-15</pubDate>
-    <dc:creator>Silvia Puglisi [Hiro]</dc:creator>
-    <content><p>I use yubikeys to store my gpg and ssh keys.</p>
+    <dc:date>2019-11-15</dc:date>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
+    <content:encoded><![CDATA[<p>I use yubikeys to store my gpg and ssh keys.</p>
 <p>Before starting do a little bit of reading to familiarize yourself with the setup
 procedure.
 I have added a list of links at the end. These are mainly the resources that I used.</p>
@@ -578,7 +586,7 @@ $ ssh-add -l
 <li>[4] <a href="https://www.isi.edu/~calvin/yubikeyssh.htm">https://www.isi.edu/~calvin/yubikeyssh.htm</a></li>
 <li>[5] <a href="https://developers.yubico.com/PGP/Card_edit.html">https://developers.yubico.com/PGP/Card_edit.html</a></li>
 </ul>
-</content>
+]]></content:encoded>
   </item>
 
       
@@ -589,9 +597,9 @@ $ ssh-add -l
     <link>https://sifr.tech/blog/2019-06-21-solid-tor-onion-services</link>
     <guid isPermaLink="true">https://sifr.tech/blog/2019-06-21-solid-tor-onion-services</guid>
   
-    <pubDate>2019-06-21</pubDate>
-    <dc:creator>Silvia Puglisi [Hiro]</dc:creator>
-    <content><p>A lot of information is given away by certain properties of communications beyond just the content. These properties are usually referred to as communication metadata. Metadata include information such as the lenght of the conversation, who was involved, where are the parties involved in the conversation located, and so on.</p>
+    <dc:date>2019-06-21</dc:date>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
+    <content:encoded><![CDATA[<p>A lot of information is given away by certain properties of communications beyond just the content. These properties are usually referred to as communication metadata. Metadata include information such as the lenght of the conversation, who was involved, where are the parties involved in the conversation located, and so on.</p>
 <p>Questions that can be answered by looking at metadata are:</p>
 <ul>
 <li>how long you talk, how often ...</li>
@@ -616,7 +624,7 @@ With Solid all your data are stored in an online Solid Pod. The data is owned by
 <p>The code is available via the <a href="https://github.com/hiromipaw/myonion">myonion wrapper</a>. An experiment in making available through docker containers different app via .onion services.</p>
 <p>In this post I have shown how a web application made available through .onion on the Tor network can exchange information with a Solid pod and allow a user to login and share some data. Because .onion services live on the Tor network, you do not need hosting or a public ip address to offer some service via .onion address. This means .onion services are a gateway to a decentralised, peer-to-peer internet, where you regain control on the content you create and who you are sharing it with. The .onion can even be hosted on your computer for the time you desire, allowing the people using your service to remain anonymous, and also you.</p>
 <p>I believe anonymity to be very important since it can free people, allowing them to decide how to expose themselves or to make themselves visible on their own terms.</p>
-</content>
+]]></content:encoded>
   </item>
 
       
@@ -627,9 +635,9 @@ With Solid all your data are stored in an online Solid Pod. The data is owned by
     <link>https://sifr.tech/blog/2019-04-26-on-online-political-propaganda</link>
     <guid isPermaLink="true">https://sifr.tech/blog/2019-04-26-on-online-political-propaganda</guid>
   
-    <pubDate>2019-04-26</pubDate>
-    <dc:creator>Silvia Puglisi [Hiro]</dc:creator>
-    <content><p>I have been studying twitter political propaganda machine for a while now, trying
+    <dc:date>2019-04-26</dc:date>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
+    <content:encoded><![CDATA[<p>I have been studying twitter political propaganda machine for a while now, trying
 to identify patterns and spot interesting behaviors. Here is what I found.</p>
 <p>First of all the raw data can be accessed <a href="https://docs.google.com/spreadsheets/d/1jIRr2THizWOixFippI8dk51z3Nzo-ym3qFd490z-x0I/edit?usp=sharing">here</a></p>
 <p>The spreadsheet above contains a number of keywords, most of these keywords are
@@ -646,7 +654,7 @@ on adding more as I continue this.</p>
 <p>My objective is eventually exposing the money trail behind political marketing.</p>
 <p>If you are a journalist interested in data, please get in touch, I'd like to work
 more on this.</p>
-</content>
+]]></content:encoded>
   </item>
 
       
@@ -657,9 +665,9 @@ more on this.</p>
     <link>https://sifr.tech/blog/rss</link>
     <guid isPermaLink="true">https://sifr.tech/blog/rss</guid>
   
-    <pubDate></pubDate>
-    <dc:creator></dc:creator>
-    <content></content>
+    <dc:date></dc:date>
+    <dc:creator></dc:creator
+    <content:encoded><![CDATA[]]></content:encoded>
   </item>
 
       

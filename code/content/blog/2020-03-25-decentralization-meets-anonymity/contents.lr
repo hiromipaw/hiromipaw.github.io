@@ -2,7 +2,7 @@ _template: page.html
 ---
 pub_date: 2020-03-25
 ---
-author: Silvia Puglisi [Hiro]
+author: hiro@torproject.org (Silvia Puglisi - Hiro)
 ---
 title: Decentralization meets anonymity. Using the onion service protocol to build p2p applications.
 ---
