@@ -1,0 +1,10 @@
+{% macro render_rss_post(post, from_index=false) %}
+  <item>
+  {% if from_index %}
+    <title>{{ post.title }}</title>
+    <link>{{ post|url }}</link>
+    <guid>{{ post|url }}</guid>
+  {% endif %}
+    <pubDate>{{ post.pub_date }}</pubDate>
+  </item>
+{% endmacro %}

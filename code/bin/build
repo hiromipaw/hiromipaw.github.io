@@ -2,3 +2,4 @@
 lektor build -O public
 cp -r public/* ../
 rm -fr public
+mv ../blog/rss/index.html ../blog/rss/index.xml

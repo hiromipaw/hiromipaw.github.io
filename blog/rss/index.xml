@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hiro's rss feed</title>
+    <description>Silvia [Hiro] </description>
+    <link>https://sifr.tech/blog/</link>
+    <atom:link href="https://sifr.tech/blog/rss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+  <item>
+  
+    <title>Network dynamics in the Spanish Right</title>
+    <link>../../blog/2020-05-19-network-dynamic-spanish-right/</link>
+    <guid>../../blog/2020-05-19-network-dynamic-spanish-right/</guid>
+  
+    <pubDate>2020-05-19</pubDate>
+  </item>
+
+      
+        
+  <item>
+  
+    <title>Perche&#39; preoccuparsi per la privacy in tempo di pandemia</title>
+    <link>../../blog/2020-04-30-contact-tracing-app-privacy/</link>
+    <guid>../../blog/2020-04-30-contact-tracing-app-privacy/</guid>
+  
+    <pubDate>2020-04-30</pubDate>
+  </item>
+
+      
+        
+  <item>
+  
+    <title>Online disinformation campaigns. A deep dive.</title>
+    <link>../../blog/2020-04-08-online-disinformation-part-2/</link>
+    <guid>../../blog/2020-04-08-online-disinformation-part-2/</guid>
+  
+    <pubDate>2020-04-05</pubDate>
+  </item>
+
+      
+        
+  <item>
+  
+    <title>Online disinformation campaigns. How do these work. What can we do.</title>
+    <link>../../blog/2020-04-05-online-disinformation/</link>
+    <guid>../../blog/2020-04-05-online-disinformation/</guid>
+  
+    <pubDate>2020-04-05</pubDate>
+  </item>
+
+      
+        
+  <item>
+  
+    <title>Decentralization meets anonymity. Using the onion service protocol to build p2p applications.</title>
+    <link>../../blog/2020-03-25-decentralization-meets-anonymity/</link>
+    <guid>../../blog/2020-03-25-decentralization-meets-anonymity/</guid>
+  
+    <pubDate>2020-03-25</pubDate>
+  </item>
+
+      
+        
+  <item>
+  
+    <title>Internet Censorship</title>
+    <link>../../blog/2020-03-04-censorship/</link>
+    <guid>../../blog/2020-03-04-censorship/</guid>
+  
+    <pubDate>2020-03-04</pubDate>
+  </item>
+
+      
+        
+  <item>
+  
+    <title>Supporting the Tor network</title>
+    <link>../../blog/2020-03-04-tor-relays/</link>
+    <guid>../../blog/2020-03-04-tor-relays/</guid>
+  
+    <pubDate>2020-03-04</pubDate>
+  </item>
+
+      
+        
+  <item>
+  
+    <title>How to setup and use yubikeys for authentication</title>
+    <link>../../blog/2019-11-15-yubikey-setup/</link>
+    <guid>../../blog/2019-11-15-yubikey-setup/</guid>
+  
+    <pubDate>2019-11-15</pubDate>
+  </item>
+
+      
+        
+  <item>
+  
+    <title>Using Solid with Tor .onion services. How to decentralise your online identities</title>
+    <link>../../blog/2019-06-21-solid-tor-onion-services/</link>
+    <guid>../../blog/2019-06-21-solid-tor-onion-services/</guid>
+  
+    <pubDate>2019-06-21</pubDate>
+  </item>
+
+      
+        
+  <item>
+  
+    <title>Online Political Propaganda, new fascism, controveries and the Spanish Elections</title>
+    <link>../../blog/2019-04-26-on-online-political-propaganda/</link>
+    <guid>../../blog/2019-04-26-on-online-political-propaganda/</guid>
+  
+    <pubDate>2019-04-26</pubDate>
+  </item>
+
+      
+        
+  <item>
+  
+    <title></title>
+    <link>../../blog/rss/</link>
+    <guid>../../blog/rss/</guid>
+  
+    <pubDate></pubDate>
+  </item>
+
+      
+    
+  </channel>
+</rss>
