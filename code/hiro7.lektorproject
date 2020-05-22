@@ -1,2 +1,5 @@
 [project]
-name = hiro7
+name = sifr.tech
+url = https://www.sifr.tech/
+url_style = absolute
+locale = en

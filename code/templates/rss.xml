@@ -3,20 +3,24 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:admin="http://webns.net/mvcb/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hiro's rss feed</title>
     <description>Silvia [Hiro] </description>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
     <dc:language>en-us</dc:language>
     <link>https://www.sifr.tech/blog/</link>
+    <atom:link href="https://www.sifr.tech/blog/rss/" rel="self" type="application/rss+xml" />
 
     <admin:errorReportsTo rdf:resource="mailto:hey@sifr.tech"/>
 
     {% from "macros/rss.html" import render_rss_post %}
     {% block body %}
-      {% for post  in site.query('/blog') %}
-        {{ render_rss_post(post, from_index=true) }}
+      {% for post  in site.query('/blog/') %}
+        {% if post.title %}
+          {{ render_rss_post(post, from_index=true) }}
+        {% endif %}
       {% endfor %}
     {% endblock %}
   </channel>

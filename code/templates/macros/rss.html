@@ -6,7 +6,8 @@
     <guid isPermaLink="true">{{ 'https://sifr.tech' + post.path }}</guid>
   {% endif %}
     <dc:date>{{ post.pub_date }}</dc:date>
-    <dc:creator>{{ post.author }}</dc:creator
-    <content:encoded><![CDATA[{{ post.body }}]]></content:encoded>
+    <dc:creator>{{ post.author }}</dc:creator>
+    <description>{{ post.title }}</description>
+    <content:encoded><![CDATA[ {{ post.body }} ]]></content:encoded>
   </item>
 {% endmacro %}

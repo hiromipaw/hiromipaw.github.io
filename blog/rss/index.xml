@@ -3,13 +3,15 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:admin="http://webns.net/mvcb/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hiro's rss feed</title>
     <description>Silvia [Hiro] </description>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
     <dc:language>en-us</dc:language>
     <link>https://www.sifr.tech/blog/</link>
+    <atom:link href="https://www.sifr.tech/blog/rss/" rel="self" type="application/rss+xml" />
 
     <admin:errorReportsTo rdf:resource="mailto:hey@sifr.tech"/>
 
@@ -17,6 +19,7 @@
     
       
         
+          
   <item>
   
     <title>Network dynamics in the Spanish Right</title>
@@ -24,8 +27,9 @@
     <guid isPermaLink="true">https://sifr.tech/blog/2020-05-19-network-dynamic-spanish-right</guid>
   
     <dc:date>2020-05-19</dc:date>
-    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
-    <content:encoded><![CDATA[<p>Let's analyze accounts interacting with a specific account and let's see with what
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
+    <description>Network dynamics in the Spanish Right</description>
+    <content:encoded><![CDATA[ <p>Let's analyze accounts interacting with a specific account and let's see with what
 other accounts they interact.</p>
 <p>We would have the idea that organically people replying or RT-ing a certain account
 have different interests and follow different people.</p>
@@ -34,9 +38,9 @@ performed (like commenting or replying to posts on social media) all follow a
 specific pattern.</p>
 <p>At the following links and images I have collected data and visualization for the
 accounts RT and replied by users RT-ing @vox_es:</p>
-<p><img src="../../static/files/twitter/vox_es-overall.png" alt="distribution_vox_es-overall" title="Twitter activity distribution for users RT-ing @vox_es">
-<img src="../../static/files/twitter/vox_es-RT.png" alt="distribution_vox_es-RT" title="Retweets activity distribution for users RT-ing @vox_es">
-<img src="../../static/files/twitter/vox_es-reply.png" alt="distribution_vox_es-reply" title="Reply activity distribution for users RT-ing @vox_es"></p>
+<p><img src="/static/files/twitter/vox_es-overall.png" alt="distribution_vox_es-overall" title="Twitter activity distribution for users RT-ing @vox_es">
+<img src="/static/files/twitter/vox_es-RT.png" alt="distribution_vox_es-RT" title="Retweets activity distribution for users RT-ing @vox_es">
+<img src="/static/files/twitter/vox_es-reply.png" alt="distribution_vox_es-reply" title="Reply activity distribution for users RT-ing @vox_es"></p>
 <p><a href="https://docs.google.com/spreadsheets/d/15Z85z3WQ7gZ5p-qQFFeDfFcetDWUH1D5DCCMfzMm55I/edit?usp=sharing">@vox-es overall activity and Retweets</a></p>
 <p><a href="https://docs.google.com/spreadsheets/d/1ZFCyObb-Rm7kFM6Bq9tXFbGKSipkXIjRm5laP4h7ens/edit?usp=sharing">@vox-es replies</a></p>
 <p>Let's compare this with some other parties accounts from the opposite political
@@ -56,11 +60,13 @@ opposition with the same volumes, suggesting a more organic behavior.</p>
 these population are always @psoe and @peniche.
 I would tend to think this accounts are set as targets, suggesting some organized
 strategy to boost a certain political narrative.</p>
-]]></content:encoded>
+ ]]></content:encoded>
   </item>
 
+        
       
         
+          
   <item>
   
     <title>Perche&#39; preoccuparsi per la privacy in tempo di pandemia</title>
@@ -68,8 +74,9 @@ strategy to boost a certain political narrative.</p>
     <guid isPermaLink="true">https://sifr.tech/blog/2020-04-30-contact-tracing-app-privacy</guid>
   
     <dc:date>2020-04-30</dc:date>
-    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
-    <content:encoded><![CDATA[<p>Perche preoccuparsi di privacy in tempo di pandemia?</p>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
+    <description>Perche&#39; preoccuparsi per la privacy in tempo di pandemia</description>
+    <content:encoded><![CDATA[ <p>Perche preoccuparsi di privacy in tempo di pandemia?</p>
 <p>Ne abbiamo discusso in questo webminar: <a href="ttps://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/">Le contact tracing app rispettano la nostra privacy?</a> [1]</p>
 <p>Cerco di aggiungere un po' di contesto al mio intervento in queste note.</p>
 <h2>Come funziona una app di contact tracing?</h2>
@@ -181,11 +188,13 @@ dirtitti futuri.</p>
 <p>REFERENCES</p>
 <p>[1] Le contact tracing app rispettano la nostra privacy? <a href="https://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/">https://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/</a></p>
 <p>[2] Decentralized Privacy-Preserving Proximity Tracing <a href="https://github.com/DP-3T/">https://github.com/DP-3T/</a></p>
-]]></content:encoded>
+ ]]></content:encoded>
   </item>
 
+        
       
         
+          
   <item>
   
     <title>Online disinformation campaigns. A deep dive.</title>
@@ -193,13 +202,14 @@ dirtitti futuri.</p>
     <guid isPermaLink="true">https://sifr.tech/blog/2020-04-08-online-disinformation-part-2</guid>
   
     <dc:date>2020-04-05</dc:date>
-    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
-    <content:encoded><![CDATA[<p>A few days ago I published a little summary of online disinformation campaign for
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
+    <description>Online disinformation campaigns. A deep dive.</description>
+    <content:encoded><![CDATA[ <p>A few days ago I published a little summary of online disinformation campaign for
 the spanish far right [1].</p>
 <p>I tried to highlight the emerging patterns of how these amplification machines
 operate. Shoving retweets distribution for users rt-ing one of the top-talker
 accounts.</p>
-<p>I am now going to share a larger <a href="../../static/files/twitter/query_result_2020-04-08T20_01_14.869652Z.zip">archive</a>
+<p>I am now going to share a larger <a href="/static/files/twitter/query_result_2020-04-08T20_01_14.869652Z.zip">archive</a>
 of tweets. To obtain this archive I compiled all the tweets from users that have
 retweeted the account <a href="https://twitter.com/ldpsincomplejos">@ldpsincomplejos</a>.</p>
 <p>Here is how I obtained the tweets for the account @ldpsincomplejos was obtained:</p>
@@ -219,35 +229,35 @@ For each tweet I extracted the username and got the latest 200 tweets user timel
 <p>Now I identified a few top-talkers and computed the distribution of RTs to Accounts.</p>
 <p>Here are some results:</p>
 <h3>Twitter distribution for users RT-ing @okdiario: who are they RTing?</h3>
-<p><img src="../../static/files/twitter/distribucion_okdiario_RTs-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
-<a href="../../static/files/twitter/distribucion_okdiario_RTs.png">full image</a></p>
+<p><img src="/static/files/twitter/distribucion_okdiario_RTs-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
+<a href="/static/files/twitter/distribucion_okdiario_RTs.png">full image</a></p>
 <h3>Twitter distribution for users RT-ing @hermanntertsch: who are they RTing?</h3>
-<p><img src="../../static/files/twitter/distribucion_hermanntertsch_RTs-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
-<a href="../../static/files/twitter/distribucion_hermanntertsch_RTs.png">full image</a></p>
+<p><img src="/static/files/twitter/distribucion_hermanntertsch_RTs-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
+<a href="/static/files/twitter/distribucion_hermanntertsch_RTs.png">full image</a></p>
 <h3>Twitter distribution for users RT-ing @alvisepf: who are they RTing?</h3>
-<p><img src="../../static/files/twitter/distribucion_alvisepf_RTs-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
-<a href="../../static/files/twitter/distribucion_alvisepf_RTs.png">full image</a></p>
+<p><img src="/static/files/twitter/distribucion_alvisepf_RTs-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
+<a href="/static/files/twitter/distribucion_alvisepf_RTs.png">full image</a></p>
 <p>Here is the thing. If you look at the distribution of comments instead you get a
 different result.</p>
 <h3>Twitter distribution for users commenting-ing @okdiario: who are they commenting?</h3>
-<p><img src="../../static/files/twitter/distribucion_comment_okdiario-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
-<a href="../../static/files/twitter/distribucion_comments_okdiario.png">full image</a></p>
+<p><img src="/static/files/twitter/distribucion_comment_okdiario-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
+<a href="/static/files/twitter/distribucion_comments_okdiario.png">full image</a></p>
 <h3>Twitter distribution for users commenting-ing @hermanntertsch: who are they commenting?</h3>
-<p><img src="../../static/files/twitter/distribucion_comment_hermanntertsch-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
-<a href="../../static/files/twitter/distribucion_comments_hermanntertsch.png">full image</a></p>
+<p><img src="/static/files/twitter/distribucion_comment_hermanntertsch-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
+<a href="/static/files/twitter/distribucion_comments_hermanntertsch.png">full image</a></p>
 <h3>Twitter distribution for users commenting-ing @alvisepf: who are they commenting?</h3>
-<p><img src="../../static/files/twitter/distribucion_comment_alvisepf-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
-<a href="../../static/files/twitter/distribucion_comments_alvisepfs.png">full image</a></p>
+<p><img src="/static/files/twitter/distribucion_comment_alvisepf-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
+<a href="/static/files/twitter/distribucion_comments_alvisepfs.png">full image</a></p>
 <p>This means in practice that there is a list of accounts RT-ing sources on the right
  and commenting on accounts from the left. The anticipation machines objective is
  in fact to spread division and hate.</p>
 <p>Finally here is a visualization of the graph of accounts RTin OkDiario:</p>
-<p><img src="../../static/files/twitter/plot-50.jpg" alt="plot_graph_okdiario" title="Graph of accounts RTing Ok Diario">
-<a href="../../static/files/twitter/plot.jpg">full image</a></p>
+<p><img src="/static/files/twitter/plot-50.jpg" alt="plot_graph_okdiario" title="Graph of accounts RTing Ok Diario">
+<a href="/static/files/twitter/plot.jpg">full image</a></p>
 <p>If we isolate the accounts doing more than 100 RT, we find a group of approximately
 20 accounts doing most of the tweets.</p>
-<p><img src="../../static/files/twitter/top_plot-50.jpg" alt="plot_graph_okdiario" title="Graph of top accounts RTing Ok Diario">
-<a href="../../static/files/twitter/top_plot.jpg">full image</a></p>
+<p><img src="/static/files/twitter/top_plot-50.jpg" alt="plot_graph_okdiario" title="Graph of top accounts RTing Ok Diario">
+<a href="/static/files/twitter/top_plot.jpg">full image</a></p>
 <p>Here is probably a team of accounts acting to promote the tweets from OkDiario and
 a group of other accounts.</p>
 <h2>Would you like to have access to this data?</h2>
@@ -258,11 +268,13 @@ used in this study.</p>
 <p>If you get in touch I can give you access.</p>
 <p>REFERENCES</p>
 <p>[1] <a href="https://www.hiro7.eu/blog/2020-04-05-online-disinformation">https://www.hiro7.eu/blog/2020-04-05-online-disinformation</a></p>
-]]></content:encoded>
+ ]]></content:encoded>
   </item>
 
+        
       
         
+          
   <item>
   
     <title>Online disinformation campaigns. How do these work. What can we do.</title>
@@ -270,8 +282,9 @@ used in this study.</p>
     <guid isPermaLink="true">https://sifr.tech/blog/2020-04-05-online-disinformation</guid>
   
     <dc:date>2020-04-05</dc:date>
-    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
-    <content:encoded><![CDATA[<p>Every social media user has possibly noticed how content is often driven by very
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
+    <description>Online disinformation campaigns. How do these work. What can we do.</description>
+    <content:encoded><![CDATA[ <p>Every social media user has possibly noticed how content is often driven by very
 strong emotions. Many posts range from extreme cute kittens to drama stories, but
 above all emotions it seems like online content is especially fueled by anger [1] [2].</p>
 <p>This might be specifically true for political driven content [3], but how people
@@ -299,7 +312,7 @@ is an example:</p>
 Far right accounts.</p>
 <p>For this user we extracted a subset of users that are retweeting their posts.
 For this subset of users we extracted a subset of their timelines.</p>
-<p>This is the <a href="../../static/files/twitter/query_result_2020-04-01T09_42_42.689784Z.csv">archive</a>.</p>
+<p>This is the <a href="/static/files/twitter/query_result_2020-04-01T09_42_42.689784Z.csv">archive</a>.</p>
 <p>We were interesting in finding out what other accounts these users were tweeting.
 We found out most of the tweets are actually retweets to accounts in the spanish
 far right political spectrum.
@@ -307,12 +320,12 @@ In other words these accounts are part of an amplification machine of the same
 group of top talkers for the spanish far right.</p>
 <p>Hence we counted the number of retweets for account with the idea of extracting
 a distribution.</p>
-<p>Again here is the <a href="../../static/files/twitter/query_result_2020-04-01T11_23_09.761662Z.csv">result</a>.</p>
+<p>Again here is the <a href="/static/files/twitter/query_result_2020-04-01T11_23_09.761662Z.csv">result</a>.</p>
 <p>And here is a distribution per account:</p>
-<p><img src="../../static/files/twitter/screenshot-50.png" alt="distribution" title="Twitter distribution per accounts">
-<a href="../../static/files/twitter/Screenshot_2020-04-01%20Distribution%20of%20RT%20to%20accounts%20%C2%B7%20Metabase.png">full image</a></p>
+<p><img src="/static/files/twitter/screenshot-50.png" alt="distribution" title="Twitter distribution per accounts">
+<a href="/static/files/twitter/Screenshot_2020-04-01%20Distribution%20of%20RT%20to%20accounts%20%C2%B7%20Metabase.png">full image</a></p>
 <h2>How does a typical amplification account look like</h2>
-<p>This <a href="../../static/files/twitter/query_result_2020-03-31T09_44_57.589694Z.csv">archive</a>
+<p>This <a href="/static/files/twitter/query_result_2020-03-31T09_44_57.589694Z.csv">archive</a>
  contains approximately 400 tweets from a single user, that coincidentally never sleeps ;).</p>
 <h2>What news sources are linked</h2>
 <p>Here is a list of identified news sources:</p>
@@ -334,11 +347,11 @@ a distribution.</p>
 <li><a href="https://youtube.com/channel/UCisIqN_XqjXz92eJMnjvEmA">https://youtube.com/channel/UCisIqN_XqjXz92eJMnjvEmA</a></li>
 </ul>
 <p>We noticed that all these accounts always retweet the same news source.
-So <a href="../../static/files/twitter/query_result_2020-04-05T17_07_24.229283Z.csv">here</a>
+So <a href="/static/files/twitter/query_result_2020-04-05T17_07_24.229283Z.csv">here</a>
  we compiled a list of tweets to these recurrent news sources from accounts that
 retweeted @alvisepf.</p>
 <p>Finally here is a complete archive of a set of tweets linking articles from these
-news source: <a href="../../static/files/twitter/users_tweeting_right_news_2020-04-05T16_51_11.893225Z.csv">archive</a>.</p>
+news source: <a href="/static/files/twitter/users_tweeting_right_news_2020-04-05T16_51_11.893225Z.csv">archive</a>.</p>
 <h2>What can be done</h2>
 <p>The patterns observed are pretty simple and repeated across countries and issues.
 Accounts like these are exposed every other day by researchers, but also by the
@@ -368,11 +381,13 @@ I'd also be happy to share access to my DB and give you full access to the data.
 <p>[6] <a href="https://en.wikipedia.org/wiki/Cambridge_Analytica">https://en.wikipedia.org/wiki/Cambridge_Analytica</a></p>
 <p>[7] <a href="https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown">https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown</a></p>
 <p>[8] <a href="https://en.wikipedia.org/wiki/Proof_of_work">https://en.wikipedia.org/wiki/Proof_of_work</a></p>
-]]></content:encoded>
+ ]]></content:encoded>
   </item>
 
+        
       
         
+          
   <item>
   
     <title>Decentralization meets anonymity. Using the onion service protocol to build p2p applications.</title>
@@ -380,8 +395,9 @@ I'd also be happy to share access to my DB and give you full access to the data.
     <guid isPermaLink="true">https://sifr.tech/blog/2020-03-25-decentralization-meets-anonymity</guid>
   
     <dc:date>2020-03-25</dc:date>
-    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
-    <content:encoded><![CDATA[<p>The architecture of the web is based on the client/server paradigm where the Hypertext Transfer Protocol (HTTP) occupies a predominant role [1]. HTTP was designed to transfer resource representations, to abstract over lower-layered transport protocols, such as TCP or UDP, and to act as the primary application-level protocol.</p>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
+    <description>Decentralization meets anonymity. Using the onion service protocol to build p2p applications.</description>
+    <content:encoded><![CDATA[ <p>The architecture of the web is based on the client/server paradigm where the Hypertext Transfer Protocol (HTTP) occupies a predominant role [1]. HTTP was designed to transfer resource representations, to abstract over lower-layered transport protocols, such as TCP or UDP, and to act as the primary application-level protocol.</p>
 <p>Representational State Transfer (REST) architectures are a generalization of the Web based on the HTTP protocol. In this sense the World Wide Web represent an Internet-scale implementation of the RESTful architectural style.</p>
 <p>RESTful architecture identify three main foundation blocks:
     – The identification mechanism, or a Uniform Resource Identifier (URI)
@@ -407,11 +423,13 @@ Because .onion services are only accessible via the Tor network, users do not ne
 <p>[5] Mansour, E., Sambra, A.V., Hawke, S., Zereba, M., Capadisli, S., Ghanem, A., Aboulnaga, A. and Berners-Lee, T., 2016, April. A demonstration of the solid platform for social web applications. In Proceedings of the 25th International Conference Companion on World Wide Web (pp. 223-226). <a href="https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf">https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf</a></p>
 <p>[6] <a href="https://onionshare.org">https://onionshare.org</a></p>
 <p>[7] <a href="https://play.google.com/store/apps/details?id=org.havenapp.main&amp;hl=en">https://play.google.com/store/apps/details?id=org.havenapp.main&amp;hl=en</a></p>
-]]></content:encoded>
+ ]]></content:encoded>
   </item>
 
+        
       
         
+          
   <item>
   
     <title>Internet Censorship</title>
@@ -419,8 +437,9 @@ Because .onion services are only accessible via the Tor network, users do not ne
     <guid isPermaLink="true">https://sifr.tech/blog/2020-03-04-censorship</guid>
   
     <dc:date>2020-03-04</dc:date>
-    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
-    <content:encoded><![CDATA[<p>When we talk about things like internet censorship and surveillance, these might appear as abstract concepts to some people, especially in global north countries. This post will tries to explain the effects of these activities, and what can be done to help people subjected to both.</p>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
+    <description>Internet Censorship</description>
+    <content:encoded><![CDATA[ <p>When we talk about things like internet censorship and surveillance, these might appear as abstract concepts to some people, especially in global north countries. This post will tries to explain the effects of these activities, and what can be done to help people subjected to both.</p>
 <h1>How does internet censorship look like?</h1>
 <p>Internet censorship can take many different forms. In most countries there is some form of internet censorship, meaning that the government might decide to block some websites for different reasons. Usually, in democratic settings, internet blocking is regulated by the state and it takes more the shape of content restrictions based on various constitutional rights and principles, and it is enacted both through the democratic process and formal legislation.</p>
 <p>Generally speaking a network can be censored by blocking or slowing down access to certain websites, services, protocols. The ooni project [1] has been developing tests to find out when and how is censorship happening in a network [2].
@@ -457,11 +476,13 @@ How blocking is implementing varies widely from country to country and even by s
 <p>[19] <a href="https://2019.www.torproject.org/docs/onion-services.html.en">https://2019.www.torproject.org/docs/onion-services.html.en</a></p>
 <p>[20] <a href="https://torproject.org">https://torproject.org</a></p>
 <p>[21] <a href="https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship">https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship</a></p>
-]]></content:encoded>
+ ]]></content:encoded>
   </item>
 
+        
       
         
+          
   <item>
   
     <title>Supporting the Tor network</title>
@@ -469,8 +490,9 @@ How blocking is implementing varies widely from country to country and even by s
     <guid isPermaLink="true">https://sifr.tech/blog/2020-03-04-tor-relays</guid>
   
     <dc:date>2020-03-04</dc:date>
-    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
-    <content:encoded><![CDATA[<p>How can small organization run relays on the Tor network while sustain their operations</p>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
+    <description>Supporting the Tor network</description>
+    <content:encoded><![CDATA[ <p>How can small organization run relays on the Tor network while sustain their operations</p>
 <h1>How is the Tor network composed</h1>
 <p>The Tor network consists entirely of relays run by volunteers, providing bandwidth and other services to Tor users. There are currently about 6000 relays sustaining the network [1].
 Up to now the Tor network has grown organically, by the mean of community outreach activities. Tor relay operators are usually individuals that are motivated by various factors. The Tor project mission itself is a strong driver for individuals interested in providing privacy enhancing communication tools to people all over the world. Other relay operators might be researchers interested in the technical aspects of the Tor software and protocol. Others can also simply be open source entusiasts that want to be part of its community. Many relay operators have often been recruited, so to speak, by other community members or core developers. Finally some relay operators are adversaries that are trying to run different analysis over the Tor network itself, like collecting information on its use or on the content being transferred.</p>
@@ -512,11 +534,13 @@ legitimate onion service ecosystem.</p>
 <p>[3] Krithika, P.R. and Palit, D., 2013. Participatory business models for off-grid electrification. In Rural electrification through decentralised off-grid systems in developing countries (pp. 187-225). Springer, London. <a href="https://www.researchgate.net/profile/Debajit_Palit/publication/261946063_Participatory_Business_Models_for_Off-Grid_Electrification/links/53e993090cf2fb1b9b671622.pdf">https://www.researchgate.net/profile/Debajit_Palit/publication/261946063_Participatory_Business_Models_for_Off-Grid_Electrification/links/53e993090cf2fb1b9b671622.pdf</a></p>
 <p>[4] <a href="https://applied-privacy.net/membership/">https://applied-privacy.net/membership/</a></p>
 <p>[5] <a href="https://enn.lu/member">https://enn.lu/member</a></p>
-]]></content:encoded>
+ ]]></content:encoded>
   </item>
 
+        
       
         
+          
   <item>
   
     <title>How to setup and use yubikeys for authentication</title>
@@ -524,8 +548,9 @@ legitimate onion service ecosystem.</p>
     <guid isPermaLink="true">https://sifr.tech/blog/2019-11-15-yubikey-setup</guid>
   
     <dc:date>2019-11-15</dc:date>
-    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
-    <content:encoded><![CDATA[<p>I use yubikeys to store my gpg and ssh keys.</p>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
+    <description>How to setup and use yubikeys for authentication</description>
+    <content:encoded><![CDATA[ <p>I use yubikeys to store my gpg and ssh keys.</p>
 <p>Before starting do a little bit of reading to familiarize yourself with the setup
 procedure.
 I have added a list of links at the end. These are mainly the resources that I used.</p>
@@ -586,11 +611,13 @@ $ ssh-add -l
 <li>[4] <a href="https://www.isi.edu/~calvin/yubikeyssh.htm">https://www.isi.edu/~calvin/yubikeyssh.htm</a></li>
 <li>[5] <a href="https://developers.yubico.com/PGP/Card_edit.html">https://developers.yubico.com/PGP/Card_edit.html</a></li>
 </ul>
-]]></content:encoded>
+ ]]></content:encoded>
   </item>
 
+        
       
         
+          
   <item>
   
     <title>Using Solid with Tor .onion services. How to decentralise your online identities</title>
@@ -598,8 +625,9 @@ $ ssh-add -l
     <guid isPermaLink="true">https://sifr.tech/blog/2019-06-21-solid-tor-onion-services</guid>
   
     <dc:date>2019-06-21</dc:date>
-    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
-    <content:encoded><![CDATA[<p>A lot of information is given away by certain properties of communications beyond just the content. These properties are usually referred to as communication metadata. Metadata include information such as the lenght of the conversation, who was involved, where are the parties involved in the conversation located, and so on.</p>
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
+    <description>Using Solid with Tor .onion services. How to decentralise your online identities</description>
+    <content:encoded><![CDATA[ <p>A lot of information is given away by certain properties of communications beyond just the content. These properties are usually referred to as communication metadata. Metadata include information such as the lenght of the conversation, who was involved, where are the parties involved in the conversation located, and so on.</p>
 <p>Questions that can be answered by looking at metadata are:</p>
 <ul>
 <li>how long you talk, how often ...</li>
@@ -624,11 +652,13 @@ With Solid all your data are stored in an online Solid Pod. The data is owned by
 <p>The code is available via the <a href="https://github.com/hiromipaw/myonion">myonion wrapper</a>. An experiment in making available through docker containers different app via .onion services.</p>
 <p>In this post I have shown how a web application made available through .onion on the Tor network can exchange information with a Solid pod and allow a user to login and share some data. Because .onion services live on the Tor network, you do not need hosting or a public ip address to offer some service via .onion address. This means .onion services are a gateway to a decentralised, peer-to-peer internet, where you regain control on the content you create and who you are sharing it with. The .onion can even be hosted on your computer for the time you desire, allowing the people using your service to remain anonymous, and also you.</p>
 <p>I believe anonymity to be very important since it can free people, allowing them to decide how to expose themselves or to make themselves visible on their own terms.</p>
-]]></content:encoded>
+ ]]></content:encoded>
   </item>
 
+        
       
         
+          
   <item>
   
     <title>Online Political Propaganda, new fascism, controveries and the Spanish Elections</title>
@@ -636,8 +666,9 @@ With Solid all your data are stored in an online Solid Pod. The data is owned by
     <guid isPermaLink="true">https://sifr.tech/blog/2019-04-26-on-online-political-propaganda</guid>
   
     <dc:date>2019-04-26</dc:date>
-    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator
-    <content:encoded><![CDATA[<p>I have been studying twitter political propaganda machine for a while now, trying
+    <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
+    <description>Online Political Propaganda, new fascism, controveries and the Spanish Elections</description>
+    <content:encoded><![CDATA[ <p>I have been studying twitter political propaganda machine for a while now, trying
 to identify patterns and spot interesting behaviors. Here is what I found.</p>
 <p>First of all the raw data can be accessed <a href="https://docs.google.com/spreadsheets/d/1jIRr2THizWOixFippI8dk51z3Nzo-ym3qFd490z-x0I/edit?usp=sharing">here</a></p>
 <p>The spreadsheet above contains a number of keywords, most of these keywords are
@@ -654,22 +685,12 @@ on adding more as I continue this.</p>
 <p>My objective is eventually exposing the money trail behind political marketing.</p>
 <p>If you are a journalist interested in data, please get in touch, I'd like to work
 more on this.</p>
-]]></content:encoded>
+ ]]></content:encoded>
   </item>
 
+        
       
         
-  <item>
-  
-    <title></title>
-    <link>https://sifr.tech/blog/rss</link>
-    <guid isPermaLink="true">https://sifr.tech/blog/rss</guid>
-  
-    <dc:date></dc:date>
-    <dc:creator></dc:creator
-    <content:encoded><![CDATA[]]></content:encoded>
-  </item>
-
       
     
   </channel>
