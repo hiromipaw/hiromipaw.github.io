@@ -26,7 +26,7 @@
   
     <dc:date>2020-05-19</dc:date>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
-    <description>online misinformation groups a network within the network.</description>
+    <description>Online misinformation groups: a network within the network.</description>
     <content:encoded><![CDATA[ <p>Let's analyze accounts interacting with a specific account and let's see with what
 other accounts they interact.</p>
 <p>We would have the idea that organically people replying or RT-ing a certain account
