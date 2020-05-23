@@ -7,7 +7,7 @@
   {% endif %}
     <dc:date>{{ post.pub_date }}</dc:date>
     <dc:creator>{{ post.author }}</dc:creator>
-    <description>{{ post.title }}</description>
+    <description>{{ post.summary }}</description>
     <content:encoded><![CDATA[ {{ post.body }} ]]></content:encoded>
   </item>
 {% endmacro %}

@@ -12,9 +12,7 @@
     <dc:language>en-us</dc:language>
     <link>https://www.sifr.tech/blog/</link>
     <atom:link href="https://www.sifr.tech/blog/rss/" rel="self" type="application/rss+xml" />
-
     <admin:errorReportsTo rdf:resource="mailto:hey@sifr.tech"/>
-
     {% from "macros/rss.html" import render_rss_post %}
     {% block body %}
       {% for post  in site.query('/blog/') %}

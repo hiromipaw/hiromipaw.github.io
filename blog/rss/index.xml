@@ -12,9 +12,7 @@
     <dc:language>en-us</dc:language>
     <link>https://www.sifr.tech/blog/</link>
     <atom:link href="https://www.sifr.tech/blog/rss/" rel="self" type="application/rss+xml" />
-
     <admin:errorReportsTo rdf:resource="mailto:hey@sifr.tech"/>
-
     
     
       
@@ -28,7 +26,7 @@
   
     <dc:date>2020-05-19</dc:date>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
-    <description>Network dynamics in the Spanish Right</description>
+    <description>online misinformation groups a network within the network.</description>
     <content:encoded><![CDATA[ <p>Let's analyze accounts interacting with a specific account and let's see with what
 other accounts they interact.</p>
 <p>We would have the idea that organically people replying or RT-ing a certain account
@@ -75,7 +73,7 @@ strategy to boost a certain political narrative.</p>
   
     <dc:date>2020-04-30</dc:date>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
-    <description>Perche&#39; preoccuparsi per la privacy in tempo di pandemia</description>
+    <description>applicazioni per il contract tracing durante l&#39;emergenza covid-19. Perche&#39; bisogna preoccuparsi della privacy.</description>
     <content:encoded><![CDATA[ <p>Perche preoccuparsi di privacy in tempo di pandemia?</p>
 <p>Ne abbiamo discusso in questo webminar: <a href="ttps://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/">Le contact tracing app rispettano la nostra privacy?</a> [1]</p>
 <p>Cerco di aggiungere un po' di contesto al mio intervento in queste note.</p>
@@ -203,9 +201,9 @@ dirtitti futuri.</p>
   
     <dc:date>2020-04-05</dc:date>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
-    <description>Online disinformation campaigns. A deep dive.</description>
+    <description>emerging patterns for online misinformation campaigns. how do these groups operate.</description>
     <content:encoded><![CDATA[ <p>A few days ago I published a little summary of online disinformation campaign for
-the spanish far right [1].</p>
+the Spanish far right [1].</p>
 <p>I tried to highlight the emerging patterns of how these amplification machines
 operate. Shoving retweets distribution for users rt-ing one of the top-talker
 accounts.</p>
@@ -283,7 +281,7 @@ used in this study.</p>
   
     <dc:date>2020-04-05</dc:date>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
-    <description>Online disinformation campaigns. How do these work. What can we do.</description>
+    <description>Online disinformation in the spanish far right. How the online political discourse is being silenced.</description>
     <content:encoded><![CDATA[ <p>Every social media user has possibly noticed how content is often driven by very
 strong emotions. Many posts range from extreme cute kittens to drama stories, but
 above all emotions it seems like online content is especially fueled by anger [1] [2].</p>
@@ -396,7 +394,7 @@ I'd also be happy to share access to my DB and give you full access to the data.
   
     <dc:date>2020-03-25</dc:date>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
-    <description>Decentralization meets anonymity. Using the onion service protocol to build p2p applications.</description>
+    <description>How can the .onion service protocol be used to develop p2p privacy friendly apps</description>
     <content:encoded><![CDATA[ <p>The architecture of the web is based on the client/server paradigm where the Hypertext Transfer Protocol (HTTP) occupies a predominant role [1]. HTTP was designed to transfer resource representations, to abstract over lower-layered transport protocols, such as TCP or UDP, and to act as the primary application-level protocol.</p>
 <p>Representational State Transfer (REST) architectures are a generalization of the Web based on the HTTP protocol. In this sense the World Wide Web represent an Internet-scale implementation of the RESTful architectural style.</p>
 <p>RESTful architecture identify three main foundation blocks:
@@ -438,7 +436,7 @@ Because .onion services are only accessible via the Tor network, users do not ne
   
     <dc:date>2020-03-04</dc:date>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
-    <description>Internet Censorship</description>
+    <description>A few thoughts on internet censorship and surveillance</description>
     <content:encoded><![CDATA[ <p>When we talk about things like internet censorship and surveillance, these might appear as abstract concepts to some people, especially in global north countries. This post will tries to explain the effects of these activities, and what can be done to help people subjected to both.</p>
 <h1>How does internet censorship look like?</h1>
 <p>Internet censorship can take many different forms. In most countries there is some form of internet censorship, meaning that the government might decide to block some websites for different reasons. Usually, in democratic settings, internet blocking is regulated by the state and it takes more the shape of content restrictions based on various constitutional rights and principles, and it is enacted both through the democratic process and formal legislation.</p>
@@ -491,7 +489,7 @@ How blocking is implementing varies widely from country to country and even by s
   
     <dc:date>2020-03-04</dc:date>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
-    <description>Supporting the Tor network</description>
+    <description>How can small organization run relays on the Tor network while sustain their operations. Learning from participatory business models for off-grid utilities</description>
     <content:encoded><![CDATA[ <p>How can small organization run relays on the Tor network while sustain their operations</p>
 <h1>How is the Tor network composed</h1>
 <p>The Tor network consists entirely of relays run by volunteers, providing bandwidth and other services to Tor users. There are currently about 6000 relays sustaining the network [1].
@@ -549,7 +547,7 @@ legitimate onion service ecosystem.</p>
   
     <dc:date>2019-11-15</dc:date>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
-    <description>How to setup and use yubikeys for authentication</description>
+    <description>Setting up yubikeys to store gpg and ssh keys</description>
     <content:encoded><![CDATA[ <p>I use yubikeys to store my gpg and ssh keys.</p>
 <p>Before starting do a little bit of reading to familiarize yourself with the setup
 procedure.
@@ -626,7 +624,7 @@ $ ssh-add -l
   
     <dc:date>2019-06-21</dc:date>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
-    <description>Using Solid with Tor .onion services. How to decentralise your online identities</description>
+    <description>Experimenting with solid pods shared as onion services</description>
     <content:encoded><![CDATA[ <p>A lot of information is given away by certain properties of communications beyond just the content. These properties are usually referred to as communication metadata. Metadata include information such as the lenght of the conversation, who was involved, where are the parties involved in the conversation located, and so on.</p>
 <p>Questions that can be answered by looking at metadata are:</p>
 <ul>
@@ -667,7 +665,7 @@ With Solid all your data are stored in an online Solid Pod. The data is owned by
   
     <dc:date>2019-04-26</dc:date>
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
-    <description>Online Political Propaganda, new fascism, controveries and the Spanish Elections</description>
+    <description>I have been studying twitter political propaganda machine for a while now, trying to identify patterns and spot interesting behaviors. Here is what I found.</description>
     <content:encoded><![CDATA[ <p>I have been studying twitter political propaganda machine for a while now, trying
 to identify patterns and spot interesting behaviors. Here is what I found.</p>
 <p>First of all the raw data can be accessed <a href="https://docs.google.com/spreadsheets/d/1jIRr2THizWOixFippI8dk51z3Nzo-ym3qFd490z-x0I/edit?usp=sharing">here</a></p>

@@ -6,6 +6,8 @@ author: hiro@torproject.org (Silvia Puglisi - Hiro)
 ---
 title: Decentralization meets anonymity. Using the onion service protocol to build p2p applications.
 ---
+summary: How can the .onion service protocol be used to develop p2p privacy friendly apps
+---
 body:
 
 The architecture of the web is based on the client/server paradigm where the Hypertext Transfer Protocol (HTTP) occupies a predominant role [1]. HTTP was designed to transfer resource representations, to abstract over lower-layered transport protocols, such as TCP or UDP, and to act as the primary application-level protocol.
