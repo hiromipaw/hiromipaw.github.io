@@ -49,7 +49,7 @@ Far right accounts.
 For this user we extracted a subset of users that are retweeting their posts.
 For this subset of users we extracted a subset of their timelines.
 
-This is the [archive](/static/files/twitter/query_result_2020-04-01T09_42_42.689784Z.csv).
+This is the [archive](https://www.sifr.tech/static/files/twitter/query_result_2020-04-01T09_42_42.689784Z.csv).
 
 We were interesting in finding out what other accounts these users were tweeting.
 We found out most of the tweets are actually retweets to accounts in the spanish
@@ -60,16 +60,16 @@ group of top talkers for the spanish far right.
 Hence we counted the number of retweets for account with the idea of extracting
 a distribution.
 
-Again here is the [result](/static/files/twitter/query_result_2020-04-01T11_23_09.761662Z.csv).
+Again here is the [result](https://www.sifr.tech/static/files/twitter/query_result_2020-04-01T11_23_09.761662Z.csv).
 
 And here is a distribution per account:
 
-![distribution](/static/files/twitter/screenshot-50.png "Twitter distribution per accounts")
-[full image](/static/files/twitter/Screenshot_2020-04-01%20Distribution%20of%20RT%20to%20accounts%20%C2%B7%20Metabase.png)
+![distribution](https://www.sifr.tech/static/files/twitter/screenshot-50.png "Twitter distribution per accounts")
+[full image](https://www.sifr.tech/static/files/twitter/Screenshot_2020-04-01%20Distribution%20of%20RT%20to%20accounts%20%C2%B7%20Metabase.png)
 
 ## How does a typical amplification account look like
 
-This [archive](/static/files/twitter/query_result_2020-03-31T09_44_57.589694Z.csv)
+This [archive](https://www.sifr.tech/static/files/twitter/query_result_2020-03-31T09_44_57.589694Z.csv)
  contains approximately 400 tweets from a single user, that coincidentally never sleeps ;).
 
 ## What news sources are linked
@@ -93,12 +93,12 @@ Here is a list of identified news sources:
 - https://youtube.com/channel/UCisIqN_XqjXz92eJMnjvEmA
 
 We noticed that all these accounts always retweet the same news source.
-So [here](/static/files/twitter/query_result_2020-04-05T17_07_24.229283Z.csv)
+So [here](https://www.sifr.tech/static/files/twitter/query_result_2020-04-05T17_07_24.229283Z.csv)
  we compiled a list of tweets to these recurrent news sources from accounts that
 retweeted @alvisepf.
 
 Finally here is a complete archive of a set of tweets linking articles from these
-news source: [archive](/static/files/twitter/users_tweeting_right_news_2020-04-05T16_51_11.893225Z.csv).
+news source: [archive](https://www.sifr.tech/static/files/twitter/users_tweeting_right_news_2020-04-05T16_51_11.893225Z.csv).
 
 ## What can be done
 
