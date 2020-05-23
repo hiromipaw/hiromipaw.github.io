@@ -18,3 +18,17 @@
     {{ post.body }}
   </section>
 {% endmacro %}
+
+{% macro render_rss_post(post, from_index=false) %}
+  <item>
+  {% if from_index %}
+    <title>{{ post.title }}</title>
+    <link>{{ 'https://sifr.tech' + post.path }}</link>
+    <guid isPermaLink="true">{{ 'https://sifr.tech' + post.path }}</guid>
+  {% endif %}
+    <dc:date>{{ post.pub_date }}</dc:date>
+    <dc:creator>{{ post.author }}</dc:creator>
+    <description>{{ post.summary }}</description>
+    <content:encoded><![CDATA[ {{ post.body }} ]]></content:encoded>
+  </item>
+{% endmacro %}

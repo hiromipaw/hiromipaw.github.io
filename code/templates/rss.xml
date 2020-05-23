@@ -13,10 +13,10 @@
     <link>https://www.sifr.tech/blog/</link>
     <atom:link href="https://www.sifr.tech/blog/rss/" rel="self" type="application/rss+xml" />
     <admin:errorReportsTo rdf:resource="mailto:hey@sifr.tech"/>
-    {% from "macros/rss.html" import render_rss_post %}
+    {% from "macros/blog.html" import render_rss_post %}
     {% block body %}
       {% for post  in site.query('/blog/') %}
-        {% if post.title %}
+        {% if post.title and loop.index < 11 %}
           {{ render_rss_post(post, from_index=true) }}
         {% endif %}
       {% endfor %}
