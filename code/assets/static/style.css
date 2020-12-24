@@ -1,4 +1,9 @@
 * { margin: 0; padding: 0; }
+body {
+  background: rgb(33,0,84);
+  background: linear-gradient(90deg, rgba(33,0,84,1) 0%, rgba(9,9,121,1) 35%, rgba(117,0,255,1) 100%);
+  color: #eee;
+}
 .terminal {
     border-radius: 5px 5px 0 0;
     position: relative;
@@ -31,7 +36,7 @@
 .yellow{ background: #F5C04F; border-color: #D6A13D; }
 .clear{clear: both;}
 .terminal .body {
-    background: #002b36;
+    background: rgba(0, 43, 54, 0.85);
     color: #839496;
     padding: 8px;
 }
@@ -60,7 +65,11 @@ p {
     word-break: break-word;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 1em 0;
+    margin: 1em;
+}
+
+ul {
+  padding: 2em;
 }
 
 code {

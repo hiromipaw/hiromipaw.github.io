@@ -4,24 +4,36 @@ title: Welcome !
 ---
 body:
 
-I am a Systems Engineer based in Barcelona, EU.
+$ ./about
 
-I am currently working at torproject.org and I am also part of the Information Security Group in the Department of Telematics Engineering at Universitat Politècnica de Catalunya (UPC) where I got my Ph.D. I research topics in the fields of privacy and anonymity of users in online communities and social networks.
+I am a Systems Engineer and Privacy Researcher based in Barcelona, EU.
 
-My current research interest are focused towards understanding what kind of information are publicly accessible online as result of users activities on social networks. I am also interested in RESTful architecture and application of hypermedia to Privacy and Security.
+I am currently working at [torproject.org](https://torproject.org).
+
+I was part of the Information Security Group in the Department of Telematics Engineering at
+Universitat Politècnica de Catalunya (UPC) where I got my Ph.D.
+
+I research topics in the fields of privacy and anonymity online.
+
+I am an adjunct professor at [uoc.edu](https://uoc.edu)
+
+
+$ ./about --website
 
 This website is available under different domains that I have used through the years.
 
 In no particular order:
 
-- nopressure.co.uk
-- hiro7.eu
-- hiro.network
+- [nopressure.co.uk](https://nopressure.co.uk)
+- [hiro7.eu](https://hiro7.eu)
+- [hiro.network](https://hiro.network)
 
 All redirect to: [sifr.tech](/)
 
 You can read sifr as you would read [cipher](https://en.wikipedia.org/wiki/Cipher). In fact in the word "cipher" in the middle age meant "zero" and originated through
 French and Italian from the pre-islamic term sifr = zero - in Arabic صفر (see [Zero Etymology](https://en.wikipedia.org/wiki/0#Etymology)).
+
+$./about --contacts
 
 You can reache me @: hey at sifr.tech
 
@@ -40,5 +52,7 @@ CA4F992C 56C1A912 5EF06865 6F4026C0 2CC052CE
 hiro@torproject.org Jabber
 
 C6DE1978 28721810 F6FF21CC E91A4B26 2D468808
+
+$ ./about --likes
 
 I like: surfing, swimming, skiing, mountainering and hiking. I have got two dog and two cats. If we were still in the '90s I would have displayed here my geek code.
