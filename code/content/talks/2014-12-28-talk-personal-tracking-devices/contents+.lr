@@ -1,0 +1,19 @@
+_template: page.html
+---
+title: Personal tracking devices
+---
+pub_date: 2014-12-28
+---
+author: Silvia Puglisi [Hiro]
+---
+body:
+
+In the post-NSA world it is important to understand the magnitude of our online activities in order to take informative decisions on our ubiquitous shared lives. Personal Tracking Devices is the result of a two years long study on tracking technologies and the inherent nature of the web and telecommunication networks in general. The study, conducted as part of Ph.D. research in privacy and security at UPC Barcelona Tech, collected a large amount of metadata to raise awareness on the footprints left by users on the web and through mobile apps.
+
+[Slides](http://www.nopressure.co.uk/31C3/#/)
+
+[Video](https://media.ccc.de/v/31c3_-_6100_-_en_-_saal_6_-_201412271245_-_personal_tracking_devices_and_online_identity_-_silvia)
+
+venue: "CCC"
+
+location: "Hamburg, Germany"

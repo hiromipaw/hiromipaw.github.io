@@ -3,42 +3,50 @@
       <meta charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/static/milligram.min.css">
-      <link rel="stylesheet" href="/static/normalize.css">
       <link rel="stylesheet" href="/static/style.css">
 
       <title>Welcome</title>
-      <link rel="author" href="humans.txt">
 </head>
 <body>
-  <main class="wrapper">
-      <nav class="navigation">
-	<section class="container">
-		<a class="navigation-title" href="/">
-      <img src="/static/profile.png" />
-    </a>
-    <ul class="navigation-list">
+  <header class="header">
+  <div class="inner">
+    <div class="logo">
+      <a href="/">
+        <img src="/static/profile.png" />
+      </a>
+    </div>
+		<nav class="menu">
+  		<ul>
+				
+				
+					<li><a href="/CV/">CV</a></li>
+				
+					<li><a href="/press/">Press</a></li>
+				
+					<li><a href="/publications/">Pubblications</a></li>
+				
+					<li><a href="/blog/">Blog</a></li>
+				
+					<li><a href="/talks/">Talks</a></li>
+				
+					<li><a href="/projects/">Projects</a></li>
+				
+			</ul>
+		</nav>
+  </div>
+</header>
 
-      
-      
-          <li class="navigation-item"><a class="navigation-link" href="/talks/">Talks</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/blog/">Blog</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/publications/">Pubblications</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/projects/">Projects</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/CV/">CV</a></li>
-      
-    </ul>
-  </section>
-</nav>
-
-      <section class="container">
-        <article>
-            <h3>Online disinformation campaigns. A deep dive.</h3>
-            <p>A few days ago I published a little summary of online disinformation campaign for
+  <div class="terminal space shadow">
+    <div class="top">
+        <div class="btns">
+            <span class="circle red"></span>
+            <span class="circle yellow"></span>
+            <span class="circle green"></span>
+        </div>
+        <div class="title">Online disinformation campaigns. A deep dive. -- </div>
+    </div>
+    <div class="body">
+      <p>A few days ago I published a little summary of online disinformation campaign for
 the Spanish far right [1].</p>
 <p>I tried to highlight the emerging patterns of how these amplification machines
 operate. Shoving retweets distribution for users rt-ing one of the top-talker
@@ -62,25 +70,19 @@ For each tweet I extracted the username and got the latest 200 tweets user timel
 </code></pre>
 <p>Now I identified a few top-talkers and computed the distribution of RTs to Accounts.</p>
 <p>Here are some results:</p>
-<h3>Twitter distribution for users RT-ing @okdiario: who are they RTing?</h3>
-<p><img src="https://www.sifr.tech/static/files/twitter/distribucion_okdiario_RTs-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
+<h3 id="twitter-distribution-for-users-rt-ing-okdiario-who-are-they-rting">Twitter distribution for users RT-ing @okdiario: who are they RTing?</h3><p><img src="https://www.sifr.tech/static/files/twitter/distribucion_okdiario_RTs-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
 <a href="https://www.sifr.tech/static/files/twitter/distribucion_okdiario_RTs.png">full image</a></p>
-<h3>Twitter distribution for users RT-ing @hermanntertsch: who are they RTing?</h3>
-<p><img src="https://www.sifr.tech/static/files/twitter/distribucion_hermanntertsch_RTs-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
+<h3 id="twitter-distribution-for-users-rt-ing-hermanntertsch-who-are-they-rting">Twitter distribution for users RT-ing @hermanntertsch: who are they RTing?</h3><p><img src="https://www.sifr.tech/static/files/twitter/distribucion_hermanntertsch_RTs-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
 <a href="https://www.sifr.tech/static/files/twitter/distribucion_hermanntertsch_RTs.png">full image</a></p>
-<h3>Twitter distribution for users RT-ing @alvisepf: who are they RTing?</h3>
-<p><img src="https://www.sifr.tech/static/files/twitter/distribucion_alvisepf_RTs-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
+<h3 id="twitter-distribution-for-users-rt-ing-alvisepf-who-are-they-rting">Twitter distribution for users RT-ing @alvisepf: who are they RTing?</h3><p><img src="https://www.sifr.tech/static/files/twitter/distribucion_alvisepf_RTs-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
 <a href="https://www.sifr.tech/static/files/twitter/distribucion_alvisepf_RTs.png">full image</a></p>
 <p>Here is the thing. If you look at the distribution of comments instead you get a
 different result.</p>
-<h3>Twitter distribution for users commenting-ing @okdiario: who are they commenting?</h3>
-<p><img src="https://www.sifr.tech/static/files/twitter/distribucion_comment_okdiario-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
+<h3 id="twitter-distribution-for-users-commenting-ing-okdiario-who-are-they-commenting">Twitter distribution for users commenting-ing @okdiario: who are they commenting?</h3><p><img src="https://www.sifr.tech/static/files/twitter/distribucion_comment_okdiario-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
 <a href="https://www.sifr.tech/static/files/twitter/distribucion_comments_okdiario.png">full image</a></p>
-<h3>Twitter distribution for users commenting-ing @hermanntertsch: who are they commenting?</h3>
-<p><img src="https://www.sifr.tech/static/files/twitter/distribucion_comment_hermanntertsch-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
+<h3 id="twitter-distribution-for-users-commenting-ing-hermanntertsch-who-are-they-commenting">Twitter distribution for users commenting-ing @hermanntertsch: who are they commenting?</h3><p><img src="https://www.sifr.tech/static/files/twitter/distribucion_comment_hermanntertsch-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
 <a href="https://www.sifr.tech/static/files/twitter/distribucion_comments_hermanntertsch.png">full image</a></p>
-<h3>Twitter distribution for users commenting-ing @alvisepf: who are they commenting?</h3>
-<p><img src="https://www.sifr.tech/static/files/twitter/distribucion_comment_alvisepf-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
+<h3 id="twitter-distribution-for-users-commenting-ing-alvisepf-who-are-they-commenting">Twitter distribution for users commenting-ing @alvisepf: who are they commenting?</h3><p><img src="https://www.sifr.tech/static/files/twitter/distribucion_comment_alvisepf-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
 <a href="https://www.sifr.tech/static/files/twitter/distribucion_comments_alvisepfs.png">full image</a></p>
 <p>This means in practice that there is a list of accounts RT-ing sources on the right
  and commenting on accounts from the left. The anticipation machines objective is
@@ -94,8 +96,7 @@ different result.</p>
 <a href="https://www.sifr.tech/static/files/twitter/top_plot.jpg">full image</a></p>
 <p>Here is probably a team of accounts acting to promote the tweets from OkDiario and
 a group of other accounts.</p>
-<h2>Would you like to have access to this data?</h2>
-<p>I have a <a href="https://metabase.com">metabase</a> <a href="https://project-mononoke.herokuapp.com/">instance</a>
+<h2 id="would-you-like-to-have-access-to-this-data">Would you like to have access to this data?</h2><p>I have a <a href="https://metabase.com">metabase</a> <a href="https://project-mononoke.herokuapp.com/">instance</a>
 setup on <a href="https://heroku.com">heroku</a>.</p>
 <p>You can have a look at the <a href="http://project-mononoke.herokuapp.com/public/dashboard/7e31a8e1-345b-4742-9774-82b86892135f">data</a>
 used in this study.</p>
@@ -103,10 +104,17 @@ used in this study.</p>
 <p>REFERENCES</p>
 <p>[1] <a href="https://www.hiro7.eu/blog/2020-04-05-online-disinformation">https://www.hiro7.eu/blog/2020-04-05-online-disinformation</a></p>
 
-        </article>
-      </section>
+    </div>
+  </div>
 
-      <footer class="footer">
+  <section class="container">
+  <p class="description">Silvia Puglisi [Hiro]</p>
+  <h5>Contacts:</h5>
+  <p>Email: <a href="mailto:hey@sifr.tech">hey at sifr dot tech</a></p>
+  <p>Twitter: <a href="https://twitter.com/nopressure/" target="_blank">@nopressure</a></p>
+  <p>Code: <a href="https://0xacab.org/hiro">0xacab/hiro</a></p>
+</section>
+  <footer class="footer">
 	<section class="container">
 		Links:
      <a href="https://twitter.com/nopressure/" target="_blank">Twitter</a> |
@@ -118,5 +126,4 @@ used in this study.</p>
 		 <a href="https://www.sifr.tech/blog/rss/" target="_blank">RSS</a> |
    </section>
 </footer>
-    </main>
 </body>

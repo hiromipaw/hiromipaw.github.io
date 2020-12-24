@@ -1,0 +1,107 @@
+_template: page.html
+---
+title: Network dynamics in the Spanish Right
+---
+pub_date: 2020-05-19
+---
+author: hiro@torproject.org (Silvia Puglisi - Hiro)
+---
+summary: Online misinformation groups: a network within the network.
+---
+body:
+
+Let's analyze accounts interacting with a specific account and let's see with what
+other accounts they interact.
+
+We would have the idea that organically people replying or RT-ing a certain account
+have different interests and follow different people.
+
+We would expect that if the activity is not organic, a large part of the actions
+performed (like commenting or replying to posts on social media) all follow a
+specific pattern.
+
+At the following links and images I have collected data and visualization for the
+accounts RT and replied by users RT-ing @vox_es:
+
+![distribution_vox_es-overall](https://www.sifr.tech/static/files/twitter/vox_es-overall.png "Twitter activity distribution for users RT-ing @vox_es")
+![distribution_vox_es-RT](https://www.sifr.tech/static/files/twitter/vox_es-RT.png "Retweets activity distribution for users RT-ing @vox_es")
+![distribution_vox_es-reply](https://www.sifr.tech/static/files/twitter/vox_es-reply.png "Reply activity distribution for users RT-ing @vox_es")
+
+[@vox-es overall activity and Retweets](https://docs.google.com/spreadsheets/d/15Z85z3WQ7gZ5p-qQFFeDfFcetDWUH1D5DCCMfzMm55I/edit?usp=sharing)
+
+[@vox-es replies](https://docs.google.com/spreadsheets/d/1ZFCyObb-Rm7kFM6Bq9tXFbGKSipkXIjRm5laP4h7ens/edit?usp=sharing)
+
+Let's compare this with some other parties accounts from the opposite political
+spectrum, @psoe and @iunida:
+
+[@psoe overall activity, RTs only and replies only](https://docs.google.com/spreadsheets/d/1bUtwPpgIjNbWf9_uDaNwK2QnVAvGTLKJZbYEFY4uyO4/edit?usp=sharing)
+
+[@iunida overall activity, RTs only and replies only](https://docs.google.com/spreadsheets/d/1JFBaPellTlYM5ad1O87L11jXskWtxvF5--zARWsCCLk/edit?usp=sharing)
+
+We can see how the behavior is completely different by observing how the replies
+for the accounts in the population aren't necessarily directed at accounts of the
+opposition with the same volumes, suggesting a more organic behavior.
+
+Some more distribution for accounts in the Spanish right:
+
+[@okdiario](https://docs.google.com/spreadsheets/d/1S2C_1Kkr0cGpSH9313xp79Swa_emz0e8PRsLGE104Gg/edit?usp=sharing)
+
+[@inesarrimadas](https://docs.google.com/spreadsheets/d/17vGyK64R477MMK9gmLLwIqlTfYD8zWFdZSL5sBL8Y0Y/edit?usp=sharing)
+
+[@alvisepf](https://docs.google.com/spreadsheets/d/1_FgjInYXtSQnxKohZYsqAK7s7anupXjBbIWPMUBtCDs/edit?usp=sharing)
+
+[@hermanntertsch](https://docs.google.com/spreadsheets/d/1iTSTkuX5XbVyCE-zORH5dGJNUtRQZ4OgdvMQdQWq7yk/edit?usp=sharing)
+
+[@carlesenric](https://docs.google.com/spreadsheets/d/1hNsypcwuKN6IjaWtzNpTNqmFky1i6mKa6dKCOHh_JFQ/edit?usp=sharing)
+
+[@estadodalarmatv](https://docs.google.com/spreadsheets/d/1q_C0EnaVp92IDgbCSAzNqlJp2Xt2QmL071QZniSjuLQ/edit?usp=sharing)
+
+[@abc_es](https://docs.google.com/spreadsheets/d/16V3KmZ5DEP5P6XbNLRSMMyi1WfX8p6udjDOyLsjjcgU/edit?usp=sharing)
+
+[@gonnassau](https://docs.google.com/spreadsheets/d/1klcXbcYJWSty30660JnrKqRI0jMtyjZrFffH8BpWbY8/edit?usp=sharing)
+
+[@pablocasado_](https://docs.google.com/spreadsheets/d/1ZEIKxWJQm79oDtIs7eoZeJOdDcNjr-EI3QS1U8xyEPY/edit?usp=sharing)
+
+[@jorgebuxade](https://docs.google.com/spreadsheets/d/1ZWybsa_GTROtTrGdxAyk1Y7mVnz9DuYFMaSrfAX6POk/edit?usp=sharing)
+
+[@elmundoes](https://docs.google.com/spreadsheets/d/1bbXnMeD0V7E27BzItrEqOW6rLtO4U7SSN8HfRgsM0rc/edit?usp=sharing)
+
+[@frayjosepho](https://docs.google.com/spreadsheets/d/15I8SDGlHTTxTTWST3-0cn6_RmgZXT3qvTUqv88Kklo4/edit?usp=sharing)
+
+[@elaguijon_](https://docs.google.com/spreadsheets/d/1afjc5BJWR1M5dxb36_5qy6gFPi3e4yN-bce6mrNVekQ/edit?usp=sharing)
+
+[@guajesalvaje](https://docs.google.com/spreadsheets/d/1Z-A4L0Q6EUy2oCdDcVCXAHVkKvRo3FZOSAvMbI1ykoo/edit?usp=sharing)
+
+[@javiernegre10](https://docs.google.com/spreadsheets/d/1cjAvrmb9RSqoNM09xaaBPbQYC1yzc0SRp0hN3ySd2EI/edit?usp=sharing)
+
+[@juanfraescudero](https://docs.google.com/spreadsheets/d/1hcKqlpVn0W41Go7Gj3jKGK_qXrNjf4gPInYH6Q_tLX8/edit?usp=sharing)
+
+[@idiazayuso](https://docs.google.com/spreadsheets/d/1tM-H2pe8bZjuFkpWEs5ybkPmzA_8aEEuJcz_LgCl_6Y/edit?usp=sharing)
+
+[@alfonso_ussia](https://docs.google.com/spreadsheets/d/19v9wjYlEt8GpnfsRlZ6yh62Fry6cUnlJ30tryo2_ZUk/edit?usp=sharing)
+
+[@tonicanto1](https://docs.google.com/spreadsheets/d/1N_l-h-2IDFYRBTMkqpEkvpBd2vgpFz4Z1UM62JvNadI/edit?usp=sharing)
+
+[@willytolerdoo](https://docs.google.com/spreadsheets/d/1RN761oC1EIn-CS3iCZILqZrXJh-ei0onW_nqR4fxYjs/edit?usp=sharing)
+
+[@crpandemonium](https://docs.google.com/spreadsheets/d/1nMpDbcd0wyvCL0_mFnrv3dZQXuqXeJyCO1wl_CREy64/edit?usp=sharing)
+
+[@cristinasegui_](https://docs.google.com/spreadsheets/d/1h49-c6QVQc5F1M9QTT9E3gUfZPczOU-LdvMdehwxqNk/edit?usp=sharing)
+
+[@girautaoficial](https://docs.google.com/spreadsheets/d/1kL6CTy7-iCDGDWeJx_VMQZLvLRNmbKEf5j15xfoslKU/edit?usp=sharing)
+
+[@ldpsincomplejos](https://docs.google.com/spreadsheets/d/1nNvqnANXB6RLWy_LMdMSCJW_GANvme55e35ISjZhLRY/edit?usp=sharing)
+
+[@Macarena_Olona](https://docs.google.com/spreadsheets/d/1KoyOsBhPJ7fGX5OnI3wyB0M3Q__NkTwF5MhdI2PM5Oc/edit?usp=sharing)
+
+[@rosadiezglez](https://docs.google.com/spreadsheets/d/1hEQxU0EJ5lB1WRBRMBxqkGVw2Ke75zMqDnBOEgYL9QU/edit?usp=sharing)
+
+[@JosPastr](https://docs.google.com/spreadsheets/d/183J0iMCgmg0mV9YkTmydWRvdKRpX9pdDs3yjpBTpdqA/edit?usp=sharing)
+
+
+
+
+What is particularly interesting is how the first two accounts replied by users in
+these population are always @psoe and @peniche.
+I would tend to think this accounts are set as targets, suggesting some organized
+strategy to boost a certain political narrative.

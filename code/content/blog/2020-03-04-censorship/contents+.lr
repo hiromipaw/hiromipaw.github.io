@@ -1,0 +1,85 @@
+_template: page.html
+---
+pub_date: 2020-03-04
+---
+summary: A few thoughts on internet censorship and surveillance
+---
+author: hiro@torproject.org (Silvia Puglisi - Hiro)
+---
+title: Internet Censorship
+---
+body:
+
+When we talk about things like internet censorship and surveillance, these might appear as abstract concepts to some people, especially in global north countries. This post will tries to explain the effects of these activities, and what can be done to help people subjected to both.
+
+# How does internet censorship look like?
+
+Internet censorship can take many different forms. In most countries there is some form of internet censorship, meaning that the government might decide to block some websites for different reasons. Usually, in democratic settings, internet blocking is regulated by the state and it takes more the shape of content restrictions based on various constitutional rights and principles, and it is enacted both through the democratic process and formal legislation.
+
+Generally speaking a network can be censored by blocking or slowing down access to certain websites, services, protocols. The ooni project [1] has been developing tests to find out when and how is censorship happening in a network [2].
+How blocking is implementing varies widely from country to country and even by specific political situations or events. Measures that can be adopted to circumnvent censorship at a certain moment might not work after a while. It is said that censorship circumnvention is a arms race. As censorship circunvention measures become more sophisticated so does censorship technology. Eventually the right for freedom and democracy is won at the political level.
+
+Ooni keeps a blog [3] where they present each internet censorship events and describe both the political background and the technical details of how the blocking is performed.
+
+While interent censorship might seems secondary it is important to point out that autoritarian regimes use communication control and blocking to shutdown or reduce people ability to organize and protest. There is evidence that as digitalr rights are restricted human rights are violated [4] [5].
+
+Internet censorship doesn't affect everyone equally either. Marginalized groups and people living in the global south are the ones that summer digital rights violation the most [6] [7].
+
+
+# Relationship between internet censorship and surveillance
+
+When communication networks are controlled and blocked, citizens are surveilled [8][9]. Controlling dissent by targeting certain groups and dissidents is a common practice for many authoritarian governments [10]. In certain cases these governments prefer to engage themeselves online or partern with online media companies to control content and who has access to it [11]. In other cases the technics are more sophisticated. In certain cases even, having a state actor surveil their citizens affects users and business outside that country. This is the example of China weaponizing ligitimate requests to attack certain websites outside the Great Firewall (GFW) and even target the global chinese community [10].
+
+# How to protect yourself from surveillance and circumnvent censorship
+
+The global investigative journalism network advises journalist to protect themselves and their sources from possible threats [13]. The first step is usually try to protect communications [14] by using end-to-end encrypted services, followed by taking necessary measures to protect access to personal accounts and using secure and encrypted tools and services to store and share documents.
+
+The ability to interact with sources is strategically important for journalist. This is why tools like Secure Drop [16] are used in newsrooms around the globe. Often journalists rely on more lightweight applications. One of this is OnionShare [17]. Onionshare allows users to share or receive files, or to publish a website, directly from their computer. Because OnionShare uses the Onion Service protocol [19] and expose the service on the Tor network only. The Onion Service protocol allows for bi-directional anonymity, meaning both the party offering the service and the party receiving the service are anonymous and protected by a 3-hops tor circuit.
+
+The Onion Service protocol also allows news organizations to reach surveilled and censored individuals [21] by offering their website on the Tor network. These website addresses end in the TLD .onion. Similar to how the https:// protocol of a website provides more security than the http:// protocol, an onion address also appears to be the same site but gives a visitor more privacy and security through end-to-end encryption and improved authentication. Visiting an onion address is easy. All that’s needed is Tor Browser (Tor Browser is built from Firefox and is similar to use); you visit the onion address in Tor Browser like you visit any web address.
+
+Because journalists and activists often have a public profile, both in real life and on social media, they need to take extra care to protect themselves from phishing attacks [15]. To understand the magnitude of phishing operations we just have to consider that the NSO's spyware Pegasus was targeting people in 45 countries [18].
+
+In other situation activists and journalist need to protect themselves by remaining anonymous. Tools like Tor [20] allow activists to safely browse the internet, do research, publish articles, and plan actions. All without being tracked.
+
+[1] https://ooni.org
+
+[2] https://ooni.org/nettest/
+
+[3] https://ooni.org/post/
+
+[4] https://www.washingtonpost.com/politics/2019/11/27/iran-shut-down-internet-stop-protests-how-long/
+
+[5] https://netblocks.org/reports/evidence-of-internet-disruptions-in-russia-during-moscow-opposition-protests-XADErzBg
+
+[6] https://www.accessnow.org/digital-rights-101-understanding-how-technology-affects-human-rights-for-all/
+
+[7] https://ooni.org/post/2019-blocking-abortion-rights-websites-women-on-waves-web/
+
+[8] https://www.theguardian.com/technology/2012/mar/02/censorship-inseperable-from-surveillance
+
+[9] https://www.washingtonpost.com/world/asia_pacific/chinas-scary-lesson-to-the-world-censoring-the-internet-works/2016/05/23/413afe78-fff3-11e5-8bb1-f124a43f84dc_story.html
+
+[10] https://www.wired.com/2017/04/internet-censorship-is-advancing-under-trump/
+
+[11] https://www.zdnet.com/article/internet-censorship-its-on-the-rise-and-silicon-valley-is-helping-it-happen/
+
+[12] https://www.eff.org/deeplinks/2019/10/chinas-global-reach-surveillance-and-censorship-beyond-great-firewall
+
+[13] https://gijn.org/digital-security/
+
+[14] https://www.icij.org/blog/2018/01/five-digital-security-tools-to-protect-your-work-and-sources/
+
+[15] https://cpj.org/2019/07/digital-safety-kit-journalists.php
+
+[16] https://securedrop.org/
+
+[17] https://onionshare.org/
+
+[18] https://citizenlab.ca/2018/09/hide-and-seek-tracking-nso-groups-pegasus-spyware-to-operations-in-45-countries/
+
+[19] https://2019.www.torproject.org/docs/onion-services.html.en
+
+[20] https://torproject.org
+
+[21] https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship

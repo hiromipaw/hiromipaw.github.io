@@ -1,0 +1,9 @@
+_model: RSS
+---
+_template: rss.xml
+---
+title: Silvia's RSS [Hiro's world]
+---
+_discoverable: yes
+---
+_hidden: no

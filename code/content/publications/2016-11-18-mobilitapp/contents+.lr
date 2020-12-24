@@ -1,0 +1,17 @@
+_template: page.html
+---
+title: MobilitApp: Analysing Mobility Data of Citizens in the Metropolitan Area of Barcelona
+---
+pub_date: 2016-11-18
+---
+author: Silvia Puglisi [Hiro]
+---
+body:
+
+MobilitApp is a platform designed to provide smart mobility services in urban areas. It is designed to help citizens and transport authorities alike. Citizens will be able to access the MobilitApp mobile application and decide their optimal transportation strategy by visualising their usual routes, their carbon footprint, receiving tips, analytics and general mobility information, such as traffic and incident alerts. Transport authorities and service providers will be able to access information about the mobility pattern of citizens to offer their best services, improve costs and planning. The MobilitApp client runs on Android devices and records synchronously, while running in the background, periodic location updates from its users. The information obtained is processed and analysed to understand the mobility patterns of our users in the city of Barcelona, Spain.
+
+citation: Silvia Puglisi, Ángel Torres Moreira, Gerard Marrugat Torregrosa, Mónica Aguilar Igartua and Jordi Forné. (2016). "MobilitApp: Analysing Mobility Data of Citizens in the Metropolitan Area of Barcelona." <i>Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering book series</i>. Vol. 169.
+
+proceedings: 'Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering book series'
+
+[paperurl](/static/files/mobilitapp.pdf)

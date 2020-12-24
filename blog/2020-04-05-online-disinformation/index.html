@@ -3,42 +3,50 @@
       <meta charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/static/milligram.min.css">
-      <link rel="stylesheet" href="/static/normalize.css">
       <link rel="stylesheet" href="/static/style.css">
 
       <title>Welcome</title>
-      <link rel="author" href="humans.txt">
 </head>
 <body>
-  <main class="wrapper">
-      <nav class="navigation">
-	<section class="container">
-		<a class="navigation-title" href="/">
-      <img src="/static/profile.png" />
-    </a>
-    <ul class="navigation-list">
+  <header class="header">
+  <div class="inner">
+    <div class="logo">
+      <a href="/">
+        <img src="/static/profile.png" />
+      </a>
+    </div>
+		<nav class="menu">
+  		<ul>
+				
+				
+					<li><a href="/CV/">CV</a></li>
+				
+					<li><a href="/press/">Press</a></li>
+				
+					<li><a href="/publications/">Pubblications</a></li>
+				
+					<li><a href="/blog/">Blog</a></li>
+				
+					<li><a href="/talks/">Talks</a></li>
+				
+					<li><a href="/projects/">Projects</a></li>
+				
+			</ul>
+		</nav>
+  </div>
+</header>
 
-      
-      
-          <li class="navigation-item"><a class="navigation-link" href="/talks/">Talks</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/blog/">Blog</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/publications/">Pubblications</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/projects/">Projects</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/CV/">CV</a></li>
-      
-    </ul>
-  </section>
-</nav>
-
-      <section class="container">
-        <article>
-            <h3>Online disinformation campaigns. How do these work. What can we do.</h3>
-            <p>Every social media user has possibly noticed how content is often driven by very
+  <div class="terminal space shadow">
+    <div class="top">
+        <div class="btns">
+            <span class="circle red"></span>
+            <span class="circle yellow"></span>
+            <span class="circle green"></span>
+        </div>
+        <div class="title">Online disinformation campaigns. How do these work. What can we do. -- </div>
+    </div>
+    <div class="body">
+      <p>Every social media user has possibly noticed how content is often driven by very
 strong emotions. Many posts range from extreme cute kittens to drama stories, but
 above all emotions it seems like online content is especially fueled by anger [1] [2].</p>
 <p>This might be specifically true for political driven content [3], but how people
@@ -49,8 +57,7 @@ and Cambridge Analytica [5]. Between 2013 and 2018 the company combined aggregat
 of Facebook data (later proved illegal), data mining and analysis, with communication
 campaigns during the electoral processes around the world with the goal to influence
 their outcome in favour of their clients [6].</p>
-<h2>What how does misinformation really look like?</h2>
-<p>If we take a look how any controversial or political topic on twitter we get
+<h2 id="what-how-does-misinformation-really-look-like">What how does misinformation really look like?</h2><p>If we take a look how any controversial or political topic on twitter we get
 a glimpse of how companies like Cambridge Analytica operate.</p>
 <p>At its core misinformation campaigns are built to spread a certain political agenda
 using specific language and amplifying only certain sources.</p>
@@ -58,8 +65,7 @@ using specific language and amplifying only certain sources.</p>
 Spanish political propaganda. Here is what I found.</p>
 <p>A few accounts and news sources spread the main messages, then a network of automated
 accounts make sure to retweet, highlight and reply to these messages.</p>
-<h2>A few examples</h2>
-<p>We have been observing a number of accounts following this similar pattern. Here
+<h2 id="a-few-examples">A few examples</h2><p>We have been observing a number of accounts following this similar pattern. Here
 is an example:</p>
 <p>User: <a href="https://twitter.com/Alvisepf">@alvisepf</a></p>
 <p>We have chosen this user because it is one of the "top talkers" in the spanish
@@ -78,11 +84,9 @@ a distribution.</p>
 <p>And here is a distribution per account:</p>
 <p><img src="https://www.sifr.tech/static/files/twitter/screenshot-50.png" alt="distribution" title="Twitter distribution per accounts">
 <a href="https://www.sifr.tech/static/files/twitter/Screenshot_2020-04-01%20Distribution%20of%20RT%20to%20accounts%20%C2%B7%20Metabase.png">full image</a></p>
-<h2>How does a typical amplification account look like</h2>
-<p>This <a href="https://www.sifr.tech/static/files/twitter/query_result_2020-03-31T09_44_57.589694Z.csv">archive</a>
+<h2 id="how-does-a-typical-amplification-account-look-like">How does a typical amplification account look like</h2><p>This <a href="https://www.sifr.tech/static/files/twitter/query_result_2020-03-31T09_44_57.589694Z.csv">archive</a>
  contains approximately 400 tweets from a single user, that coincidentally never sleeps ;).</p>
-<h2>What news sources are linked</h2>
-<p>Here is a list of identified news sources:</p>
+<h2 id="what-news-sources-are-linked">What news sources are linked</h2><p>Here is a list of identified news sources:</p>
 <ul>
 <li>Ok Diario</li>
 <li>Periodista Digital</li>
@@ -106,8 +110,7 @@ So <a href="https://www.sifr.tech/static/files/twitter/query_result_2020-04-05T1
 retweeted @alvisepf.</p>
 <p>Finally here is a complete archive of a set of tweets linking articles from these
 news source: <a href="https://www.sifr.tech/static/files/twitter/users_tweeting_right_news_2020-04-05T16_51_11.893225Z.csv">archive</a>.</p>
-<h2>What can be done</h2>
-<p>The patterns observed are pretty simple and repeated across countries and issues.
+<h2 id="what-can-be-done">What can be done</h2><p>The patterns observed are pretty simple and repeated across countries and issues.
 Accounts like these are exposed every other day by researchers, but also by the
 social networks operators [7].</p>
 <p>Why are operators not taking a stand against automated accounts? Patterns are not
@@ -119,8 +122,7 @@ could well increase the cost of automating a large amount of highlights and retw
 operation whose calculation difficulty is increased as the client makes more requests
 to a certain service. PoWs deters denial-of-service attacks and other service abuses,
 such as spam on a network.</p>
-<h2>What can you do</h2>
-<p>You can run your own research. I use a mix of own scripts calling twitter APIs and
+<h2 id="what-can-you-do">What can you do</h2><p>You can run your own research. I use a mix of own scripts calling twitter APIs and
 I also use <a href="https://github.com/twintproject">twint</a>. For visualizations I use
 <a href="https://metabase.com">metabase</a>.</p>
 <p>If you are a researcher or a journalist please get in touch. I'd be happy to
@@ -136,10 +138,17 @@ I'd also be happy to share access to my DB and give you full access to the data.
 <p>[7] <a href="https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown">https://cyber.fsi.stanford.edu/io/news/april-2020-twitter-takedown</a></p>
 <p>[8] <a href="https://en.wikipedia.org/wiki/Proof_of_work">https://en.wikipedia.org/wiki/Proof_of_work</a></p>
 
-        </article>
-      </section>
+    </div>
+  </div>
 
-      <footer class="footer">
+  <section class="container">
+  <p class="description">Silvia Puglisi [Hiro]</p>
+  <h5>Contacts:</h5>
+  <p>Email: <a href="mailto:hey@sifr.tech">hey at sifr dot tech</a></p>
+  <p>Twitter: <a href="https://twitter.com/nopressure/" target="_blank">@nopressure</a></p>
+  <p>Code: <a href="https://0xacab.org/hiro">0xacab/hiro</a></p>
+</section>
+  <footer class="footer">
 	<section class="container">
 		Links:
      <a href="https://twitter.com/nopressure/" target="_blank">Twitter</a> |
@@ -151,5 +160,4 @@ I'd also be happy to share access to my DB and give you full access to the data.
 		 <a href="https://www.sifr.tech/blog/rss/" target="_blank">RSS</a> |
    </section>
 </footer>
-    </main>
 </body>

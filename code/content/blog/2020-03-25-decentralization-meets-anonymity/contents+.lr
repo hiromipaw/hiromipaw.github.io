@@ -1,0 +1,61 @@
+_template: page.html
+---
+pub_date: 2020-03-25
+---
+author: hiro@torproject.org (Silvia Puglisi - Hiro)
+---
+title: Decentralization meets anonymity. Using the onion service protocol to build p2p applications.
+---
+summary: How can the .onion service protocol be used to develop p2p privacy friendly apps
+---
+body:
+
+The architecture of the web is based on the client/server paradigm where the Hypertext Transfer Protocol (HTTP) occupies a predominant role [1]. HTTP was designed to transfer resource representations, to abstract over lower-layered transport protocols, such as TCP or UDP, and to act as the primary application-level protocol.
+
+Representational State Transfer (REST) architectures are a generalization of the Web based on the HTTP protocol. In this sense the World Wide Web represent an Internet-scale implementation of the RESTful architectural style.
+
+RESTful architecture identify three main foundation blocks:
+    – The identification mechanism, or a Uniform Resource Identifier (URI)
+    – The communication process between agents
+    – The representation of data being exchanged
+
+We used to think of the web as hypertext documents linked to one another, but nowadays web documents are more like data objects linked to other objects, or in other words: hyperdata. The constraints imposed by the RESTful architectural style make the Web's architecture particularly malleable. The components making the web are continually changing and providing new capabilities, adding new resources in the form of novel websites and web services, supporting new representations for resources, etc [2].
+
+The web architecture is hence inherently decentralized, but the data shared on the Internet and the services used to store this data are completely centralized [3]. These means that access to those data is controlled by the service owner, which is often different from the entity that produced the data. This approach might be considered extremely pragmatic and in most cases also cheaper and easier to manage than in-house data storage services.
+This process of centralizing data in a handful of location has been described as dataveillance [4], or a form of surveillance using the massive collection and storage of vast quantities of personal data. While users lose control over their data, they also lose control over their privacy.
+
+Personal data store approaches have been proposed to over come these issues [5] and allow users to regain control over who can access their data. But decentralized access to data is only one part of the problems associated with web privacy.
+
+Tor is an important tool providing privacy and anonymity online. The Tor network itself is only a part of what Tor is. Tor also provides privacy at the application level through the Tor Browser. The Tor Browser was designed to provide privacy while surfing the web and defend users against both network and local forensic adversaries. The same properties can be adopted by applications and services wishing to integrate the tor network in their architecture. Furthermore, onion services provide better authentication and assurance of who you are talking to. With onion services Tor can provide bi-directional anonymity by making it possible for users to hide their locations while offering various kinds of services, such as web publishing or an instant messaging server.
+
+An .onion service needs to advertise its existence in the Tor network before clients will be able to contact it. Therefore, the service randomly picks some relays, builds circuits to them, and asks them to act as introduction points by telling them its public key. An onion service lives on the Tor network and its name is its long term master identity key. This is encoded as a hostname by encoding the entire key in Base 32, including a version byte and a checksum, and then appending the string “.onion” at the end. The result is a 56-character domain name.
+
+This means that onion service operators do not need a public IP address to publish an onion service, but only it's onion service address (URI) making the protocol ideal for p2p applications.
+
+While the introduction points and others are told the onion service's identity (public key), we don't want them to learn about the onion server's location (IP address). By using a full Tor circuit, it's hard for anyone to associate an introduction point with the .onion server's IP address.
+Because .onion services are only accessible via the Tor network, users do not need hosting or a public ip address to offer some service via .onion address. This means .onion services are a gateway to a decentralized, peer-to-peer internet, where users regain control on the content they create and who they are sharing it with.
+
+Access control for an onion service is imposed at multiple points. The first stage of access control happens when downloading HS descriptors. Specifically, in order to download a descriptor, clients must know the public key of the service. Also, if optional client authorization is enabled, onion service descriptors are super-encrypted using each authorized user's identity x25519 key, to further ensure that unauthorized entities cannot decrypt it. The final level of access control happens at the server itself, which may decide to respond or not respond to the client's request depending on the contents of the request.
+
+By using the Tor Browsers (or any web browser supporting the Tor protocol) clients can interact with onion service applications following the same RESTful paradigms.  Users can still interact with applications via hyperlinks and the browser will render accessed resource representation in a similar way to how it renders the content of a website. In fact a website shared via .onion is still a website. In fact for a set of web services, the onion service protocol is just another way that they can be reached, i.e. via the Tor network. For p2p applications instead it is a way to take advantage of the flexibility, far-reach and ease of use of web technologies to create decentralized, privacy-friendly services. Furthermore because .onions can be hosted locally, on someone personal computer, we can start imaging services that are available for the time the user desire, and disappear when the .onion operator wishes to shutdown the server.
+
+There are a number of applications that are using the onion service protocol in a p2p fashion. One of this is onionshare [6] that allow user to share files or publishing a website without using a centralized server. Another is Haven [7] that transform an Android phone into a physical security device and use an onion service to check logs of the phone sensors remotely. We can envision apps allowing people to communicate between one another or developing their own social network. Hopefully more applications will be developed in the near future, creating a dynamic onion service app ecosystem and fostering a more privacy friendly decentralized web.
+
+REFERENCES:
+
+[1] Berners‐Lee, T., Cailliau, R., Groff, J.F. and Pollermann, B., 1992. World‐Wide Web: the information universe. Internet Research. https://www.emeraldgrouppublishing.com/products/backfiles/pdf/backfiles_sample_5.pdf
+
+[2] Fielding, R.T., Taylor, R.N., Erenkrantz, J.R., Gorlick, M.M., Whitehead, J., Khare, R. and Oreizy, P., 2017, August. Reflections on the REST architectural style and” principled design of the modern web architecture”(impact paper award). In Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering (pp. 4-14). https://pdfs.semanticscholar.org/1942/68d1965a7704d1361e440c3ebf599249a005.pdf
+
+[3] Robinson, D.C., Hand, J.A., Madsen, M.B. and McKelvey, K.R., 2018. The Dat Project, an open and decentralized research data tool. Scientific data, 5. https://www.nature.com/articles/sdata2018221
+
+[4] Solove, D.J., 2004. The digital person: Technology and privacy in the information age (Vol. 1). NyU Press. https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=2501&context=faculty_publications
+
+[5] Mansour, E., Sambra, A.V., Hawke, S., Zereba, M., Capadisli, S., Ghanem, A., Aboulnaga, A. and Berners-Lee, T., 2016, April. A demonstration of the solid platform for social web applications. In Proceedings of the 25th International Conference Companion on World Wide Web (pp. 223-226). https://pdfs.semanticscholar.org/5ac9/3548fd0628f7ff8ff65b5878d04c79c513c4.pdf
+
+[6] https://onionshare.org
+
+[7] https://play.google.com/store/apps/details?id=org.havenapp.main&hl=en
+
+---
+_discoverable: yes

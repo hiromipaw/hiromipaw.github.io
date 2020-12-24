@@ -1,13 +1,21 @@
 {% include 'header.html' %}
 <body>
-  <main class="wrapper">
-    {% include 'nav.html' %}
-    {% include 'hero.html' %}
-    <section class="container">
-      <h3>About</h3>
-      {{ this.body }}
-    </section>
+  {% include 'nav.html' %}
 
-    {% include 'footer.html' %}
-  </main>
+  <div class="terminal space shadow">
+    <div class="top">
+        <div class="btns">
+            <span class="circle red"></span>
+            <span class="circle yellow"></span>
+            <span class="circle green"></span>
+        </div>
+        <div class="title">about -- </div>
+    </div>
+    <div class="body">
+      {{ this.body }}
+    </div>
+  </div>
+
+  {% include 'hero.html' %}
+  {% include 'footer.html' %}
 </body>

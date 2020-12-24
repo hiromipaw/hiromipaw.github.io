@@ -3,42 +3,50 @@
       <meta charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/static/milligram.min.css">
-      <link rel="stylesheet" href="/static/normalize.css">
       <link rel="stylesheet" href="/static/style.css">
 
       <title>Welcome</title>
-      <link rel="author" href="humans.txt">
 </head>
 <body>
-  <main class="wrapper">
-      <nav class="navigation">
-	<section class="container">
-		<a class="navigation-title" href="/">
-      <img src="/static/profile.png" />
-    </a>
-    <ul class="navigation-list">
+  <header class="header">
+  <div class="inner">
+    <div class="logo">
+      <a href="/">
+        <img src="/static/profile.png" />
+      </a>
+    </div>
+		<nav class="menu">
+  		<ul>
+				
+				
+					<li><a href="/CV/">CV</a></li>
+				
+					<li><a href="/press/">Press</a></li>
+				
+					<li><a href="/publications/">Pubblications</a></li>
+				
+					<li><a href="/blog/">Blog</a></li>
+				
+					<li><a href="/talks/">Talks</a></li>
+				
+					<li><a href="/projects/">Projects</a></li>
+				
+			</ul>
+		</nav>
+  </div>
+</header>
 
-      
-      
-          <li class="navigation-item"><a class="navigation-link" href="/talks/">Talks</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/blog/">Blog</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/publications/">Pubblications</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/projects/">Projects</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/CV/">CV</a></li>
-      
-    </ul>
-  </section>
-</nav>
-
-      <section class="container">
-        <article>
-            <h3>Peeling onions: understanding and using the Tor network</h3>
-            <p>Tor is an important tool providing privacy and anonymity online. The property of anonymity itself is more than just providing an encrypted connection between the source and the destination of a given conversation. There is in fact a lot of information that can be still learned by just observing encrypted communications. Anonymity is a broad concept, and it can mean different things to different groups. The main advertised property of the Tor network is that it provides strong anonymity given a variety of people using the network. The Tor network itself is only a part of what Tor is. Tor also provides privacy at the application level through the Tor Browser. This talk is going to present what Tor is and how it works. We are also going to present new features we have been developing lately. Finally we are going to explain how you can build applications that use Tor.</p>
+  <div class="terminal space shadow">
+    <div class="top">
+        <div class="btns">
+            <span class="circle red"></span>
+            <span class="circle yellow"></span>
+            <span class="circle green"></span>
+        </div>
+        <div class="title">Peeling onions: understanding and using the Tor network -- </div>
+    </div>
+    <div class="body">
+      <p>Tor is an important tool providing privacy and anonymity online. The property of anonymity itself is more than just providing an encrypted connection between the source and the destination of a given conversation. There is in fact a lot of information that can be still learned by just observing encrypted communications. Anonymity is a broad concept, and it can mean different things to different groups. The main advertised property of the Tor network is that it provides strong anonymity given a variety of people using the network. The Tor network itself is only a part of what Tor is. Tor also provides privacy at the application level through the Tor Browser. This talk is going to present what Tor is and how it works. We are also going to present new features we have been developing lately. Finally we are going to explain how you can build applications that use Tor.</p>
 <p>Tor is an important tool providing privacy and anonymity online. The property of anonymity itself is more than just providing an encrypted connection between the source and the destination of a given conversation. Encryption only prevents the content of the communication between Alice and Bob from becoming known.</p>
 <p>There is in fact a lot of information that can still be learned by just observing encrypted communications. For example, it is always possible to guess certain information by learning some properties of the conversation beyond just the content, such as the length of the conversation, or who was involved, or even guessing a group of people that communicate with a certain frequency. These properties are called metadata and can be used to describe information even when the full data is not available.</p>
 <p>Anonymity is a broad concept, and it can mean different things to different groups. The main advertised property of the Tor network is that it provides strong anonymity given a variety of people using the network. For the Tor network to function properly and to satisfy users' needs, we need a certain degree of diversity. We need diversity in the nodes comprising the network and in the user population sending traffic through it. Lately, we have been introducing new traffic scheduling features in the network in order to solve problems, reduce congestion and improve overall performance.</p>
@@ -49,10 +57,17 @@
 <p>venue: "FOSDEM"</p>
 <p>location: "Brussels, Belgium"</p>
 
-        </article>
-      </section>
+    </div>
+  </div>
 
-      <footer class="footer">
+  <section class="container">
+  <p class="description">Silvia Puglisi [Hiro]</p>
+  <h5>Contacts:</h5>
+  <p>Email: <a href="mailto:hey@sifr.tech">hey at sifr dot tech</a></p>
+  <p>Twitter: <a href="https://twitter.com/nopressure/" target="_blank">@nopressure</a></p>
+  <p>Code: <a href="https://0xacab.org/hiro">0xacab/hiro</a></p>
+</section>
+  <footer class="footer">
 	<section class="container">
 		Links:
      <a href="https://twitter.com/nopressure/" target="_blank">Twitter</a> |
@@ -64,5 +79,4 @@
 		 <a href="https://www.sifr.tech/blog/rss/" target="_blank">RSS</a> |
    </section>
 </footer>
-    </main>
 </body>

@@ -1,14 +1,17 @@
-<nav class="navigation">
-	<section class="container">
-		<a class="navigation-title" href="/">
-      <img src="{{ '/static/profile.png'|url }}" />
-    </a>
-    <ul class="navigation-list">
-
-      {% set s = site.query('/') %}
-      {% for item in s %}
-          <li class="navigation-item"><a class="navigation-link" href="{{ item.path|url }}">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </section>
-</nav>
+<header class="header">
+  <div class="inner">
+    <div class="logo">
+      <a href="/">
+        <img src="{{ '/static/profile.png'|url }}" />
+      </a>
+    </div>
+		<nav class="menu">
+  		<ul>
+				{% set s = site.query('/') %}
+				{% for item in s %}
+					<li><a href="{{ item.path|url }}">{{ item.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+  </div>
+</header>

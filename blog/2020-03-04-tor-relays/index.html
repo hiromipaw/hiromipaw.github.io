@@ -3,56 +3,60 @@
       <meta charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/static/milligram.min.css">
-      <link rel="stylesheet" href="/static/normalize.css">
       <link rel="stylesheet" href="/static/style.css">
 
       <title>Welcome</title>
-      <link rel="author" href="humans.txt">
 </head>
 <body>
-  <main class="wrapper">
-      <nav class="navigation">
-	<section class="container">
-		<a class="navigation-title" href="/">
-      <img src="/static/profile.png" />
-    </a>
-    <ul class="navigation-list">
+  <header class="header">
+  <div class="inner">
+    <div class="logo">
+      <a href="/">
+        <img src="/static/profile.png" />
+      </a>
+    </div>
+		<nav class="menu">
+  		<ul>
+				
+				
+					<li><a href="/CV/">CV</a></li>
+				
+					<li><a href="/press/">Press</a></li>
+				
+					<li><a href="/publications/">Pubblications</a></li>
+				
+					<li><a href="/blog/">Blog</a></li>
+				
+					<li><a href="/talks/">Talks</a></li>
+				
+					<li><a href="/projects/">Projects</a></li>
+				
+			</ul>
+		</nav>
+  </div>
+</header>
 
-      
-      
-          <li class="navigation-item"><a class="navigation-link" href="/talks/">Talks</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/blog/">Blog</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/publications/">Pubblications</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/projects/">Projects</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/CV/">CV</a></li>
-      
-    </ul>
-  </section>
-</nav>
-
-      <section class="container">
-        <article>
-            <h3>Supporting the Tor network</h3>
-            <p>How can small organization run relays on the Tor network while sustain their operations</p>
-<h1>How is the Tor network composed</h1>
-<p>The Tor network consists entirely of relays run by volunteers, providing bandwidth and other services to Tor users. There are currently about 6000 relays sustaining the network [1].
+  <div class="terminal space shadow">
+    <div class="top">
+        <div class="btns">
+            <span class="circle red"></span>
+            <span class="circle yellow"></span>
+            <span class="circle green"></span>
+        </div>
+        <div class="title">Supporting the Tor network -- </div>
+    </div>
+    <div class="body">
+      <p>How can small organization run relays on the Tor network while sustain their operations</p>
+<h1 id="how-is-the-tor-network-composed">How is the Tor network composed</h1><p>The Tor network consists entirely of relays run by volunteers, providing bandwidth and other services to Tor users. There are currently about 6000 relays sustaining the network [1].
 Up to now the Tor network has grown organically, by the mean of community outreach activities. Tor relay operators are usually individuals that are motivated by various factors. The Tor project mission itself is a strong driver for individuals interested in providing privacy enhancing communication tools to people all over the world. Other relay operators might be researchers interested in the technical aspects of the Tor software and protocol. Others can also simply be open source entusiasts that want to be part of its community. Many relay operators have often been recruited, so to speak, by other community members or core developers. Finally some relay operators are adversaries that are trying to run different analysis over the Tor network itself, like collecting information on its use or on the content being transferred.</p>
 <p>All the motivations described above do not require direct compensation by the Tor Project and the volunteer-based approach to sustain the network has been proved successful. Relay operators do not only invest their hardware, but also time and commitment in running the relays and in being part of the Tor community. Expenading the set of relays is vital for the Tor network. More importantly the network needs a diverse set of relay, not just advertised bandwidth. Diversity means different hardware and operating systems, but also different locations across the globe in order to reach users worldwide and offer overall the same quality of service.</p>
 <p>Throughout Tor history, there have never been in place an official mechanism for relay operators to be rewarded extrinsically. The intrinsic reward of being a relay operator was the social perceived value, like recognition within the Tor community. Many different proposals have been made for a Tor incentives system [2], but none has ever been implemented.</p>
-<h1>How do relay operators organize</h1>
-<p>Relay operators sometimes create a small non profit or join an umbrella organization, to support their activities. These are setup so that the individual operators are not legally responsible in case of a legal dispute. Also the organization is setup to share the burden of possible legal expenses and to collect donations for their activities. The Tor Project itself advises people to constitute a non-profit organization responsible for the relays in case of possible legal disputes.
+<h1 id="how-do-relay-operators-organize">How do relay operators organize</h1><p>Relay operators sometimes create a small non profit or join an umbrella organization, to support their activities. These are setup so that the individual operators are not legally responsible in case of a legal dispute. Also the organization is setup to share the burden of possible legal expenses and to collect donations for their activities. The Tor Project itself advises people to constitute a non-profit organization responsible for the relays in case of possible legal disputes.
 There are some legal risks in fact associated with running relays. These are usually not different from the same risks that an ISP could have since both relay internet traffic. Exits relays have more legal concerns that bridges, guards or middle relays, because middles and guards only relay encrypted traffic, while exits performs requests to the open internet.
 The Tor Project provides some standard response letters that relay operators can use and some legal resources that could become handy. In any case relay operators are advised to consult with a lawyer if any problem with law enforcement should arise.</p>
-<h1>How much does it cost to run a relay</h1>
-<p>Running a relay can be as cheap as a few dollars per month and as expensive as a few hundred, depending on where the relay runs, which kind of hardware it's running on, bandwidth, operating system and so on. Most relays operators rely on donations from individuals that want to contribute to the network but for several reasons are not able to run a relay at the moment. There is again intrinsic value to donate to relay operators to contribute to the Tor community.</p>
+<h1 id="how-much-does-it-cost-to-run-a-relay">How much does it cost to run a relay</h1><p>Running a relay can be as cheap as a few dollars per month and as expensive as a few hundred, depending on where the relay runs, which kind of hardware it's running on, bandwidth, operating system and so on. Most relays operators rely on donations from individuals that want to contribute to the network but for several reasons are not able to run a relay at the moment. There is again intrinsic value to donate to relay operators to contribute to the Tor community.</p>
 <p>A big portion of relay costs are taken over by bandwidth consumption. If an individual or group wants to run a node that relays a lot of traffic, bandwidth might become expensive.</p>
-<h1>Participatory Business Models for Off-Grid utilities, what can we learn</h1>
-<p>Certain mechanisms developed by and for the maintenance and operations of the Tor network have much in common with off-grid utility implementation. To start both are ipso-facto decentralized, community based and require experimenting with different business models for implementation.</p>
+<h1 id="participatory-business-models-for-off-grid-utilities-what-can-we-learn">Participatory Business Models for Off-Grid utilities, what can we learn</h1><p>Certain mechanisms developed by and for the maintenance and operations of the Tor network have much in common with off-grid utility implementation. To start both are ipso-facto decentralized, community based and require experimenting with different business models for implementation.</p>
 <p>A number  of  previous  studies  have  developed  their  own  classifications  for electrification models.</p>
 <ul>
 <li>Commercially  led  models which  are  driven  by  suppliers  and  dealers  with relatively little government control.</li>
@@ -70,8 +74,7 @@ The Tor Project provides some standard response letters that relay operators can
 </ol>
 <p>One thing that differentiate the ecosystem of companies and cooperatives providing utilities and relay operators is the fact that while utility providing organizations could in theory charge its users for using their network, the Tor network is freely accessible by everyone running a Tor client. Since neither the Tor Project nor any reasonable relay operator would like to charge Tor users for bandwidth used, in the past people have speculated whether it would make sense to build mechanisms so that the network could reward relays for the bandwidth provided to the network. A part of this speculation has also involved considering possible harms of such mechanism to both the privacy and security of Tor users and the community of relay operators. For example some have argued that this could encourage bad or malicious relays, or the growth of relay farms with the only interest to cash out instead of maintaining the network and protecting the privacy of its users.</p>
 <p>Some relay operators groups have developed a membership model to help sustain their operations [4] [5]. The membership model allows such group to build a close relationship with their supporters while also sustaining their operations.</p>
-<h1>Running a participatory relay community</h1>
-<p>While relay operators cannot be directly compensated by Tor users directly, they could be compensated for offering other services in a participatory way to the community of Tor users and .onion websites.
+<h1 id="running-a-participatory-relay-community">Running a participatory relay community</h1><p>While relay operators cannot be directly compensated by Tor users directly, they could be compensated for offering other services in a participatory way to the community of Tor users and .onion websites.
 The relay operators group could add a certain fee to the service offered and redirect part of this compensation to sustaining their infrastructure and work in maintaining the Tor network. This mechanism could help both the relay operators and the Tor network itself in more than one way. One the one hand relay operators can build a relationship with their members by offering a set of privacy friendly services that might or might not use the Tor network itself to be operated, like bridges, .onion hosting, vpn, and so on. On the other hand the Tor project will benefit by seeing more diverse use of the Tor network. Finally, this could also be an incentive for creating a better experience for onion services developers and operators and therefore fostering a more
 legitimate onion service ecosystem.</p>
 <p>This mechanism could be easier to implement for some relay operators that other form of financing, simply because they are already running some of these services as these are needed for day-to-day operations. For example many operators group running exit are already running an authoritative dns and could easily offer this service to their members (some in fact already do). This might actually be easier in many circumstances than applying for international grants or public funding, since in many cases this suppose a big overhead in work that small relay operators group cannot sustain.</p>
@@ -81,10 +84,17 @@ legitimate onion service ecosystem.</p>
 <p>[4] <a href="https://applied-privacy.net/membership/">https://applied-privacy.net/membership/</a></p>
 <p>[5] <a href="https://enn.lu/member">https://enn.lu/member</a></p>
 
-        </article>
-      </section>
+    </div>
+  </div>
 
-      <footer class="footer">
+  <section class="container">
+  <p class="description">Silvia Puglisi [Hiro]</p>
+  <h5>Contacts:</h5>
+  <p>Email: <a href="mailto:hey@sifr.tech">hey at sifr dot tech</a></p>
+  <p>Twitter: <a href="https://twitter.com/nopressure/" target="_blank">@nopressure</a></p>
+  <p>Code: <a href="https://0xacab.org/hiro">0xacab/hiro</a></p>
+</section>
+  <footer class="footer">
 	<section class="container">
 		Links:
      <a href="https://twitter.com/nopressure/" target="_blank">Twitter</a> |
@@ -96,5 +106,4 @@ legitimate onion service ecosystem.</p>
 		 <a href="https://www.sifr.tech/blog/rss/" target="_blank">RSS</a> |
    </section>
 </footer>
-    </main>
 </body>

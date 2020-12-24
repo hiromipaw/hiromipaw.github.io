@@ -3,50 +3,65 @@
       <meta charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/static/milligram.min.css">
-      <link rel="stylesheet" href="/static/normalize.css">
       <link rel="stylesheet" href="/static/style.css">
 
       <title>Welcome</title>
-      <link rel="author" href="humans.txt">
 </head>
 <body>
-  <main class="wrapper">
-      <nav class="navigation">
-	<section class="container">
-		<a class="navigation-title" href="/">
-      <img src="/static/profile.png" />
-    </a>
-    <ul class="navigation-list">
+  <header class="header">
+  <div class="inner">
+    <div class="logo">
+      <a href="/">
+        <img src="/static/profile.png" />
+      </a>
+    </div>
+		<nav class="menu">
+  		<ul>
+				
+				
+					<li><a href="/CV/">CV</a></li>
+				
+					<li><a href="/press/">Press</a></li>
+				
+					<li><a href="/publications/">Pubblications</a></li>
+				
+					<li><a href="/blog/">Blog</a></li>
+				
+					<li><a href="/talks/">Talks</a></li>
+				
+					<li><a href="/projects/">Projects</a></li>
+				
+			</ul>
+		</nav>
+  </div>
+</header>
 
-      
-      
-          <li class="navigation-item"><a class="navigation-link" href="/talks/">Talks</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/blog/">Blog</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/publications/">Pubblications</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/projects/">Projects</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/CV/">CV</a></li>
-      
-    </ul>
-  </section>
-</nav>
-
-      <section class="container">
-        <article>
-            <h3>Onions in Containers: How Docker Containers Can Be Used to Spawn Onion Services, Securely and Anonymously, from Your Computer</h3>
-            <p>Tor is an important tool providing privacy and anonymity online. The property of anonymity itself is more than just providing an encrypted connection between the source and the destination of a given conversation. Encryption only prevents the content of the communication between Alice and Bob from becoming known. Onion Services offer bidirectional anonymity through Tor "rendezvous points," other Tor users can connect to these onion services each without knowing the other's network identity, just by sharing the onion service address. This talk is going to explain how we built a desktop app to allow users to start onion services with a click and share a website or a web app from their computer.</p>
+  <div class="terminal space shadow">
+    <div class="top">
+        <div class="btns">
+            <span class="circle red"></span>
+            <span class="circle yellow"></span>
+            <span class="circle green"></span>
+        </div>
+        <div class="title">Onions in Containers: How Docker Containers Can Be Used to Spawn Onion Services, Securely and Anonymously, from Your Computer -- </div>
+    </div>
+    <div class="body">
+      <p>Tor is an important tool providing privacy and anonymity online. The property of anonymity itself is more than just providing an encrypted connection between the source and the destination of a given conversation. Encryption only prevents the content of the communication between Alice and Bob from becoming known. Onion Services offer bidirectional anonymity through Tor "rendezvous points," other Tor users can connect to these onion services each without knowing the other's network identity, just by sharing the onion service address. This talk is going to explain how we built a desktop app to allow users to start onion services with a click and share a website or a web app from their computer.</p>
 <p><a href="https://docs.google.com/presentation/d/1wQGQAqlZZB0dubIoyxXc0gIeTHhWIzS5FVXT-PQzYsY/edit#slide=id.p3">Slides</a></p>
 <p>venue: "Docker Con EU"</p>
 <p>location: "Barcelona, Spain"</p>
 
-        </article>
-      </section>
+    </div>
+  </div>
 
-      <footer class="footer">
+  <section class="container">
+  <p class="description">Silvia Puglisi [Hiro]</p>
+  <h5>Contacts:</h5>
+  <p>Email: <a href="mailto:hey@sifr.tech">hey at sifr dot tech</a></p>
+  <p>Twitter: <a href="https://twitter.com/nopressure/" target="_blank">@nopressure</a></p>
+  <p>Code: <a href="https://0xacab.org/hiro">0xacab/hiro</a></p>
+</section>
+  <footer class="footer">
 	<section class="container">
 		Links:
      <a href="https://twitter.com/nopressure/" target="_blank">Twitter</a> |
@@ -58,5 +73,4 @@
 		 <a href="https://www.sifr.tech/blog/rss/" target="_blank">RSS</a> |
    </section>
 </footer>
-    </main>
 </body>

@@ -1,0 +1,116 @@
+_template: page.html
+---
+pub_date: 2020-04-05
+---
+author: hiro@torproject.org (Silvia Puglisi - Hiro)
+---
+title: Online disinformation campaigns. A deep dive.
+---
+summary: emerging patterns for online misinformation campaigns. how do these groups operate.
+---
+body:
+
+A few days ago I published a little summary of online disinformation campaign for
+the Spanish far right [1].
+
+I tried to highlight the emerging patterns of how these amplification machines
+operate. Shoving retweets distribution for users rt-ing one of the top-talker
+accounts.
+
+I am now going to share a larger [archive](https://www.sifr.tech/static/files/twitter/query_result_2020-04-08T20_01_14.869652Z.zip)
+of tweets. To obtain this archive I compiled all the tweets from users that have
+retweeted the account [@ldpsincomplejos](https://twitter.com/ldpsincomplejos).
+
+Here is how I obtained the tweets for the account @ldpsincomplejos was obtained:
+
+```
+def get_tweets_search(key, client):
+    tweets_endpoint = "https://api.twitter.com/1.1/search/tweets.json?q=" + key + "&count=500&include_entities=true&result_type=recent"
+    response, data = client.request(tweets_endpoint)
+    return json.loads(data)
+```
+
+This function will return 500 tweets, including both tweets by the account and RTs
+to the account.
+For each tweet I extracted the username and got the latest 200 tweets user timeline.
+
+```
+def get_timeline(username, client):
+    timeline_endpoint = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + username + "&include_rts=true&count=200"
+    response, data = client.request(timeline_endpoint)
+    return json.loads(data)
+```
+
+Now I identified a few top-talkers and computed the distribution of RTs to Accounts.
+
+Here are some results:
+
+### Twitter distribution for users RT-ing @okdiario: who are they RTing?
+
+![distribution_okdiario](https://www.sifr.tech/static/files/twitter/distribucion_okdiario_RTs-50.png "Twitter distribution for users RT-ing @okdiario")
+[full image](https://www.sifr.tech/static/files/twitter/distribucion_okdiario_RTs.png)
+
+### Twitter distribution for users RT-ing @hermanntertsch: who are they RTing?
+
+![distribution_hermanntertsch](https://www.sifr.tech/static/files/twitter/distribucion_hermanntertsch_RTs-50.png "Twitter distribution for users RT-ing @hermanntertsch")
+[full image](https://www.sifr.tech/static/files/twitter/distribucion_hermanntertsch_RTs.png)
+
+### Twitter distribution for users RT-ing @alvisepf: who are they RTing?
+
+![distribution_alvisepf](https://www.sifr.tech/static/files/twitter/distribucion_alvisepf_RTs-50.png "Twitter distribution for users RT-ing @alvisepf")
+[full image](https://www.sifr.tech/static/files/twitter/distribucion_alvisepf_RTs.png)
+
+Here is the thing. If you look at the distribution of comments instead you get a
+different result.
+
+### Twitter distribution for users commenting-ing @okdiario: who are they commenting?
+
+![distribution_okdiario](https://www.sifr.tech/static/files/twitter/distribucion_comment_okdiario-50.png "Twitter distribution for users RT-ing @okdiario")
+[full image](https://www.sifr.tech/static/files/twitter/distribucion_comments_okdiario.png)
+
+### Twitter distribution for users commenting-ing @hermanntertsch: who are they commenting?
+
+![distribution_hermanntertsch](https://www.sifr.tech/static/files/twitter/distribucion_comment_hermanntertsch-50.png "Twitter distribution for users RT-ing @hermanntertsch")
+[full image](https://www.sifr.tech/static/files/twitter/distribucion_comments_hermanntertsch.png)
+
+### Twitter distribution for users commenting-ing @alvisepf: who are they commenting?
+
+![distribution_alvisepf](https://www.sifr.tech/static/files/twitter/distribucion_comment_alvisepf-50.png "Twitter distribution for users RT-ing @alvisepf")
+[full image](https://www.sifr.tech/static/files/twitter/distribucion_comments_alvisepfs.png)
+
+This means in practice that there is a list of accounts RT-ing sources on the right
+ and commenting on accounts from the left. The anticipation machines objective is
+ in fact to spread division and hate.
+
+Finally here is a visualization of the graph of accounts RTin OkDiario:
+
+![plot_graph_okdiario](https://www.sifr.tech/static/files/twitter/plot-50.jpg "Graph of accounts RTing Ok Diario")
+[full image](https://www.sifr.tech/static/files/twitter/plot.jpg)
+
+If we isolate the accounts doing more than 100 RT, we find a group of approximately
+20 accounts doing most of the tweets.
+
+![plot_graph_okdiario](https://www.sifr.tech/static/files/twitter/top_plot-50.jpg "Graph of top accounts RTing Ok Diario")
+[full image](https://www.sifr.tech/static/files/twitter/top_plot.jpg)
+
+Here is probably a team of accounts acting to promote the tweets from OkDiario and
+a group of other accounts.
+
+## Would you like to have access to this data?
+
+I have a [metabase](https://metabase.com) [instance](https://project-mononoke.herokuapp.com/)
+setup on [heroku](https://heroku.com).
+
+You can have a look at the [data](http://project-mononoke.herokuapp.com/public/dashboard/7e31a8e1-345b-4742-9774-82b86892135f)
+used in this study.
+
+If you get in touch I can give you access.
+
+REFERENCES
+
+[1] https://www.hiro7.eu/blog/2020-04-05-online-disinformation
+
+
+
+---
+_discoverable: yes

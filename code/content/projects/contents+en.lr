@@ -1,0 +1,19 @@
+icon: cogs
+---
+title: Projects
+---
+body:
+
+### GhostWriter
+
+[GhostWriter](https://ghostwriter.sh) lets you edit a website via lektor, a flexible and powerful static content management system for building websites out of markdown files — for people who do not want to make a compromise between a CMS and a static blog engine. The generated site can be published via onionshare or a web server running from your computer.
+
+
+### Barcelona Cyber Security
+
+[Barcelona Cybersecurity](https://cyber.barcelona) is a nonprofit, technology focused, organization, fostering research, education and outreach activities. We are based in Barcelona and our main focus is the local community.
+
+
+### BSides barcelona
+
+[BSides Barcelona](https://bsides.barcelona) is a community-driven framework for building events for and by information security community members. It's not the usual conference.

@@ -99,8 +99,7 @@ strategy to boost a certain political narrative.</p>
     <content:encoded><![CDATA[ <p>Perche preoccuparsi di privacy in tempo di pandemia?</p>
 <p>Ne abbiamo discusso in questo webminar: <a href="ttps://alexandrageese.eu/de/le-contact-tracing-app-rispettano-la-nostra-privacy/">Le contact tracing app rispettano la nostra privacy?</a> [1]</p>
 <p>Cerco di aggiungere un po' di contesto al mio intervento in queste note.</p>
-<h2>Come funziona una app di contact tracing?</h2>
-<p>Una app di contact tracing e' uno strumento di prevenzione che se utilizzato insieme
+<h2 id="come-funziona-una-app-di-contact-tracing">Come funziona una app di contact tracing?</h2><p>Una app di contact tracing e' uno strumento di prevenzione che se utilizzato insieme
 agli altri metodi di cui disponiamo per fare fronte alla pandemia del covid, ovvero
 test massivo e profilassi di protezione (igiene, mascherine, distanziamento sociale),
 puo' aiutare a rompere la catena dei contagi.</p>
@@ -142,31 +141,24 @@ scambiati dall'applicazione</p>
 essere calcolati o ricavati dai dati scambiati dall'applicazione.</p>
 </li>
 </ul>
-<h2>Che rischi presuppone creare e utilizzare una app di contact tracing?</h2>
-<h3>Protezione dei dati</h3>
-<p>Perche' una app di contact tracing non sia un rischio per la popolazione e' importante
+<h2 id="che-rischi-presuppone-creare-e-utilizzare-una-app-di-contact-tracing">Che rischi presuppone creare e utilizzare una app di contact tracing?</h2><h3 id="protezione-dei-dati">Protezione dei dati</h3><p>Perche' una app di contact tracing non sia un rischio per la popolazione e' importante
 che vengano rispettati alcuni criteri di protezione dei dati raccolti, tra cui:</p>
-<h4>Minimizzazione dei dati</h4>
-<p>Nessuna entita' deve essere in grado di poter osservare o ricavare il grafo sociale
+<h4 id="minimizzazione-dei-dati">Minimizzazione dei dati</h4><p>Nessuna entita' deve essere in grado di poter osservare o ricavare il grafo sociale
 degli utenti della app. Neanche in forma anonimizzata.</p>
 <p>Questo aspetto e' molto importante perche' il grafo sociale di una popolazione o
 semplicemente di un gruppo ristretto di persone puo' rendere pubbliche informazioni
 altrimenti confidenziali.</p>
-<h4>Le informazioni ricevuti dagli utenti e raccolte dal sistema devono essere</h4>
-<p>solamente quelle essenziali.</p>
+<h4 id="le-informazioni-ricevuti-dagli-utenti-e-raccolte-dal-sistema-devono-essere">Le informazioni ricevuti dagli utenti e raccolte dal sistema devono essere</h4><p>solamente quelle essenziali.</p>
 <p>Le informazioni raccolte sugli utenti che decideranno di installare la app devono
 essere solo quelle necessarie a ridurre il rischio di diffusione dell'empidemia.</p>
-<h4>Gli individui negativi devono essere protetti</h4>
-<p>Il sistema non puo' essere utilizzato come uno strumento di sorveglianza della
+<h4 id="gli-individui-negativi-devono-essere-protetti">Gli individui negativi devono essere protetti</h4><p>Il sistema non puo' essere utilizzato come uno strumento di sorveglianza della
 popolazione. Nessuna informazione sugli utenti negativi deve essere raccolta dal
 sistema.</p>
-<h4>I dati devono essere distrutti</h4>
-<p>Il sistema deve essere in grado di dimenticare i dati raccolti alla fine dell'empidemia.
+<h4 id="i-dati-devono-essere-distrutti">I dati devono essere distrutti</h4><p>Il sistema deve essere in grado di dimenticare i dati raccolti alla fine dell'empidemia.
 Se non ci saranno pazienti infetti che trasmettono dati riguardo la loro positivita',
 e se in generale le persone smetteranno usare la applicazione, i dati dovranno
 essere distrutti.</p>
-<h3>Sicurezza</h3>
-<p>Perche' una app di contact tracing sia utile per il rischio epidemiologico si stima
+<h3 id="sicurezza">Sicurezza</h3><p>Perche' una app di contact tracing sia utile per il rischio epidemiologico si stima
 che debba essere utilizzata da circa il 50%-70% della popolazione.</p>
 <p>Per avere un'idea di questo dato fondamentale, pensiamo che il 60% delle persone
 che hanno un cellulare, hanno installato whatsapp.</p>
@@ -175,23 +167,18 @@ potenzialmente contiene dei dati sensibili e riservati sugli utenti, diventa
 necessariamente un target. Esiste un mercato di vulnerabilita' di sistemi informatici
 a cui accedono agenzie governative e non per le quali questi dati possono rappresentare
 un valore.</p>
-<h4>Rischi</h4>
-<h5>Un avversario modifica la app per raccogliere ulteriori informazioni sugli utenti</h5>
-<p>In questo scenario un possibile avversario puo' collezionare gli identificativi
+<h4 id="rischi">Rischi</h4><h5 id="un-avversario-modifica-la-app-per-raccogliere-ulteriori-informazioni-sugli-utenti">Un avversario modifica la app per raccogliere ulteriori informazioni sugli utenti</h5><p>In questo scenario un possibile avversario puo' collezionare gli identificativi
 anonimi generati dai cellulari con cui e' stato in contatto per identificare degli
 individui.</p>
-<h5>Un avversario implementa un'antenna per intercettare le connessioni bluetooth dei cellulari in una zona circoscritta.</h5>
-<p>Questo scenario e' simile al precedente. In questo caso pero l'avversario utilizza
+<h5 id="un-avversario-implementa-un-antenna-per-intercettare-le-connessioni-bluetooth-dei-cellulari-in-una-zona-circoscritta">Un avversario implementa un'antenna per intercettare le connessioni bluetooth dei cellulari in una zona circoscritta.</h5><p>Questo scenario e' simile al precedente. In questo caso pero l'avversario utilizza
 dei sistemi per poter intercettare i segnali bluetooth dei cellulari nelle sue
 vicinanze e poter identificare gli utenti della app.</p>
-<h5>Un avversario riesce ad impersonificare le notifiche della app e comunicare degli status di esposizione falsi agli utenti</h5>
-<p>Questo scenario e' simile alle campagne di fishing agli account bancari. Un avversario crea
+<h5 id="un-avversario-riesce-ad-impersonificare-le-notifiche-della-app-e-comunicare-degli-status-di-esposizione-falsi-agli-utenti">Un avversario riesce ad impersonificare le notifiche della app e comunicare degli status di esposizione falsi agli utenti</h5><p>Questo scenario e' simile alle campagne di fishing agli account bancari. Un avversario crea
 un messaggio simile alla notifica che invia la app e comunica ad un numero elevato
 di utenti di essere stati in contatto con un positivo.</p>
 <p>L'effetto di questo attacco e' quello di generare panico o di ridurre la fiducia
 della popolazione nella app (discoragiandone l'utilizzo).</p>
-<h4>Perche' e' importante parlare di privacy</h4>
-<p>Identificare un individuo positivo puo' rappresentare un rischio per la sicurezza
+<h4 id="perche-e-importante-parlare-di-privacy">Perche' e' importante parlare di privacy</h4><p>Identificare un individuo positivo puo' rappresentare un rischio per la sicurezza
 fisica di quella persona.</p>
 <p>Alcune persone possono reaggire con aggressivita' alla notizia di essere stati in
 contatto con una persona infetta.</p>
@@ -248,25 +235,19 @@ For each tweet I extracted the username and got the latest 200 tweets user timel
 </code></pre>
 <p>Now I identified a few top-talkers and computed the distribution of RTs to Accounts.</p>
 <p>Here are some results:</p>
-<h3>Twitter distribution for users RT-ing @okdiario: who are they RTing?</h3>
-<p><img src="https://www.sifr.tech/static/files/twitter/distribucion_okdiario_RTs-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
+<h3 id="twitter-distribution-for-users-rt-ing-okdiario-who-are-they-rting">Twitter distribution for users RT-ing @okdiario: who are they RTing?</h3><p><img src="https://www.sifr.tech/static/files/twitter/distribucion_okdiario_RTs-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
 <a href="https://www.sifr.tech/static/files/twitter/distribucion_okdiario_RTs.png">full image</a></p>
-<h3>Twitter distribution for users RT-ing @hermanntertsch: who are they RTing?</h3>
-<p><img src="https://www.sifr.tech/static/files/twitter/distribucion_hermanntertsch_RTs-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
+<h3 id="twitter-distribution-for-users-rt-ing-hermanntertsch-who-are-they-rting">Twitter distribution for users RT-ing @hermanntertsch: who are they RTing?</h3><p><img src="https://www.sifr.tech/static/files/twitter/distribucion_hermanntertsch_RTs-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
 <a href="https://www.sifr.tech/static/files/twitter/distribucion_hermanntertsch_RTs.png">full image</a></p>
-<h3>Twitter distribution for users RT-ing @alvisepf: who are they RTing?</h3>
-<p><img src="https://www.sifr.tech/static/files/twitter/distribucion_alvisepf_RTs-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
+<h3 id="twitter-distribution-for-users-rt-ing-alvisepf-who-are-they-rting">Twitter distribution for users RT-ing @alvisepf: who are they RTing?</h3><p><img src="https://www.sifr.tech/static/files/twitter/distribucion_alvisepf_RTs-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
 <a href="https://www.sifr.tech/static/files/twitter/distribucion_alvisepf_RTs.png">full image</a></p>
 <p>Here is the thing. If you look at the distribution of comments instead you get a
 different result.</p>
-<h3>Twitter distribution for users commenting-ing @okdiario: who are they commenting?</h3>
-<p><img src="https://www.sifr.tech/static/files/twitter/distribucion_comment_okdiario-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
+<h3 id="twitter-distribution-for-users-commenting-ing-okdiario-who-are-they-commenting">Twitter distribution for users commenting-ing @okdiario: who are they commenting?</h3><p><img src="https://www.sifr.tech/static/files/twitter/distribucion_comment_okdiario-50.png" alt="distribution_okdiario" title="Twitter distribution for users RT-ing @okdiario">
 <a href="https://www.sifr.tech/static/files/twitter/distribucion_comments_okdiario.png">full image</a></p>
-<h3>Twitter distribution for users commenting-ing @hermanntertsch: who are they commenting?</h3>
-<p><img src="https://www.sifr.tech/static/files/twitter/distribucion_comment_hermanntertsch-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
+<h3 id="twitter-distribution-for-users-commenting-ing-hermanntertsch-who-are-they-commenting">Twitter distribution for users commenting-ing @hermanntertsch: who are they commenting?</h3><p><img src="https://www.sifr.tech/static/files/twitter/distribucion_comment_hermanntertsch-50.png" alt="distribution_hermanntertsch" title="Twitter distribution for users RT-ing @hermanntertsch">
 <a href="https://www.sifr.tech/static/files/twitter/distribucion_comments_hermanntertsch.png">full image</a></p>
-<h3>Twitter distribution for users commenting-ing @alvisepf: who are they commenting?</h3>
-<p><img src="https://www.sifr.tech/static/files/twitter/distribucion_comment_alvisepf-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
+<h3 id="twitter-distribution-for-users-commenting-ing-alvisepf-who-are-they-commenting">Twitter distribution for users commenting-ing @alvisepf: who are they commenting?</h3><p><img src="https://www.sifr.tech/static/files/twitter/distribucion_comment_alvisepf-50.png" alt="distribution_alvisepf" title="Twitter distribution for users RT-ing @alvisepf">
 <a href="https://www.sifr.tech/static/files/twitter/distribucion_comments_alvisepfs.png">full image</a></p>
 <p>This means in practice that there is a list of accounts RT-ing sources on the right
  and commenting on accounts from the left. The anticipation machines objective is
@@ -280,8 +261,7 @@ different result.</p>
 <a href="https://www.sifr.tech/static/files/twitter/top_plot.jpg">full image</a></p>
 <p>Here is probably a team of accounts acting to promote the tweets from OkDiario and
 a group of other accounts.</p>
-<h2>Would you like to have access to this data?</h2>
-<p>I have a <a href="https://metabase.com">metabase</a> <a href="https://project-mononoke.herokuapp.com/">instance</a>
+<h2 id="would-you-like-to-have-access-to-this-data">Would you like to have access to this data?</h2><p>I have a <a href="https://metabase.com">metabase</a> <a href="https://project-mononoke.herokuapp.com/">instance</a>
 setup on <a href="https://heroku.com">heroku</a>.</p>
 <p>You can have a look at the <a href="http://project-mononoke.herokuapp.com/public/dashboard/7e31a8e1-345b-4742-9774-82b86892135f">data</a>
 used in this study.</p>
@@ -315,8 +295,7 @@ and Cambridge Analytica [5]. Between 2013 and 2018 the company combined aggregat
 of Facebook data (later proved illegal), data mining and analysis, with communication
 campaigns during the electoral processes around the world with the goal to influence
 their outcome in favour of their clients [6].</p>
-<h2>What how does misinformation really look like?</h2>
-<p>If we take a look how any controversial or political topic on twitter we get
+<h2 id="what-how-does-misinformation-really-look-like">What how does misinformation really look like?</h2><p>If we take a look how any controversial or political topic on twitter we get
 a glimpse of how companies like Cambridge Analytica operate.</p>
 <p>At its core misinformation campaigns are built to spread a certain political agenda
 using specific language and amplifying only certain sources.</p>
@@ -324,8 +303,7 @@ using specific language and amplifying only certain sources.</p>
 Spanish political propaganda. Here is what I found.</p>
 <p>A few accounts and news sources spread the main messages, then a network of automated
 accounts make sure to retweet, highlight and reply to these messages.</p>
-<h2>A few examples</h2>
-<p>We have been observing a number of accounts following this similar pattern. Here
+<h2 id="a-few-examples">A few examples</h2><p>We have been observing a number of accounts following this similar pattern. Here
 is an example:</p>
 <p>User: <a href="https://twitter.com/Alvisepf">@alvisepf</a></p>
 <p>We have chosen this user because it is one of the "top talkers" in the spanish
@@ -344,11 +322,9 @@ a distribution.</p>
 <p>And here is a distribution per account:</p>
 <p><img src="https://www.sifr.tech/static/files/twitter/screenshot-50.png" alt="distribution" title="Twitter distribution per accounts">
 <a href="https://www.sifr.tech/static/files/twitter/Screenshot_2020-04-01%20Distribution%20of%20RT%20to%20accounts%20%C2%B7%20Metabase.png">full image</a></p>
-<h2>How does a typical amplification account look like</h2>
-<p>This <a href="https://www.sifr.tech/static/files/twitter/query_result_2020-03-31T09_44_57.589694Z.csv">archive</a>
+<h2 id="how-does-a-typical-amplification-account-look-like">How does a typical amplification account look like</h2><p>This <a href="https://www.sifr.tech/static/files/twitter/query_result_2020-03-31T09_44_57.589694Z.csv">archive</a>
  contains approximately 400 tweets from a single user, that coincidentally never sleeps ;).</p>
-<h2>What news sources are linked</h2>
-<p>Here is a list of identified news sources:</p>
+<h2 id="what-news-sources-are-linked">What news sources are linked</h2><p>Here is a list of identified news sources:</p>
 <ul>
 <li>Ok Diario</li>
 <li>Periodista Digital</li>
@@ -372,8 +348,7 @@ So <a href="https://www.sifr.tech/static/files/twitter/query_result_2020-04-05T1
 retweeted @alvisepf.</p>
 <p>Finally here is a complete archive of a set of tweets linking articles from these
 news source: <a href="https://www.sifr.tech/static/files/twitter/users_tweeting_right_news_2020-04-05T16_51_11.893225Z.csv">archive</a>.</p>
-<h2>What can be done</h2>
-<p>The patterns observed are pretty simple and repeated across countries and issues.
+<h2 id="what-can-be-done">What can be done</h2><p>The patterns observed are pretty simple and repeated across countries and issues.
 Accounts like these are exposed every other day by researchers, but also by the
 social networks operators [7].</p>
 <p>Why are operators not taking a stand against automated accounts? Patterns are not
@@ -385,8 +360,7 @@ could well increase the cost of automating a large amount of highlights and retw
 operation whose calculation difficulty is increased as the client makes more requests
 to a certain service. PoWs deters denial-of-service attacks and other service abuses,
 such as spam on a network.</p>
-<h2>What can you do</h2>
-<p>You can run your own research. I use a mix of own scripts calling twitter APIs and
+<h2 id="what-can-you-do">What can you do</h2><p>You can run your own research. I use a mix of own scripts calling twitter APIs and
 I also use <a href="https://github.com/twintproject">twint</a>. For visualizations I use
 <a href="https://metabase.com">metabase</a>.</p>
 <p>If you are a researcher or a journalist please get in touch. I'd be happy to
@@ -460,17 +434,14 @@ Because .onion services are only accessible via the Tor network, users do not ne
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
     <description>A few thoughts on internet censorship and surveillance</description>
     <content:encoded><![CDATA[ <p>When we talk about things like internet censorship and surveillance, these might appear as abstract concepts to some people, especially in global north countries. This post will tries to explain the effects of these activities, and what can be done to help people subjected to both.</p>
-<h1>How does internet censorship look like?</h1>
-<p>Internet censorship can take many different forms. In most countries there is some form of internet censorship, meaning that the government might decide to block some websites for different reasons. Usually, in democratic settings, internet blocking is regulated by the state and it takes more the shape of content restrictions based on various constitutional rights and principles, and it is enacted both through the democratic process and formal legislation.</p>
+<h1 id="how-does-internet-censorship-look-like">How does internet censorship look like?</h1><p>Internet censorship can take many different forms. In most countries there is some form of internet censorship, meaning that the government might decide to block some websites for different reasons. Usually, in democratic settings, internet blocking is regulated by the state and it takes more the shape of content restrictions based on various constitutional rights and principles, and it is enacted both through the democratic process and formal legislation.</p>
 <p>Generally speaking a network can be censored by blocking or slowing down access to certain websites, services, protocols. The ooni project [1] has been developing tests to find out when and how is censorship happening in a network [2].
 How blocking is implementing varies widely from country to country and even by specific political situations or events. Measures that can be adopted to circumnvent censorship at a certain moment might not work after a while. It is said that censorship circumnvention is a arms race. As censorship circunvention measures become more sophisticated so does censorship technology. Eventually the right for freedom and democracy is won at the political level.</p>
 <p>Ooni keeps a blog [3] where they present each internet censorship events and describe both the political background and the technical details of how the blocking is performed.</p>
 <p>While interent censorship might seems secondary it is important to point out that autoritarian regimes use communication control and blocking to shutdown or reduce people ability to organize and protest. There is evidence that as digitalr rights are restricted human rights are violated [4] [5].</p>
 <p>Internet censorship doesn't affect everyone equally either. Marginalized groups and people living in the global south are the ones that summer digital rights violation the most [6] [7].</p>
-<h1>Relationship between internet censorship and surveillance</h1>
-<p>When communication networks are controlled and blocked, citizens are surveilled [8][9]. Controlling dissent by targeting certain groups and dissidents is a common practice for many authoritarian governments [10]. In certain cases these governments prefer to engage themeselves online or partern with online media companies to control content and who has access to it [11]. In other cases the technics are more sophisticated. In certain cases even, having a state actor surveil their citizens affects users and business outside that country. This is the example of China weaponizing ligitimate requests to attack certain websites outside the Great Firewall (GFW) and even target the global chinese community [10].</p>
-<h1>How to protect yourself from surveillance and circumnvent censorship</h1>
-<p>The global investigative journalism network advises journalist to protect themselves and their sources from possible threats [13]. The first step is usually try to protect communications [14] by using end-to-end encrypted services, followed by taking necessary measures to protect access to personal accounts and using secure and encrypted tools and services to store and share documents.</p>
+<h1 id="relationship-between-internet-censorship-and-surveillance">Relationship between internet censorship and surveillance</h1><p>When communication networks are controlled and blocked, citizens are surveilled [8][9]. Controlling dissent by targeting certain groups and dissidents is a common practice for many authoritarian governments [10]. In certain cases these governments prefer to engage themeselves online or partern with online media companies to control content and who has access to it [11]. In other cases the technics are more sophisticated. In certain cases even, having a state actor surveil their citizens affects users and business outside that country. This is the example of China weaponizing ligitimate requests to attack certain websites outside the Great Firewall (GFW) and even target the global chinese community [10].</p>
+<h1 id="how-to-protect-yourself-from-surveillance-and-circumnvent-censorship">How to protect yourself from surveillance and circumnvent censorship</h1><p>The global investigative journalism network advises journalist to protect themselves and their sources from possible threats [13]. The first step is usually try to protect communications [14] by using end-to-end encrypted services, followed by taking necessary measures to protect access to personal accounts and using secure and encrypted tools and services to store and share documents.</p>
 <p>The ability to interact with sources is strategically important for journalist. This is why tools like Secure Drop [16] are used in newsrooms around the globe. Often journalists rely on more lightweight applications. One of this is OnionShare [17]. Onionshare allows users to share or receive files, or to publish a website, directly from their computer. Because OnionShare uses the Onion Service protocol [19] and expose the service on the Tor network only. The Onion Service protocol allows for bi-directional anonymity, meaning both the party offering the service and the party receiving the service are anonymous and protected by a 3-hops tor circuit.</p>
 <p>The Onion Service protocol also allows news organizations to reach surveilled and censored individuals [21] by offering their website on the Tor network. These website addresses end in the TLD .onion. Similar to how the https:// protocol of a website provides more security than the http:// protocol, an onion address also appears to be the same site but gives a visitor more privacy and security through end-to-end encryption and improved authentication. Visiting an onion address is easy. All that’s needed is Tor Browser (Tor Browser is built from Firefox and is similar to use); you visit the onion address in Tor Browser like you visit any web address.</p>
 <p>Because journalists and activists often have a public profile, both in real life and on social media, they need to take extra care to protect themselves from phishing attacks [15]. To understand the magnitude of phishing operations we just have to consider that the NSO's spyware Pegasus was targeting people in 45 countries [18].</p>
@@ -513,20 +484,16 @@ How blocking is implementing varies widely from country to country and even by s
     <dc:creator>hiro@torproject.org (Silvia Puglisi - Hiro)</dc:creator>
     <description>How can small organization run relays on the Tor network while sustain their operations. Learning from participatory business models for off-grid utilities</description>
     <content:encoded><![CDATA[ <p>How can small organization run relays on the Tor network while sustain their operations</p>
-<h1>How is the Tor network composed</h1>
-<p>The Tor network consists entirely of relays run by volunteers, providing bandwidth and other services to Tor users. There are currently about 6000 relays sustaining the network [1].
+<h1 id="how-is-the-tor-network-composed">How is the Tor network composed</h1><p>The Tor network consists entirely of relays run by volunteers, providing bandwidth and other services to Tor users. There are currently about 6000 relays sustaining the network [1].
 Up to now the Tor network has grown organically, by the mean of community outreach activities. Tor relay operators are usually individuals that are motivated by various factors. The Tor project mission itself is a strong driver for individuals interested in providing privacy enhancing communication tools to people all over the world. Other relay operators might be researchers interested in the technical aspects of the Tor software and protocol. Others can also simply be open source entusiasts that want to be part of its community. Many relay operators have often been recruited, so to speak, by other community members or core developers. Finally some relay operators are adversaries that are trying to run different analysis over the Tor network itself, like collecting information on its use or on the content being transferred.</p>
 <p>All the motivations described above do not require direct compensation by the Tor Project and the volunteer-based approach to sustain the network has been proved successful. Relay operators do not only invest their hardware, but also time and commitment in running the relays and in being part of the Tor community. Expenading the set of relays is vital for the Tor network. More importantly the network needs a diverse set of relay, not just advertised bandwidth. Diversity means different hardware and operating systems, but also different locations across the globe in order to reach users worldwide and offer overall the same quality of service.</p>
 <p>Throughout Tor history, there have never been in place an official mechanism for relay operators to be rewarded extrinsically. The intrinsic reward of being a relay operator was the social perceived value, like recognition within the Tor community. Many different proposals have been made for a Tor incentives system [2], but none has ever been implemented.</p>
-<h1>How do relay operators organize</h1>
-<p>Relay operators sometimes create a small non profit or join an umbrella organization, to support their activities. These are setup so that the individual operators are not legally responsible in case of a legal dispute. Also the organization is setup to share the burden of possible legal expenses and to collect donations for their activities. The Tor Project itself advises people to constitute a non-profit organization responsible for the relays in case of possible legal disputes.
+<h1 id="how-do-relay-operators-organize">How do relay operators organize</h1><p>Relay operators sometimes create a small non profit or join an umbrella organization, to support their activities. These are setup so that the individual operators are not legally responsible in case of a legal dispute. Also the organization is setup to share the burden of possible legal expenses and to collect donations for their activities. The Tor Project itself advises people to constitute a non-profit organization responsible for the relays in case of possible legal disputes.
 There are some legal risks in fact associated with running relays. These are usually not different from the same risks that an ISP could have since both relay internet traffic. Exits relays have more legal concerns that bridges, guards or middle relays, because middles and guards only relay encrypted traffic, while exits performs requests to the open internet.
 The Tor Project provides some standard response letters that relay operators can use and some legal resources that could become handy. In any case relay operators are advised to consult with a lawyer if any problem with law enforcement should arise.</p>
-<h1>How much does it cost to run a relay</h1>
-<p>Running a relay can be as cheap as a few dollars per month and as expensive as a few hundred, depending on where the relay runs, which kind of hardware it's running on, bandwidth, operating system and so on. Most relays operators rely on donations from individuals that want to contribute to the network but for several reasons are not able to run a relay at the moment. There is again intrinsic value to donate to relay operators to contribute to the Tor community.</p>
+<h1 id="how-much-does-it-cost-to-run-a-relay">How much does it cost to run a relay</h1><p>Running a relay can be as cheap as a few dollars per month and as expensive as a few hundred, depending on where the relay runs, which kind of hardware it's running on, bandwidth, operating system and so on. Most relays operators rely on donations from individuals that want to contribute to the network but for several reasons are not able to run a relay at the moment. There is again intrinsic value to donate to relay operators to contribute to the Tor community.</p>
 <p>A big portion of relay costs are taken over by bandwidth consumption. If an individual or group wants to run a node that relays a lot of traffic, bandwidth might become expensive.</p>
-<h1>Participatory Business Models for Off-Grid utilities, what can we learn</h1>
-<p>Certain mechanisms developed by and for the maintenance and operations of the Tor network have much in common with off-grid utility implementation. To start both are ipso-facto decentralized, community based and require experimenting with different business models for implementation.</p>
+<h1 id="participatory-business-models-for-off-grid-utilities-what-can-we-learn">Participatory Business Models for Off-Grid utilities, what can we learn</h1><p>Certain mechanisms developed by and for the maintenance and operations of the Tor network have much in common with off-grid utility implementation. To start both are ipso-facto decentralized, community based and require experimenting with different business models for implementation.</p>
 <p>A number  of  previous  studies  have  developed  their  own  classifications  for electrification models.</p>
 <ul>
 <li>Commercially  led  models which  are  driven  by  suppliers  and  dealers  with relatively little government control.</li>
@@ -544,8 +511,7 @@ The Tor Project provides some standard response letters that relay operators can
 </ol>
 <p>One thing that differentiate the ecosystem of companies and cooperatives providing utilities and relay operators is the fact that while utility providing organizations could in theory charge its users for using their network, the Tor network is freely accessible by everyone running a Tor client. Since neither the Tor Project nor any reasonable relay operator would like to charge Tor users for bandwidth used, in the past people have speculated whether it would make sense to build mechanisms so that the network could reward relays for the bandwidth provided to the network. A part of this speculation has also involved considering possible harms of such mechanism to both the privacy and security of Tor users and the community of relay operators. For example some have argued that this could encourage bad or malicious relays, or the growth of relay farms with the only interest to cash out instead of maintaining the network and protecting the privacy of its users.</p>
 <p>Some relay operators groups have developed a membership model to help sustain their operations [4] [5]. The membership model allows such group to build a close relationship with their supporters while also sustaining their operations.</p>
-<h1>Running a participatory relay community</h1>
-<p>While relay operators cannot be directly compensated by Tor users directly, they could be compensated for offering other services in a participatory way to the community of Tor users and .onion websites.
+<h1 id="running-a-participatory-relay-community">Running a participatory relay community</h1><p>While relay operators cannot be directly compensated by Tor users directly, they could be compensated for offering other services in a participatory way to the community of Tor users and .onion websites.
 The relay operators group could add a certain fee to the service offered and redirect part of this compensation to sustaining their infrastructure and work in maintaining the Tor network. This mechanism could help both the relay operators and the Tor network itself in more than one way. One the one hand relay operators can build a relationship with their members by offering a set of privacy friendly services that might or might not use the Tor network itself to be operated, like bridges, .onion hosting, vpn, and so on. On the other hand the Tor project will benefit by seeing more diverse use of the Tor network. Finally, this could also be an incentive for creating a better experience for onion services developers and operators and therefore fostering a more
 legitimate onion service ecosystem.</p>
 <p>This mechanism could be easier to implement for some relay operators that other form of financing, simply because they are already running some of these services as these are needed for day-to-day operations. For example many operators group running exit are already running an authoritative dns and could easily offer this service to their members (some in fact already do). This might actually be easier in many circumstances than applying for international grants or public funding, since in many cases this suppose a big overhead in work that small relay operators group cannot sustain.</p>
@@ -574,36 +540,31 @@ legitimate onion service ecosystem.</p>
 <p>Before starting do a little bit of reading to familiarize yourself with the setup
 procedure.
 I have added a list of links at the end. These are mainly the resources that I used.</p>
-<h2>Generate a new gpg key</h2>
-<p>I have generated my keys on a qube VM without internet connection.</p>
+<h2 id="generate-a-new-gpg-key">Generate a new gpg key</h2><p>I have generated my keys on a qube VM without internet connection.</p>
 <pre><code>$ gpg --gen-key
 </code></pre>
 <p>Selected option 0 and moved on to create my ID associated with the key.</p>
 <p>In this step I used mostly the guide from yubico developers website [1]
 The guide goes through generating Sign (S) Authentication (A) and Encryption (E)
 keys.</p>
-<h2>Add an authentication key</h2>
-<pre><code>$ gpg --expert --edit-key 123ABC45
+<h2 id="add-an-authentication-key">Add an authentication key</h2><pre><code>$ gpg --expert --edit-key 123ABC45
 </code></pre>
 <p>At this step we select another RSA key to attach to our key. In the gpg selection
 menu this corresponds to option 8.</p>
-<h2>Backup</h2>
-<p>Here is where you should backup your keys and revocation certificates. Please do
+<h2 id="backup">Backup</h2><p>Here is where you should backup your keys and revocation certificates. Please do
 I have personally lost yubikeys and having backups really helps.</p>
 <p>Also setup a PIN and a admin PIN for your yubikey [5]. With:</p>
 <pre><code>$ gpg --card-edit
 
 $ gpg/card&gt; admin
 </code></pre>
-<h2>Import the key to the yubikey</h2>
-<p>Finally we edit our key and add it to the keycard [1].</p>
+<h2 id="import-the-key-to-the-yubikey">Import the key to the yubikey</h2><p>Finally we edit our key and add it to the keycard [1].</p>
 <pre><code>$ gpg --expert --edit-key 123ABC45
 
 $ gpg&gt; keytocard
 </code></pre>
 <p>Now your key is exported to your card and ready to be used.</p>
-<h2>Setup key to be used with ssh</h2>
-<pre><code>$ gpg2 -K --with-keygrip
+<h2 id="setup-key-to-be-used-with-ssh">Setup key to be used with ssh</h2><pre><code>$ gpg2 -K --with-keygrip
 </code></pre>
 <p>This will show all your keys available with keygrip.
 Use the keygrip of your authentication key to export it to <code>sshcontrol</code></p>

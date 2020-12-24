@@ -3,53 +3,58 @@
       <meta charset="utf-8">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/static/milligram.min.css">
-      <link rel="stylesheet" href="/static/normalize.css">
       <link rel="stylesheet" href="/static/style.css">
 
       <title>Welcome</title>
-      <link rel="author" href="humans.txt">
 </head>
 <body>
-  <main class="wrapper">
-      <nav class="navigation">
-	<section class="container">
-		<a class="navigation-title" href="/">
-      <img src="/static/profile.png" />
-    </a>
-    <ul class="navigation-list">
+  <header class="header">
+  <div class="inner">
+    <div class="logo">
+      <a href="/">
+        <img src="/static/profile.png" />
+      </a>
+    </div>
+		<nav class="menu">
+  		<ul>
+				
+				
+					<li><a href="/CV/">CV</a></li>
+				
+					<li><a href="/press/">Press</a></li>
+				
+					<li><a href="/publications/">Pubblications</a></li>
+				
+					<li><a href="/blog/">Blog</a></li>
+				
+					<li><a href="/talks/">Talks</a></li>
+				
+					<li><a href="/projects/">Projects</a></li>
+				
+			</ul>
+		</nav>
+  </div>
+</header>
 
-      
-      
-          <li class="navigation-item"><a class="navigation-link" href="/talks/">Talks</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/blog/">Blog</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/publications/">Pubblications</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/projects/">Projects</a></li>
-      
-          <li class="navigation-item"><a class="navigation-link" href="/CV/">CV</a></li>
-      
-    </ul>
-  </section>
-</nav>
-
-      <section class="container">
-        <article>
-            <h3>Internet Censorship</h3>
-            <p>When we talk about things like internet censorship and surveillance, these might appear as abstract concepts to some people, especially in global north countries. This post will tries to explain the effects of these activities, and what can be done to help people subjected to both.</p>
-<h1>How does internet censorship look like?</h1>
-<p>Internet censorship can take many different forms. In most countries there is some form of internet censorship, meaning that the government might decide to block some websites for different reasons. Usually, in democratic settings, internet blocking is regulated by the state and it takes more the shape of content restrictions based on various constitutional rights and principles, and it is enacted both through the democratic process and formal legislation.</p>
+  <div class="terminal space shadow">
+    <div class="top">
+        <div class="btns">
+            <span class="circle red"></span>
+            <span class="circle yellow"></span>
+            <span class="circle green"></span>
+        </div>
+        <div class="title">Internet Censorship -- </div>
+    </div>
+    <div class="body">
+      <p>When we talk about things like internet censorship and surveillance, these might appear as abstract concepts to some people, especially in global north countries. This post will tries to explain the effects of these activities, and what can be done to help people subjected to both.</p>
+<h1 id="how-does-internet-censorship-look-like">How does internet censorship look like?</h1><p>Internet censorship can take many different forms. In most countries there is some form of internet censorship, meaning that the government might decide to block some websites for different reasons. Usually, in democratic settings, internet blocking is regulated by the state and it takes more the shape of content restrictions based on various constitutional rights and principles, and it is enacted both through the democratic process and formal legislation.</p>
 <p>Generally speaking a network can be censored by blocking or slowing down access to certain websites, services, protocols. The ooni project [1] has been developing tests to find out when and how is censorship happening in a network [2].
 How blocking is implementing varies widely from country to country and even by specific political situations or events. Measures that can be adopted to circumnvent censorship at a certain moment might not work after a while. It is said that censorship circumnvention is a arms race. As censorship circunvention measures become more sophisticated so does censorship technology. Eventually the right for freedom and democracy is won at the political level.</p>
 <p>Ooni keeps a blog [3] where they present each internet censorship events and describe both the political background and the technical details of how the blocking is performed.</p>
 <p>While interent censorship might seems secondary it is important to point out that autoritarian regimes use communication control and blocking to shutdown or reduce people ability to organize and protest. There is evidence that as digitalr rights are restricted human rights are violated [4] [5].</p>
 <p>Internet censorship doesn't affect everyone equally either. Marginalized groups and people living in the global south are the ones that summer digital rights violation the most [6] [7].</p>
-<h1>Relationship between internet censorship and surveillance</h1>
-<p>When communication networks are controlled and blocked, citizens are surveilled [8][9]. Controlling dissent by targeting certain groups and dissidents is a common practice for many authoritarian governments [10]. In certain cases these governments prefer to engage themeselves online or partern with online media companies to control content and who has access to it [11]. In other cases the technics are more sophisticated. In certain cases even, having a state actor surveil their citizens affects users and business outside that country. This is the example of China weaponizing ligitimate requests to attack certain websites outside the Great Firewall (GFW) and even target the global chinese community [10].</p>
-<h1>How to protect yourself from surveillance and circumnvent censorship</h1>
-<p>The global investigative journalism network advises journalist to protect themselves and their sources from possible threats [13]. The first step is usually try to protect communications [14] by using end-to-end encrypted services, followed by taking necessary measures to protect access to personal accounts and using secure and encrypted tools and services to store and share documents.</p>
+<h1 id="relationship-between-internet-censorship-and-surveillance">Relationship between internet censorship and surveillance</h1><p>When communication networks are controlled and blocked, citizens are surveilled [8][9]. Controlling dissent by targeting certain groups and dissidents is a common practice for many authoritarian governments [10]. In certain cases these governments prefer to engage themeselves online or partern with online media companies to control content and who has access to it [11]. In other cases the technics are more sophisticated. In certain cases even, having a state actor surveil their citizens affects users and business outside that country. This is the example of China weaponizing ligitimate requests to attack certain websites outside the Great Firewall (GFW) and even target the global chinese community [10].</p>
+<h1 id="how-to-protect-yourself-from-surveillance-and-circumnvent-censorship">How to protect yourself from surveillance and circumnvent censorship</h1><p>The global investigative journalism network advises journalist to protect themselves and their sources from possible threats [13]. The first step is usually try to protect communications [14] by using end-to-end encrypted services, followed by taking necessary measures to protect access to personal accounts and using secure and encrypted tools and services to store and share documents.</p>
 <p>The ability to interact with sources is strategically important for journalist. This is why tools like Secure Drop [16] are used in newsrooms around the globe. Often journalists rely on more lightweight applications. One of this is OnionShare [17]. Onionshare allows users to share or receive files, or to publish a website, directly from their computer. Because OnionShare uses the Onion Service protocol [19] and expose the service on the Tor network only. The Onion Service protocol allows for bi-directional anonymity, meaning both the party offering the service and the party receiving the service are anonymous and protected by a 3-hops tor circuit.</p>
 <p>The Onion Service protocol also allows news organizations to reach surveilled and censored individuals [21] by offering their website on the Tor network. These website addresses end in the TLD .onion. Similar to how the https:// protocol of a website provides more security than the http:// protocol, an onion address also appears to be the same site but gives a visitor more privacy and security through end-to-end encryption and improved authentication. Visiting an onion address is easy. All that’s needed is Tor Browser (Tor Browser is built from Firefox and is similar to use); you visit the onion address in Tor Browser like you visit any web address.</p>
 <p>Because journalists and activists often have a public profile, both in real life and on social media, they need to take extra care to protect themselves from phishing attacks [15]. To understand the magnitude of phishing operations we just have to consider that the NSO's spyware Pegasus was targeting people in 45 countries [18].</p>
@@ -76,10 +81,17 @@ How blocking is implementing varies widely from country to country and even by s
 <p>[20] <a href="https://torproject.org">https://torproject.org</a></p>
 <p>[21] <a href="https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship">https://blog.torproject.org/news-orgs-activists-onionize-your-sites-against-censorship</a></p>
 
-        </article>
-      </section>
+    </div>
+  </div>
 
-      <footer class="footer">
+  <section class="container">
+  <p class="description">Silvia Puglisi [Hiro]</p>
+  <h5>Contacts:</h5>
+  <p>Email: <a href="mailto:hey@sifr.tech">hey at sifr dot tech</a></p>
+  <p>Twitter: <a href="https://twitter.com/nopressure/" target="_blank">@nopressure</a></p>
+  <p>Code: <a href="https://0xacab.org/hiro">0xacab/hiro</a></p>
+</section>
+  <footer class="footer">
 	<section class="container">
 		Links:
      <a href="https://twitter.com/nopressure/" target="_blank">Twitter</a> |
@@ -91,5 +103,4 @@ How blocking is implementing varies widely from country to country and even by s
 		 <a href="https://www.sifr.tech/blog/rss/" target="_blank">RSS</a> |
    </section>
 </footer>
-    </main>
 </body>
